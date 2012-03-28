@@ -76,6 +76,7 @@ $(function(){
 		},
 		
 		refresh : function(){
+			console.log("IN REFRESH \n\n\n\n ")
 			this.updateStats();
 		},
 		

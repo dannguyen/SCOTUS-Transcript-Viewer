@@ -4,7 +4,7 @@ ScotusViewer.App = Backbone.View.extend({
 	
 	initialize : function(){
 		_.bindAll(this, "render", "onPersonClick",
-		'onHearingDateClick');
+		'onHearingDateClick', 'refreshInfoBoxes');
 		this.people = new Backbone.Collection();
 		this.speeches = new Backbone.Collection();
 		this.hearings = new Backbone.Collection();
@@ -18,6 +18,10 @@ ScotusViewer.App = Backbone.View.extend({
 		return this;	        
 	},
 		
+	refreshInfoBoxes : function(){
+		this.people.each(function(p){p.refresh();});
+	},
+	
 	onHearingDateClick : function(obj){
 		var set_all_visible = _.isUndefined(obj);
 				
@@ -35,6 +39,9 @@ ScotusViewer.App = Backbone.View.extend({
 		}else{
 			this.hearings.each(function(p){  p.set({'is_visible':true}); } );
 		}
+		
+		this.refreshInfoBoxes();
+		
 	},
 	
 	onPersonClick : function(obj){

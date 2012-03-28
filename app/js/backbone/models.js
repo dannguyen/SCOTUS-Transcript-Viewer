@@ -5,7 +5,21 @@ $(function(){
 		defaults : {
 			is_visible : true,
 			is_selected: false
-		}
+		},
+		initialize : function(){
+			this.speeches = new Backbone.Collection();
+			var self = this;
+			this.on("change:is_visible", function(){
+				//warning untested
+				self.speeches.each(function(_s){
+					console.log("a speech  " + _s.cid);
+					_s.set({is_visible:self.get('is_visible')},
+				 {silent: true}
+				);})
+			});
+		},
+		
+		
 	});	
 	
 	
@@ -33,8 +47,9 @@ $(function(){
 		},
 		
 		countCurrentWords : function(){
-			console.log("current words, before: speeches length: " + this.speeches.length);
-			return this.countWords();
+			console.log(' in current words count;');
+			return this.speeches.reduce(
+				function(memo, _s){return _s.get("is_visible") == true ? memo + _s.word_count : memo }, 0);
 		},
 		
 		countSpeeches : function(){
@@ -43,8 +58,6 @@ $(function(){
 		
 		countCurrentSpeeches : function(){
 			console.log(this.speeches.length)
-			return this.speeches.length;
-			
 			return this.speeches.select(function(_s){return _s.get("is_visible") == true }).length;
 		}
 		

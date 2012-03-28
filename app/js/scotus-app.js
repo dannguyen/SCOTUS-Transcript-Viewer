@@ -48,11 +48,13 @@ $(function(){
 				sch.person = s_person;
 
 				var speech = new ScotusViewer.Models.Speech(sch);
-				s_person.speeches.add(speech);
+				
 				console.log("PErson: " + s_person.key_name + ": " + s_person.speeches.length)
 				speech.hearing_id = hearing.cid;
 				
 				ScotusViewer.app.speeches.add(speech);
+				s_person.speeches.add(speech);
+				hearing.speeches.add(speech);
 				
 				var speech_segment = new ScotusViewer.Views.SpeechSegment({model:speech, id:"speech-segment-"+speech.cid});
 				hearing_segment.$el.append(speech_segment.render().el);
@@ -63,7 +65,7 @@ $(function(){
 		
 		
 		//update stats
-		ScotusViewer.app.people.each(function(p){p.refresh();})
+		ScotusViewer.app.refreshInfoBoxes();
 		
 	});
 });
