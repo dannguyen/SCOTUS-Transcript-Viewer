@@ -1,4 +1,4 @@
-window.DATA_FILENAME = 'data-hold/11-398--Department of Health and Human Servs. v. Florida--.js'
+window.DATA_FILENAME = 'data-hold/11-398--Department of Health and Human Servs. v. Florida.js'
 window.ScotusViewer = {
 	Models: {},
 	Collections: {},
@@ -13,6 +13,8 @@ $(function(){
 	ScotusViewer.transcript_navbar = $("#transcript-navbar");
 	ScotusViewer.hearing_date_navbar = $("#hearing-date-navbar");
 	ScotusViewer.sidebar = $("#sidebar");
+	
+	
 	
  	$.getJSON(DATA_FILENAME, function(data) {
 	
@@ -49,7 +51,6 @@ $(function(){
 
 				var speech = new ScotusViewer.Models.Speech(sch);
 				
-				console.log("PErson: " + s_person.key_name + ": " + s_person.speeches.length)
 				speech.hearing_id = hearing.cid;
 				
 				ScotusViewer.app.speeches.add(speech);

@@ -30,6 +30,7 @@ $(function(){
 		},
 		
 		initialize : function(){
+			this.set({'party_canon' : this.get('party').replace(/\s/, '')});
 			this.speeches = new Backbone.Collection();
 			this.key_name = this.get('key_name');
 			_.bindAll(this, "countWords", "countCurrentWords", "countSpeeches", "countCurrentSpeeches", "refresh");
@@ -77,13 +78,22 @@ $(function(){
 			this.word_count = this.get('word_count');
 			
 			this.set({
+				page_marker : this._page_marker(),
+				/*
 				person_category : this.person.get('category'),
 				person_last_name : this.person.get('last_name'),
-				person_key_name : this.person.get('key_name')
+				person_key_name : this.person.get('key_name')*/
 			});
 			
 			// cache key name
 			this.person_key_name = this.get('person_key_name');
+		},
+		
+		_page_marker : function(){
+			var start = this.get('start_position'), end = this.get('end_position');
+			var str = "pg." + start['page'] + ', ';
+			str += start['page'] == end['page'] ?  "lines: " + start['line'] + "-" + end['line'] : " line: " + start['line'] + " - pg: " + end['page'] + ", line: " + end['line'];
+			return str;
 		}
 		
 	});	

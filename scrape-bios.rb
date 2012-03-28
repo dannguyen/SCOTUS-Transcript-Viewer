@@ -15,12 +15,11 @@ judges = {}
 
 Nokogiri::HTML(open(BIOS_URL)).css('.bio').each do |bio|
   
-  obj = { }
+  obj = {'party'=>'Justice' }
   nametxt = bio.css('.bioname').text
   next if nametxt =~ /Retired/i
 
   nametxt = nametxt.split(',').map{|t| t.strip}
-
   obj['position'] = nametxt.pop
   obj['suffix'] = nametxt.pop if nametxt.length > 1
 

@@ -9,11 +9,16 @@ ScotusViewer.App = Backbone.View.extend({
 		this.speeches = new Backbone.Collection();
 		this.hearings = new Backbone.Collection();
 		
-		var self = this;
+		// sub views
+//		this.transcript_graph =
+		var x = ScotusViewer.Views.PersonMugBox;
+		console.log("xxx : ")
+		console.log(x)
 	},
 	render : function(){
 		var self = this;
-//		this.$('#transcript-navbar').css({position:'fixed'});
+		
+//		this.transcript_graph.render();
 		this.$('.appx.all-visible').click(function(){self.onPersonClick();})
 		return this;	        
 	},

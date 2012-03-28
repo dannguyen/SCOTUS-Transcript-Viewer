@@ -11,10 +11,11 @@
     <script src="js/lib/underscore.min.js"></script>
     <script src="js/lib/backbone.min.js"></script>
     <script src="js/scotus-app.js"></script>
-    <script src="js/backbone/controllers.js"></script>
 	 <script src="js/backbone/views.js"></script>
 	 <script src="js/backbone/models.js"></script>
 	 <script src="js/backbone/routers.js"></script>
+	 <script src="js/backbone/controllers.js"></script>
+    
   </head>
 
   <body>
@@ -28,7 +29,7 @@
              <div class="span4">
                
 					<div id="sidebar">
-						 <h1>Todos</h1>
+						 <h1>i</h1>
 	                "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
 						<div class="appx selector infobox all-visible">View All</div>
 					</div>
@@ -41,12 +42,15 @@
 					  <div class="navbar-inner" id="hearing-date-navbar">
 					    ...
 					  </div>
+					  <div id="transcript-graph">
+					    
+					  </div>
 					</div>
 	
    <p>             There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. 
    </p>
             
-					<div id="transcript-view">transcriptview</div>
+					<div id="transcript-view">transcript viewing</div>
 
 
              </div>
@@ -63,14 +67,14 @@
     <!-- Templates -->
 
     <script type="text/template" id="template-person-mugbox">
-		<div class="person <%=category%> <%=party%>">
+		<div class="person <%=category%> <%=party_canon%>">
 			<div class="name"><%=key_name%></div>
 		</div>		
     </script>
 
 	<script type="text/template" id="template-person-infobox">
-		<div class="person <%=category%> <%=party%>">
-			<div class="name"><%=category%> <%=key_name%></div>
+		<div class="person <%=category%> <%=party_canon%>">
+			<div class="name"><%=party%>: <%=key_name%></div>
 			<div class="stats">
 				<div class="speech_count">Speeches: <span class="current"></span></div>
 				<div class="word_count">Words: <span class="current"></span></div>
@@ -84,6 +88,7 @@
 		<div class="person-wrap"></div>
 		<div class="text">
 			<p><%=text%></p>
+			<p class="meta"><%=page_marker%></p>
 		</div>
 	 </script>
 	

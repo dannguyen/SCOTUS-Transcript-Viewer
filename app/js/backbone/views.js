@@ -12,7 +12,6 @@ $(function(){
 			return this;
 		},
 		onVisibleChange : function(){
-			console.log("hearing segment change visiblity")
 			if(this.model.get("is_visible")===true){this.$el.show();				
 			}else{this.$el.hide();	}
 		},
@@ -171,6 +170,33 @@ $(function(){
 				this.$el.removeClass('is_visible');	
 			}
 		}
+	});
+	
+	
+	
+	
+	/* other views */
+	ScotusViewer.Views.TranscriptGraph = Backbone.View.extend({
+		/* el should be provided*/
+		/*
+		events: {
+			"window scroll" : 'updateTick'
+		},
+		initialize : function(){
+			_.bindAll(this, "render", "updateTick");
+		},
+		
+		render : function(){
+			return this;
+		},
+		
+		updateTick : function(e){
+			console.log('update tick')
+		}
+		
+		*/
+		
+		
 	});
 	
 	

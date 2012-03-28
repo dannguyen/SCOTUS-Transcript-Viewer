@@ -22,6 +22,20 @@
 
 /* people */
 
+/*
+.Respondent{
+	background: #fcc;
+}
+
+.Petitioner{
+	background: #ccf;
+}
+
+.Amicuscuraie{
+	background: #cfc;
+}
+*/
+
 .person.infobox, .person.mugbox{ }
 .person.infobox.is_visible, .person.mugbox.is_visible{
 /*	display: block;*/
@@ -76,6 +90,16 @@
 	display: block;
 }
 
+
+.speech.segment .meta{
+	color: #444;
+	font-size: 12px;
+	visibility: hidden;	
+}
+
+.speech.segment.is_selected .meta{
+	visibility: visible;
+}
 
 .speech.segment .person.mugbox{
 	float: left;

@@ -4,7 +4,7 @@ require 'json'
 
 DIR_DATA = 'data-hold'
 DIR_TRANSCRIPTS = DIR_DATA + '/transcripts'
-SCOTUS_JUSTICES_JS = JSON.parse(File.open(File.join(DIR_DATA,'scotus.js')).read)
+SCOTUS_JUSTICES_JS = JSON.parse(File.open(File.join(DIR_DATA,'scotus-bios.js')).read)
 
 PAGE_PATTERNS = [
   ['empty', /^ *$/],
@@ -16,7 +16,7 @@ PAGE_PATTERNS = [
 
 LINE_PATTERNS = {
   'speaker' => /^([A-Z '\.\-]+): +/,
-  'person_intro' => /^[A-Z][A-Z\. \-',]+/,
+  'person_intro' => /^([A-Z][A-Z\. \-',]+?\.)(, [A-Z]+[a-z]+.+)$/,
   'proceedings' => /P R O C E E D I N G S/,
   'appearances' => /APPEARANCES:/,
   'contents'=>/C O N T E N T S/,
@@ -27,6 +27,7 @@ PAGE_STATUS = {
   'page_number'=>0,
   'line_number'=>0,
   'total_line_number'=>0,
+  'word_count'=>0
 }
 
 
@@ -59,6 +60,17 @@ def process_line_and_get_type(str)
 end
 
 
+def find_person_from_people(people, person_cat, person_key_name)
+  person_object = people.map.select{|_o| _o[1]['category'] == person_cat && _o[0] =~ /#{person_key_name}/  }
+  raise "Person object length is #{person_object.length}: #{person_object}; using values: #{person_cat}, #{person_key_name}" if person_object.length != 1
+  return person_object[0][1]
+end
+
+
+
+
+
+
 transcripts = Dir.glob("#{DIR_TRANSCRIPTS}/*.txt")
 case_filenames = transcripts.map{|f| File.basename(f, '.txt').match(/.+?(?=\d{4}-\d{2}-\d{2}$)/)[0] }.uniq
 
@@ -70,7 +82,7 @@ puts "There are #{transcripts.length} transcripts"
 case_filenames.each do |case_filename|
   
   # collect cases
-  case_code, case_name = File.basename(case_filename, '.txt').split('--')
+  case_code, case_name = File.basename(case_filename, '.txt').split('--')[0..1]
   case_obj = {
     'case_code' => case_code,
     'case_name' => case_name,
@@ -105,8 +117,9 @@ case_filenames.each do |case_filename|
        line_type = process_line_and_get_type(file_line)
        if line_type == 'content_line'
          file_line = content_line_cleaner(file_line)
-         if file_line =~ LINE_PATTERNS['person_intro']
-           person = {'name'=>file_line, 'key_name'=>file_line, 'category'=> 'Someone', 'description'=>[]}
+         if person_desc =  file_line.match( LINE_PATTERNS['person_intro'])
+           person_name = person_desc[1]
+           person = {'name'=>person_name, 'key_name'=>person_name, 'category'=> 'Party', 'description'=>[person_desc[2]]}
            people <<  person
          else
            person['description'] << file_line if person
@@ -163,19 +176,20 @@ case_filenames.each do |case_filename|
           # new speaker here  
           speaker_name = speaker[1]
           if speaker_name =~ /JUSTICE/
-            speaker_cat = 'SCOTUS'
-            speaker_key = speaker_name.split(/JUSTICE/,2)[-1].strip
+            person_cat = 'SCOTUS'
+            speaker_key_name = speaker_name.split(/JUSTICE/,2)[-1].strip
           else
-            speaker_key = speaker_name.match(/\w+$/)[0]
-            speaker_cat = "Someone"
+            speaker_key_name = speaker_name.match(/\w+$/)[0]
+            person_cat = "Party"
           end
           
-          person_object = case_obj['people'].map.select{|_o| _o[1]['category'] == speaker_cat && _o[0] =~ /#{speaker_key}/  }
-          
-          raise "Person object length is #{person_object.length}: #{person_object}" if person_object.length != 1
-          person_key = person_object[0][0]
+          # speaker_key_name is from the transcript
+          # person_key_name is canonical
 
-          current_speech = {'speaker_cat'=>speaker_cat, 'speaker_key'=>person_key, 'lines'=>[]}        
+          person_object = find_person_from_people(case_obj['people'], person_cat, speaker_key_name)
+          person_key_name = person_object['key_name']
+
+          current_speech = {'person_cat'=>person_cat, 'person_key_name'=>person_key_name, 'lines'=>[]}        
           speeches << current_speech
           
           # Remove speaker title from the line
@@ -195,14 +209,21 @@ case_filenames.each do |case_filename|
     # end of file
   
 
-    # concatenate all lines of speech
+    hearing_word_count = 0
+    
     speeches.each do |speech|
       first_line = speech['lines'][0]
       last_line = speech['lines'][-1]
+      
+      # concatenate all lines of speech
       text = speech['lines'].map{|s| s['content']}.join(" ")
+      word_count = text.scan(/\S*\w+\S*/).length
+  
+      hearing_word_count += word_count
+      
       speech.merge!({
         'text'=>text,
-        'word_count'=>text.scan(/\S*\w+\S*/).length,
+        'word_count'=>word_count,
         'start_position'=>{'page'=>first_line['page_number'], 'line'=>first_line['line_number']},
         'end_position'=>{'page'=>last_line['page_number'], 'line'=>last_line['line_number']}
       })
@@ -213,16 +234,34 @@ case_filenames.each do |case_filename|
      # puts "From #{speech['start_position']['page']}:#{speech['start_position']['line']} to #{speech['end_position']['page']}:#{speech['end_position']['line']}"
     #  puts speech['text']
     end
+
+    PAGE_STATUS['word_count'] += hearing_word_count
     
+    hearing['word_count'] = hearing_word_count
     hearing['speeches'] = speeches
     case_obj['hearings'] << hearing
     # end of transcript
     
   end
   # end of transcript group
+  
+  case_obj['word_count'] = PAGE_STATUS['word_count'];
 
   
-  output_fname = File.join(DIR_TRANSCRIPTS, "#{case_filename}.js")
+  # build out visualization
+  
+  
+  case_obj['transcript_composition'] = case_obj['hearings'].map{|h| h['speeches']}.flatten.inject([]) do |tc, speech|
+    person = find_person_from_people(case_obj['people'], speech['person_cat'], speech['person_key_name'])
+    tc << {'person_party'=>person['party'], 'person_category'=>person['category'], 'person_key_name'=>person['key_name'], 
+      'word_count'=>speech['word_count'], 'relative_width'=>(speech['word_count'].to_f * 1000 / PAGE_STATUS['word_count']).floor / 1000.0
+  }  
+  end
+  
+  
+  
+  # write file name
+  output_fname = File.join(DIR_TRANSCRIPTS, "#{case_code}--#{case_name}.js")
   File.open(output_fname, 'w'){|w| w.write(JSON.pretty_generate(case_obj))}
   
 end
