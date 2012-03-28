@@ -1,0 +1,39 @@
+.person.infobox, .person.mugbox{
+	cursor: pointer;
+}
+.person.infobox:hover, .person.mugbox:hover{
+	border: thin solid #33f;
+}
+.person.infobox.selected, .person.mugbox.selected{
+	border: thin solid #f66;
+}
+
+
+.person.mugbox{
+	border: thin solid #aaa;
+	height: 150px;
+	padding: 5px;
+	width: 120px;
+}
+
+.speech.segment{
+	display: none;
+	margin-bottom: 2.0em;
+	
+}
+
+.speech.segment.selected{
+	display: block;
+}
+
+
+.speech.segment .person.mugbox{
+	float: left;
+	margin: 0 20px 20px 0;
+}
+/*
+.speech.segment .person{
+	float: right;
+	margin: 0 0 20px 20px;	
+}*/
+
