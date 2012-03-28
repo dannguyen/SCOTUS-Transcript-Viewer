@@ -1,11 +1,50 @@
-.person.infobox, .person.mugbox{
-	cursor: pointer;
+
+
+#sidebar{
 }
-.person.infobox:hover, .person.mugbox:hover{
-	border: thin solid #33f;
+
+.selector{
+	cursor: pointer;	
 }
-.person.infobox.selected, .person.mugbox.selected{
-	border: thin solid #f66;
+
+/* hearing */
+
+.hearing.segment{
+	border-bottom: 100px solid #ddd;
+	margin-bottom: 2em;
+	padding-bottom: 2em;
+}
+
+.hearing.segment:last-child{
+	border-bottom:0;
+}
+
+
+/* people */
+
+.person.infobox, .person.mugbox{ }
+.person.infobox.is_visible, .person.mugbox.is_visible{
+/*	display: block;*/
+}
+
+.person.infobox{
+	padding: 3px;
+}
+
+.person.infobox.is_visible{
+	display: block;
+}
+.person.infobox:hover{
+	background-color: #aaf;
+}
+
+.person.infobox.is_selected{
+	background-color: #333;
+	color: white;	
+}
+
+.person.infobox:hover.is_selected{
+	background-color: #666;
 }
 
 
@@ -16,13 +55,24 @@
 	width: 120px;
 }
 
+.person.mugbox:hover{
+	border: thin solid #33f;
+}
+.person.mugbox.is_selected{
+	border: thin solid #f66;
+}
+
+
+
+/* speech model */
+
 .speech.segment{
 	display: none;
 	margin-bottom: 2.0em;
 	
 }
 
-.speech.segment.selected{
+.speech.segment.is_visible{
 	display: block;
 }
 
@@ -37,3 +87,24 @@
 	margin: 0 0 20px 20px;	
 }*/
 
+
+
+
+
+
+/*** bootstrap fixes ***/
+#transcript-navbar{
+	left: auto;
+	right: auto;
+	width: 100%;
+	z-index: 1;
+	top: 0;
+}
+
+#transcript-navbar .navbar-inner{
+	background: white;
+	border-bottom: thin solid #777;
+	color: black;
+	height: 60px;
+	
+}
