@@ -15,34 +15,34 @@ judges = {}
 
 Nokogiri::HTML(open(BIOS_URL)).css('.bio').each do |bio|
   
-  obj = {'party'=>'Justice' }
+  obj = {'party'=>'Justice', 'bio'=>{} }
   nametxt = bio.css('.bioname').text
   next if nametxt =~ /Retired/i
 
   nametxt = nametxt.split(',').map{|t| t.strip}
-  obj['position'] = nametxt.pop
-  obj['suffix'] = nametxt.pop if nametxt.length > 1
+  obj['bio']['position'] = nametxt.pop
+  obj['bio']['suffix'] = nametxt.pop if nametxt.length > 1
 
   nametxt = nametxt.join.split(' ')
   
-  obj['last_name'] = nametxt.pop
+  obj['bio']['last_name'] = nametxt.pop
   
   # ...close enough
-  obj['first_name'], obj['middle_name'] = nametxt
+  obj['bio']['first_name'], obj['bio']['middle_name'] = nametxt
   
   ### parse body
   txt = bio.text
   
-  if bd = txt.match(/was born .+?, ([A-Z][a-z]+ \d+, \d+)/)
-    obj['birth_date'] = Chronic.parse(bd[1]).strftime("%Y-%m-%d")
+  if bd = txt.match(/was born .+?,? (?:on )?([A-Z][a-z]+ \d{1,2}, \d{4})/)
+    obj['bio']['birth_date'] = Chronic.parse(bd[1]).strftime("%Y-%m-%d")
   end
 
   # this is a little loose, but seems to work
   if nd = txt.match(/([A-Z][a-z]+ \d+, \d+)\.\s*$/)
-    obj['start_date'] = Chronic.parse(nd[1]).strftime("%Y-%m-%d")
+    obj['bio']['start_date'] = Chronic.parse(nd[1]).strftime("%Y-%m-%d")
   end
   
-  keyname = obj['last_name'].upcase
+  keyname = obj['bio']['last_name'].upcase
   judges[keyname] = obj.merge({'category'=>'SCOTUS', 'key_name'=>keyname})
   
 end

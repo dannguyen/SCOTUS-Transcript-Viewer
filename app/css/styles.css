@@ -3,9 +3,12 @@
 #sidebar{
 }
 
-.selector{
+.selector, .appx{
 	cursor: pointer;	
 }
+
+
+
 
 /* hearing */
 
@@ -43,29 +46,37 @@
 
 .person.infobox{
 	padding: 3px;
+	display: none;
+}
+
+.person.infobox .expand{
+	display: none;
 }
 
 .person.infobox.is_visible{
 	display: block;
 }
-.person.infobox:hover{
+.person.infobox .name:hover{
 	background-color: #aaf;
 }
 
-.person.infobox.is_selected{
+.person.infobox.is_selected .expand{
+	display:block;
+}
+
+.person.infobox.is_selected .name{
 	background-color: #333;
 	color: white;	
 }
 
-.person.infobox:hover.is_selected{
+.person.infobox.is_selected .name:hover{
 	background-color: #666;
 }
 
 
 .person.mugbox{
 	border: thin solid #aaa;
-	height: 150px;
-	padding: 5px;
+	height: 160px;
 	width: 120px;
 }
 
@@ -78,11 +89,24 @@
 
 
 
+.person .panel-wrap{
+	background: #dfd;
+}
+
+.person .panel-wrap .appx{
+	font-weight: bold;
+}
+
+
+
+
 /* speech model */
 
 .speech.segment{
 	display: none;
-	margin-bottom: 2.0em;
+	padding-top: 8em;
+	padding-bottom: 8.0em;
+	position: relative;
 	
 }
 
@@ -101,16 +125,31 @@
 	visibility: visible;
 }
 
-.speech.segment .person.mugbox{
-	float: left;
-	margin: 0 20px 20px 0;
+.speech.segment .row .person-wrap{
+	
+	
 }
-/*
-.speech.segment .person{
-	float: right;
-	margin: 0 0 20px 20px;	
-}*/
 
+.speech.segment .person.mugbox{
+	width: 100%;
+}
+
+.speech.segment .text p{
+	font-size: 16px;
+	line-height: 20px;
+}
+
+.speech.segment.brief{
+	padding-bottom: 1.0em;
+	padding-top: 1.0em;
+}
+.speech.segment.brief .SCOTUS .text{
+	padding-left: 0em;
+}
+.speech.segment.brief .Party .text{
+	text-align: right;
+	padding-right: 0em;
+}
 
 
 #transcript-navbar{

@@ -16,7 +16,7 @@ PAGE_PATTERNS = [
 
 LINE_PATTERNS = {
   'speaker' => /^([A-Z '\.\-]+): +/,
-  'person_intro' => /^([A-Z][A-Z\. \-',]+?\.)(, [A-Z]+[a-z]+.+)$/,
+  'person_intro' => /^([A-Z][A-Z\. \-',]+?\.), ([A-Z]+[a-z]+.+)$/,
   'proceedings' => /P R O C E E D I N G S/,
   'appearances' => /APPEARANCES:/,
   'contents'=>/C O N T E N T S/,
@@ -119,28 +119,36 @@ case_filenames.each do |case_filename|
          file_line = content_line_cleaner(file_line)
          if person_desc =  file_line.match( LINE_PATTERNS['person_intro'])
            person_name = person_desc[1]
-           person = {'name'=>person_name, 'key_name'=>person_name, 'category'=> 'Party', 'description'=>[person_desc[2]]}
+           
+           person = {'key_name'=>person_name, 'category'=> 'Party', 'bio'=>{'position'=>[person_desc[2]]} }
+           
+           # a poor man's name parser for now
+           person_name = person_name.split(', ', 2)
+           person['bio']['suffix'] = person_name.pop if person_name.length > 1           
+           
+           person_name = person_name.join
+           person['bio']['first_name'], person['bio']['middle_name'], person['bio']['last_name'] = person_name.match(/^([A-Z\-' ]+?) ([A-Z]\.)? *(.+)$/)[1..3]
+           
            people <<  person
          else
-           person['description'] << file_line if person
+           person['bio']['position'] << file_line if person
          end
        end
     end
     
     # fill out each person's category based on description
     people.each do |person|
-      person['description'] = person['description'].join(' ')
+      person['bio']['position'] = person['bio']['position'].join(' ')
       
-      if person['description'] =~ /Petitioner/
+      if person['bio']['position'] =~ /Petitioner/
         person['party'] = 'Petitioner'
-      elsif person['description'] =~ /Respondent/
+      elsif person['bio']['position'] =~ /Respondent/
         person['party'] = 'Respondent'
-      elsif person['description'] =~ /amicus curiae/i
+      elsif person['bio']['position'] =~ /amicus curiae/i
         person['party'] = 'Amicus curaie'
       else
         person['party'] = 'Unknown'
       end
-      
        case_obj['people'][person['key_name']] = person
     end
     
@@ -256,6 +264,13 @@ case_filenames.each do |case_filename|
     tc << {'person_party'=>person['party'], 'person_category'=>person['category'], 'person_key_name'=>person['key_name'], 
       'word_count'=>speech['word_count'], 'relative_width'=>(speech['word_count'].to_f * 1000 / PAGE_STATUS['word_count']).floor / 1000.0
   }  
+  end
+  
+  
+  # add some more fields to people
+  case_obj['people'].each_value do |person|
+    person['bio']['full_name'] = [person['bio']['first_name'], person['bio']['middle_name'], person['bio']['last_name']].compact.join(' ')
+    person['bio']['full_name'] += ", #{person['bio']['suffix']}" if person['bio']['suffix'] 
   end
   
   

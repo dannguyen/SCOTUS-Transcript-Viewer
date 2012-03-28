@@ -26,16 +26,22 @@ $(function(){
 	ScotusViewer.Models.Person = Backbone.Model.extend({
 		defaults: { party : '',
 			is_visible : true,
-			is_selected: false
+			is_selected: false,
+			is_focus: false,
+			first_name: null, last_name: null, middle_name: null, position: null, start_date: null, birth_date: null, suffix: null
 		},
 		
 		initialize : function(){
 			this.set({'party_canon' : this.get('party').replace(/\s/, '')});
 			this.speeches = new Backbone.Collection();
 			this.key_name = this.get('key_name');
+			this.is_justice = this.get('category') == 'SCOTUS' ? true : false;
+						
 			_.bindAll(this, "countWords", "countCurrentWords", "countSpeeches", "countCurrentSpeeches", "refresh");
 			
 		},
+		
+	
 		
 		refresh : function(){
 			this.trigger("refresh");
@@ -48,7 +54,6 @@ $(function(){
 		},
 		
 		countCurrentWords : function(){
-			console.log(' in current words count;');
 			return this.speeches.reduce(
 				function(memo, _s){return _s.get("is_visible") == true ? memo + _s.word_count : memo }, 0);
 		},
@@ -58,7 +63,6 @@ $(function(){
 		},
 		
 		countCurrentSpeeches : function(){
-			console.log(this.speeches.length)
 			return this.speeches.select(function(_s){return _s.get("is_visible") == true }).length;
 		}
 		
@@ -76,11 +80,14 @@ $(function(){
 //			_.bindAll(this, '');
 			this.person = this.get('person');
 			this.word_count = this.get('word_count');
+			this.is_justice = this.person.is_justice;
+			
 			
 			this.set({
 				page_marker : this._page_marker(),
+				person_category : this.person.get('category')
 				/*
-				person_category : this.person.get('category'),
+				,
 				person_last_name : this.person.get('last_name'),
 				person_key_name : this.person.get('key_name')*/
 			});

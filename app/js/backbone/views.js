@@ -58,7 +58,7 @@ $(function(){
 		className: 'person infobox selector is_visible',
 		template : _.template($('#template-person-infobox').html()), 
 		events : {
-			"click" : 'onClick'
+			"click .name" : 'onClick'
 		},
 		
 		initialize : function(){
@@ -97,7 +97,13 @@ $(function(){
 		onSelectedChange : function(){
 			if(this.model.get("is_selected")===true){this.$el.addClass('is_selected');			
 			}else{this.$el.removeClass('is_selected');	}
+		},
+		
+		onFocusChange : function(){
+			if(this.model.get("is_focus")===true){this.$el.addClass('is_focus');			
+			}else{this.$el.removeClass('is_focus');	}
 		}
+		
 	});
 	
 	ScotusViewer.Views.PersonMugBox = Backbone.View.extend({
@@ -105,7 +111,7 @@ $(function(){
 		className: 'person mugbox selector is_visible',
 		template : _.template($('#template-person-mugbox').html()), 
 		events : {
-			"click" : 'onClick'
+			"click .name" : 'onClick'
 		},
 		
 		initialize : function(){
@@ -140,19 +146,42 @@ $(function(){
 		tagName: 'div',
 		className: 'speech segment clearfix is_visible',
 		template : _.template($('#template-speech-segment').html()), 
+		mugbox_size : 140,
 		initialize : function(){
-			_.bindAll(this, "render", "onPersonSelected", 'onPersonVisible');
+			_.bindAll(this, "render", "onPersonSelected", 'onPersonVisible', 'fixMargins');
+			
 			this.person = this.model.person;
 			this.person.on('change:is_visible', this.onPersonVisible);
 			this.person.on('change:is_selected', this.onPersonSelected);
+			this.is_justice = this.model.is_justice;
 		},
 		
 		render : function(){
 			var self = this;
 			this.$el.html(self.template(self.model.toJSON()));
 			this.person_mug_box = new ScotusViewer.Views.PersonMugBox({model:this.person});
-			this.$('.person-wrap').append(self.person_mug_box.render().el);
+			this.text_box = this.$(".text");
+	
+			var tw = self.is_justice ? this.$('.person-wrap.SCOTUS') : this.$('.person-wrap.Party');
+			tw.html(self.person_mug_box.render().el);
+			
+			
 			return this;	        
+		},
+		
+		fixMargins: function(){
+			var tdim = this.mugbox_size - this.text_box.height();			
+			if(tdim > 0){
+				this.text_box.css({marginTop: tdim/2 });
+				if(this.text_box.text().length < 140){
+					this.$el.addClass("brief");
+				}
+				
+			}else{
+				this.person_mug_box.$el.css({marginTop: -tdim/3 });
+			}
+			
+			
 		},
 		
 		onPersonSelected : function(){
@@ -169,6 +198,12 @@ $(function(){
 			}else{
 				this.$el.removeClass('is_visible');	
 			}
+		},
+		
+		
+		onPersonFocusChange : function(){
+			if(this.person.get("is_focus")===true){this.$el.addClass('is_focus');			
+			}else{this.$el.removeClass('is_focus');	}
 		}
 	});
 	

@@ -13983,137 +13983,197 @@
   "word_count": 34816,
   "people": {
     "SCALIA": {
-      "start_date": "1986-09-26",
-      "position": "Associate Justice",
       "category": "SCOTUS",
       "key_name": "SCALIA",
-      "birth_date": "1936-03-11",
-      "last_name": "Scalia",
-      "party": "Justice",
-      "middle_name": null,
-      "first_name": "Antonin"
+      "bio": {
+        "position": "Associate Justice",
+        "start_date": "1986-09-26",
+        "birth_date": "1936-03-11",
+        "full_name": "Antonin Scalia",
+        "last_name": "Scalia",
+        "first_name": "Antonin",
+        "middle_name": null
+      },
+      "party": "Justice"
     },
     "KAGAN": {
-      "start_date": "2010-08-07",
-      "position": "Associate Justice",
       "category": "SCOTUS",
       "key_name": "KAGAN",
-      "last_name": "Kagan",
-      "party": "Justice",
-      "middle_name": null,
-      "first_name": "Elena"
+      "bio": {
+        "position": "Associate Justice",
+        "start_date": "2010-08-07",
+        "birth_date": "1960-04-28",
+        "full_name": "Elena Kagan",
+        "last_name": "Kagan",
+        "first_name": "Elena",
+        "middle_name": null
+      },
+      "party": "Justice"
     },
     "KENNEDY": {
-      "start_date": "1988-02-18",
-      "position": "Associate Justice",
       "category": "SCOTUS",
       "key_name": "KENNEDY",
-      "birth_date": "1936-07-23",
-      "last_name": "Kennedy",
-      "party": "Justice",
-      "middle_name": "M.",
-      "first_name": "Anthony"
+      "bio": {
+        "position": "Associate Justice",
+        "start_date": "1988-02-18",
+        "birth_date": "1936-07-23",
+        "full_name": "Anthony M. Kennedy",
+        "last_name": "Kennedy",
+        "first_name": "Anthony",
+        "middle_name": "M."
+      },
+      "party": "Justice"
     },
     "ALITO": {
-      "start_date": "2006-01-31",
-      "position": "Associate Justice",
       "category": "SCOTUS",
       "key_name": "ALITO",
-      "birth_date": "1950-04-01",
-      "last_name": "Alito",
-      "suffix": "Jr.",
-      "party": "Justice",
-      "middle_name": "Anthony",
-      "first_name": "Samuel"
+      "bio": {
+        "position": "Associate Justice",
+        "start_date": "2006-01-31",
+        "birth_date": "1950-04-01",
+        "full_name": "Samuel Anthony Alito, Jr.",
+        "last_name": "Alito",
+        "suffix": "Jr.",
+        "first_name": "Samuel",
+        "middle_name": "Anthony"
+      },
+      "party": "Justice"
     },
     "DONALD B. VERRILLI, JR., ESQ.": {
-      "name": "DONALD B. VERRILLI, JR., ESQ.",
       "category": "Party",
       "key_name": "DONALD B. VERRILLI, JR., ESQ.",
       "party": "Petitioner",
-      "description": ", Solicitor General, Department of Justice, Washington, D.C.; on behalf of Petitioners."
+      "bio": {
+        "position": "Solicitor General, Department of Justice, Washington, D.C.; on behalf of Petitioners.",
+        "full_name": "DONALD B. VERRILLI, JR., ESQ.",
+        "last_name": "VERRILLI",
+        "suffix": "JR., ESQ.",
+        "middle_name": "B.",
+        "first_name": "DONALD"
+      }
     },
     "GINSBURG": {
-      "start_date": "1993-08-10",
-      "position": "Associate Justice",
       "category": "SCOTUS",
       "key_name": "GINSBURG",
-      "birth_date": "1933-03-15",
-      "last_name": "Ginsburg",
-      "party": "Justice",
-      "middle_name": "Bader",
-      "first_name": "Ruth"
+      "bio": {
+        "position": "Associate Justice",
+        "start_date": "1993-08-10",
+        "birth_date": "1933-03-15",
+        "full_name": "Ruth Bader Ginsburg",
+        "last_name": "Ginsburg",
+        "first_name": "Ruth",
+        "middle_name": "Bader"
+      },
+      "party": "Justice"
     },
     "PAUL D. CLEMENT, ESQ.": {
-      "name": "PAUL D. CLEMENT, ESQ.",
       "category": "Party",
       "key_name": "PAUL D. CLEMENT, ESQ.",
       "party": "Respondent",
-      "description": ", Washington, D.C.; on behalf of Respondents Florida, et al."
+      "bio": {
+        "position": "Washington, D.C.; on behalf of Respondents Florida, et al.",
+        "full_name": "PAUL D. CLEMENT, ESQ.",
+        "last_name": "CLEMENT",
+        "suffix": "ESQ.",
+        "middle_name": "D.",
+        "first_name": "PAUL"
+      }
     },
     "MICHAEL A. CARVIN, ESQ.": {
-      "name": "MICHAEL A. CARVIN, ESQ.",
       "category": "Party",
       "key_name": "MICHAEL A. CARVIN, ESQ.",
       "party": "Respondent",
-      "description": ", Washington, D.C.; on behalf of Respondents NFIB, et al."
+      "bio": {
+        "position": "Washington, D.C.; on behalf of Respondents NFIB, et al.",
+        "full_name": "MICHAEL A. CARVIN, ESQ.",
+        "last_name": "CARVIN",
+        "suffix": "ESQ.",
+        "middle_name": "A.",
+        "first_name": "MICHAEL"
+      }
     },
     "BREYER": {
-      "start_date": "1994-08-03",
-      "position": "Associate Justice",
       "category": "SCOTUS",
       "key_name": "BREYER",
-      "birth_date": "1938-08-15",
-      "last_name": "Breyer",
-      "party": "Justice",
-      "middle_name": "G.",
-      "first_name": "Stephen"
+      "bio": {
+        "position": "Associate Justice",
+        "start_date": "1994-08-03",
+        "birth_date": "1938-08-15",
+        "full_name": "Stephen G. Breyer",
+        "last_name": "Breyer",
+        "first_name": "Stephen",
+        "middle_name": "G."
+      },
+      "party": "Justice"
     },
     "ROBERT A. LONG, ESQ.": {
-      "name": "ROBERT A. LONG, ESQ.",
       "category": "Party",
       "key_name": "ROBERT A. LONG, ESQ.",
       "party": "Amicus curaie",
-      "description": ", Washington, D.C.; for Court-appointed amicus curiae"
+      "bio": {
+        "position": "Washington, D.C.; for Court-appointed amicus curiae",
+        "full_name": "ROBERT A. LONG, ESQ.",
+        "last_name": "LONG",
+        "suffix": "ESQ.",
+        "middle_name": "A.",
+        "first_name": "ROBERT"
+      }
     },
     "GREGORY G. KATSAS, ESQ.": {
-      "name": "GREGORY G. KATSAS, ESQ.",
       "category": "Party",
       "key_name": "GREGORY G. KATSAS, ESQ.",
       "party": "Respondent",
-      "description": ", Washington, D.C.; on behalf of Respondents."
+      "bio": {
+        "position": "Washington, D.C.; on behalf of Respondents.",
+        "full_name": "GREGORY G. KATSAS, ESQ.",
+        "last_name": "KATSAS",
+        "suffix": "ESQ.",
+        "middle_name": "G.",
+        "first_name": "GREGORY"
+      }
     },
     "ROBERTS": {
-      "start_date": "2005-09-29",
-      "position": "Chief Justice of the United States",
       "category": "SCOTUS",
       "key_name": "ROBERTS",
-      "birth_date": "1955-01-27",
-      "last_name": "Roberts",
-      "suffix": "Jr.",
-      "party": "Justice",
-      "middle_name": "G.",
-      "first_name": "John"
+      "bio": {
+        "position": "Chief Justice of the United States",
+        "start_date": "2005-09-29",
+        "birth_date": "1955-01-27",
+        "full_name": "John G. Roberts, Jr.",
+        "last_name": "Roberts",
+        "suffix": "Jr.",
+        "first_name": "John",
+        "middle_name": "G."
+      },
+      "party": "Justice"
     },
     "THOMAS": {
-      "start_date": "1991-10-23",
-      "position": "Associate Justice",
       "category": "SCOTUS",
       "key_name": "THOMAS",
-      "last_name": "Thomas",
-      "party": "Justice",
-      "middle_name": null,
-      "first_name": "Clarence"
+      "bio": {
+        "position": "Associate Justice",
+        "start_date": "1991-10-23",
+        "birth_date": "1948-06-23",
+        "full_name": "Clarence Thomas",
+        "last_name": "Thomas",
+        "first_name": "Clarence",
+        "middle_name": null
+      },
+      "party": "Justice"
     },
     "SOTOMAYOR": {
-      "start_date": "2009-08-08",
-      "position": "Associate Justice",
       "category": "SCOTUS",
       "key_name": "SOTOMAYOR",
-      "last_name": "Sotomayor",
-      "party": "Justice",
-      "middle_name": null,
-      "first_name": "Sonia"
+      "bio": {
+        "position": "Associate Justice",
+        "start_date": "2009-08-08",
+        "birth_date": "1954-06-25",
+        "full_name": "Sonia Sotomayor",
+        "last_name": "Sotomayor",
+        "first_name": "Sonia",
+        "middle_name": null
+      },
+      "party": "Justice"
     }
   },
   "case_name": "Department of Health and Human Servs. v. Florida",
