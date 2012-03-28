@@ -178,24 +178,39 @@ $(function(){
 	/* other views */
 	ScotusViewer.Views.TranscriptGraph = Backbone.View.extend({
 		/* el should be provided*/
-		/*
-		events: {
-			"window scroll" : 'updateTick'
-		},
+		
 		initialize : function(){
-			_.bindAll(this, "render", "updateTick");
+			_.bindAll(this, "render", "updateTick", "getScrollPosition");
+			var self = this;
+			
+			this.transcript_height = $(document).height();
+			
+			// not very backbony but whatever
+			$(window).scroll(function(){self.updateTick();})
 		},
 		
 		render : function(){
+			this.$el.html("<div id=\"transcript-graph-pin\"></div>");
+			this.pin = this.$("#transcript-graph-pin");
 			return this;
 		},
 		
+		getScrollPosition : function(with_pct){
+			// pre: uses the window object
+			// returns: decimal value, 0 - 1.0, representing relative position of window
+			this.transcript_height = $(document).height();
+			
+			var t =  parseFloat($(document).scrollTop()) / parseFloat(this.transcript_height);
+			
+			return with_pct === true ? t * 100 + "%" : t;
+		},
+		
 		updateTick : function(e){
-			console.log('update tick')
+			var t = this.getScrollPosition(true);
+			this.pin.css({left:t});
+			
+			console.log('update tick: ' + t + "   transcriptheight: " + this.transcript_height);
 		}
-		
-		*/
-		
 		
 	});
 	

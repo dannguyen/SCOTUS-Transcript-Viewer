@@ -113,19 +113,25 @@
 
 
 
-
-
-
-/*** bootstrap fixes ***/
 #transcript-navbar{
-	left: auto;
-	right: auto;
-	width: 100%;
-	z-index: 1;
-	top: 0;
 }
 
-#transcript-navbar .navbar-inner{
+
+#transcript-graph{
+	background: #fdd;
+	height: 30px;
+	position: relative;
+}
+
+#transcript-graph-pin{
+	width: 2px;
+	height: 30px;
+	border: thin solid green;
+	position: absolute;
+}
+
+
+#hearing-date-navbar{
 	background: white;
 	border-bottom: thin solid #777;
 	color: black;
