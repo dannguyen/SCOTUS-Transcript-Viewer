@@ -27,7 +27,7 @@ $(function(){
 			
 			this.transcript_graph.render();
 			this.$('.appx.all-visible').click(function(){ self.onPersonClick();});
-			this.$('.appx.focus-statement').click(function(){ self.onClickFocus();});
+			this.$('.appx.focus-statement').click(function(){ self.onClickFocus(true);});
 			this.$('.appx.next-statement').click(function(){ self.onClickGotoStatement(1);});
 			this.$('.appx.prev-statement').click(function(){ self.onClickGotoStatement(-1);});
 			return this;	        
@@ -80,54 +80,46 @@ $(function(){
 		},
 	
 		onPersonClick : function(obj){
-			var set_all_visible = _.isUndefined(obj);		
-			console.log("set all visible:  " + set_all_visible)
+			var set_all_visible = _.isUndefined(obj) || obj.model == this.selected_person;		
+
+			//mmmm spaghetti
+			
 			if(!set_all_visible){
 				var person = obj.model;
-				var p_s = !person.get('is_selected')
-				person.set({is_selected:p_s});		
 				this.selected_person = person;	
 				this.attachPanelToInfobox(this.selected_person);
-				
+//				this.people.each(function(p){ if(p != person){ p.set({'is_selected':false});}});
+				this.people.each( function(p){ 
+					if(p != person){ 
+						p.set({is_selected:false, is_visible:false});
+					}else{ p.set({is_selected:true, is_visible: true}); }
+				});					
 			}else{
-				var person = null, p_s = false;
+				var person = null;
 				this.selected_person = null;
-				
+				this.people.each(function(p){  p.set({is_visible:true, is_selected:false}); } );				
 			}
 
-			this.people.each(function(p){ if(p != person){ p.set({'is_selected':false});}});
-		
-			if(p_s){
-				
-			}else{
-				this.people.each(function(p){  p.set({'is_visible':true}); } );
-			}		
-			
-			//mmmm spaghetti
+
 			
 		},
 		
-		onClickFocus : function(){
-			
+		onClickFocus : function(focus_val){
 			var s_person = this.selected_person;
-			var f_person = this.focused_person;
-			
-			var do_focus =  s_person && _.isNull(f_person) == true;
-			this.focusPerson(do_focus);
-	
+			var do_focus =  s_person && focus_val == true;
+			this.focusPerson(do_focus);	
 		},
 		
 		focusPerson : function(do_focus){
-			
-			if(do_focus ===true){
-				this.focused_person = this.selected_person;
-				var fp = this.focused_person;
+			if(do_focus === true){
+				var fp = this.selected_person;
 				this.$('.appx.focus-statement').addClass('focus')
-				this.people.each(function(p){ if(p != fp){p.set({'is_visible':false});}else{p.set({'is_visible':true})}});
+				this.people.each(function(p){
+					if(p != fp){p.display_speeches(false);
+					}else{ p.display_speeches(true); }});
 			}else{
-				this.focused_person = null;
 				this.$('.appx.focus-statement').removeClass('focus');
-				this.people.each(function(p){  p.set({'is_visible':true}); } );	
+				this.people.each(function(p){  p.display_speeches(true); } );	
 			}
 			
 		
@@ -169,19 +161,19 @@ $(function(){
 	ScotusViewer.transcript_viewer = $("#transcript-view");
 	ScotusViewer.transcript_navbar = $("#transcript-navbar");
 	ScotusViewer.hearing_date_navbar = $("#hearing-date-navbar");
-	ScotusViewer.sidebar = $("#sidebar");
+	ScotusViewer.people_panel = $("#people-panel");
 	
 	
 	
  	$.getJSON(DATA_FILENAME, function(data) {
 	
-		_.each(data.people, function(pers){
+		_.chain(data.people).sortBy(function(_p){return _p.category;}).each(function(pers){
 			var person = new ScotusViewer.Models.Person(pers);
 			console.log(person.get("key_name"))
 			ScotusViewer.app.people.add(person);
 			
 			var pbox = new ScotusViewer.Views.PersonInfoBox({model:person, id: "infobox-"+person.cid});
-			ScotusViewer.sidebar.append(pbox.render().el);
+			ScotusViewer.people_panel.append(pbox.render().el);
 			
 		});
 		

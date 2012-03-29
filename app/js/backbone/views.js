@@ -12,13 +12,13 @@ $(function(){
 			return this;
 		},
 		onVisibleChange : function(){
-			if(this.model.get("is_visible")===true){this.$el.show();				
-			}else{this.$el.hide();	}
+//			if(this.model.get("is_visible")===true){this.$el.show();				
+//			}else{this.$el.hide();	}
 		},
 
 		onSelectedChange : function(){
-			if(this.model.get("is_selected")===true){this.$el.addClass('is_selected');			
-			}else{this.$el.removeClass('is_selected');	}
+//			if(this.model.get("is_selected")===true){this.$el.addClass('is_selected');			
+//			}else{this.$el.removeClass('is_selected');	}
 		}
 	});
 	
@@ -42,13 +42,13 @@ $(function(){
 			ScotusViewer.app.onHearingDateClick(this);			
 		},
 		onVisibleChange : function(){
-			if(this.model.get("is_visible")===true){this.$el.addClass('is_visible');				
-			}else{this.$el.removeClass('is_visible');	}
+//			if(this.model.get("is_visible")===true){this.$el.addClass('is_visible');				
+//			}else{this.$el.removeClass('is_visible');	}
 		},
 
 		onSelectedChange : function(){
-			if(this.model.get("is_selected")===true){this.$el.addClass('is_selected');			
-			}else{this.$el.removeClass('is_selected');	}
+//			if(this.model.get("is_selected")===true){this.$el.addClass('is_selected');			
+//			}else{this.$el.removeClass('is_selected');	}
 		}
 	});
 	
@@ -97,12 +97,8 @@ $(function(){
 		onSelectedChange : function(){
 			if(this.model.get("is_selected")===true){this.$el.addClass('is_selected');			
 			}else{this.$el.removeClass('is_selected');	}
-		},
-		
-		onFocusChange : function(){
-			if(this.model.get("is_focus")===true){this.$el.addClass('is_focus');			
-			}else{this.$el.removeClass('is_focus');	}
 		}
+		
 		
 	});
 	
@@ -130,14 +126,19 @@ $(function(){
 		},
 		
 		onVisibleChange : function(){
-			if(this.model.get("is_visible")===true){this.$el.addClass('is_visible');				
-			}else{this.$el.removeClass('is_visible');	}
+//			if(this.model.get("is_visible")===true){this.$el.addClass('is_visible');				
+//			}else{this.$el.removeClass('is_visible');	}
 		},
 		onSelectedChange : function(){
-			if(this.model.get("is_selected")===true){this.$el.addClass('is_selected');			
-			}else{this.$el.removeClass('is_selected');	}
+//			if(this.model.get("is_selected")===true){this.$el.addClass('is_selected');			
+//			}else{this.$el.removeClass('is_selected');	}
 		}
 	});	
+	
+	
+	
+	
+	
 	
 	
 	/* Speech views */
@@ -148,7 +149,9 @@ $(function(){
 		template : _.template($('#template-speech-segment').html()), 
 		mugbox_size : 140,
 		initialize : function(){
-			_.bindAll(this, "render", "onPersonSelected", 'onPersonVisible', 'fixMargins');
+			_.bindAll(this, "render", "onPersonSelected", 'onPersonVisible', 'onVisibleChange', 'fixMargins');
+
+			this.model.on('change:is_visible', this.onVisibleChange);
 			
 			this.person = this.model.person;
 			this.person.on('change:is_visible', this.onPersonVisible);
@@ -175,8 +178,7 @@ $(function(){
 				this.text_box.css({marginTop: tdim/2 });
 				if(this.text_box.text().length < 140){
 					this.$el.addClass("brief");
-				}
-				
+				}				
 			}else{
 				this.person_mug_box.$el.css({marginTop: -tdim/3 });
 			}
@@ -184,7 +186,20 @@ $(function(){
 			
 		},
 		
-		onPersonSelected : function(){
+		onVisibleChange : function(){
+		//	if(this.model.get("is_visible")===true){this.$el.show();				
+		//	}else{this.$el.hide();	}
+		
+		if(this.person.get("is_visible")===true){
+			this.$el.addClass('is_visible');				
+		}else{
+			this.$el.removeClass('is_visible');	
+		}
+		
+		},
+
+		
+		onPersonSelected : function(){			
 			if(this.person.get("is_selected")===true){
 				this.$el.addClass('is_selected');				
 			}else{
@@ -193,18 +208,12 @@ $(function(){
 		},
 		
 		onPersonVisible : function(){
-			if(this.person.get("is_visible")===true){
-				this.$el.addClass('is_visible');				
-			}else{
-				this.$el.removeClass('is_visible');	
+			if(this.person.get("is_visible")==true){
+				this.model.set({is_visible:true});
 			}
 		},
 		
-		
-		onPersonFocusChange : function(){
-			if(this.person.get("is_focus")===true){this.$el.addClass('is_focus');			
-			}else{this.$el.removeClass('is_focus');	}
-		}
+
 	});
 	
 	

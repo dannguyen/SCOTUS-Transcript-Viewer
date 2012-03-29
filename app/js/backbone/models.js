@@ -37,11 +37,19 @@ $(function(){
 			this.key_name = this.get('key_name');
 			this.is_justice = this.get('category') == 'SCOTUS' ? true : false;
 						
-			_.bindAll(this, "countWords", "countCurrentWords", "countSpeeches", "countCurrentSpeeches", "refresh");
+			_.bindAll(this, "countWords", "countCurrentWords", "countSpeeches", "countCurrentSpeeches", "display_speeches", "refresh");
 			
 		},
-		
-	
+			
+		display_speeches : function(v){
+			if(v===true){
+				console.log("show_speeches")
+				this.speeches.each(function(_s){_s.set({is_visible:true});});
+			}else{
+				console.log("hide_speeches")
+				this.speeches.each(function(_s){_s.set({is_visible:false});});
+			}
+		},
 		
 		refresh : function(){
 			this.trigger("refresh");
@@ -73,7 +81,6 @@ $(function(){
 	ScotusViewer.Models.Speech = Backbone.Model.extend({
 		defaults : {
 			is_visible : true,
-			is_selected: false
 		},
 		
 		initialize : function(){

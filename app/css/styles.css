@@ -1,14 +1,16 @@
+#people-panel{
+	width: 220px;
+	position: fixed;
+}
 
 
 #sidebar{
 }
 
+
 .selector, .appx{
 	cursor: pointer;	
 }
-
-
-
 
 /* hearing */
 
@@ -104,8 +106,8 @@
 
 .speech.segment{
 	display: none;
-	padding-top: 8em;
-	padding-bottom: 8.0em;
+	padding-top: 4em;
+	padding-bottom: 4em;
 	position: relative;
 	
 }
@@ -114,6 +116,9 @@
 	display: block;
 }
 
+.speech.segment.is_selected{
+	background: #cff;
+}
 
 .speech.segment .meta{
 	color: #444;
