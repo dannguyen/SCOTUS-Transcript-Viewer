@@ -1,130 +1,47 @@
-
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
   <head>
-    <title>Backbone test</title>
-    <link href="css/bootstrap.min.css" media="all" rel="stylesheet" type="text/css"/>
-    <link href="css/styles.css" media="all" rel="stylesheet" type="text/css"/>
-
-    <script src="js/lib/jquery-1.7.2.min.js"></script>
-    <script src="js/lib/underscore.min.js"></script>
-    <script src="js/lib/backbone.min.js"></script>
-    <script src="js/scotus-app.js"></script>
-	 <script src="js/backbone/views.js"></script>
-	 <script src="js/backbone/models.js"></script>
-	 <script src="js/backbone/routers.js"></script>
-	 <script src="js/backbone/controllers.js"></script>
+    <meta charset="utf-8">
+    <title>TS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
     
-  </head>
+     <!--[if lt IE 9]>
+       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+     <![endif]-->
+        
+  	<script data-main="js/main" src="js/libs/require/require.js"></script>
 
-  <body>
+   <link rel="stylesheet" href="css/bootstrap.twitter.css">   
+   <link rel="stylesheet" href="css/styles.css">
+	 
+ </head>    
+ 
+ <body>
 
-    <!-- Todo App Interface -->
-
-    <section id="scotus-case-viewer-app">
-       <div class="container">
-				
-				
-				
-	
-          <div class="row">
-          	<div class="navbar navbar-fixed-top" id="transcript-navbar">
-				  <div class="navbarxinner">
-					 <div class="container">
-						<div id="hearing-date-navbar"></div>
-				  		<div id="transcript-graph"></div>
-					</div>
-			  	</div>
-			</div>
-
-             <div class="span3">
-               
-					<div id="sidebar">
-						 <h1>i</h1>
-	                "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
-						<div id="people-panel">
-							<div class="appx selector infobox all-visible">View All</div>
-						</div>
-					</div>
-
-             </div>
+    <div class="container uber">
+       <h3 id="init-message">A is not init</h3>
+    
+    
+       <section id="woz">
+         
+         <div class="row uber">        
+            <div class="span3">
+               <div id="panels">Panels</div>
+                  
+            </div>
             
-          
-             <div class="span9">
-					
-	
-   <p>             There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. 
-   </p>
+            <div class="span9">
+               Lorem ipsum
+            </div>
             
-					<div id="transcript-view">transcript viewing</div>
+         </div> <!-- end of row -->
 
 
-             </div>
-          
-   
-   
-          </div> <!-- end row -->
-       </div>
-    </section>
-
-  
-   
-
-    <!-- Templates -->
-
-    <script type="text/template" id="template-people-side-panel">
-      <div style="display: block;" id="people-side-panel">
-         <div class="appx prev-statement">Next statement</div>
-         <div class="appx next-statement">Previous statement</div>
-         <div class="appx focus-statement">Show just these statements</div>
-         <div class="appx all-visible">Return to full list</div>
-      </div>
-
-    </script>
-
-    <script type="text/template" id="template-person-mugbox">
-		<div class="person <%=category%> <%=party_canon%>">
-			<div class="name"><%=key_name%></div>
-		</div>		
-    </script>
-
-	<script type="text/template" id="template-person-infobox">
-		<div class="person <%=category%> <%=party_canon%>">
-			<div class="name"><%=party%>: <%=key_name%></div>
-			<div class="expand">
-			   <div class="bio">
-			      
-			   </div>
-			   <div class="stats">
-   				<div class="speech_count">Speeches: <span class="current"></span></div>
-   				<div class="word_count">Words: <span class="current"></span></div>
-   			</div>
-   			<div class="panel-wrap"></div>
-   		</div>	
-		</div>		
-    </script>
-
-
-    <script type="text/template" id="template-speech-segment">
-      <div class="row <%=person_category%>">
-   		<div class="span2">
-				<div class="person-wrap SCOTUS">&nbsp;</div>
-			</div>	
-   		<div class="span5">
-      		<div class="text">
-      			<p><%=text%></p>
-      		</div>
-      		<p class="meta"><%=page_marker%></p>
-			</div>
-			<div class="span2">
-   			<div class="person-wrap Party">&nbsp;</div>
-			</div>
-   	</div>	
-	 </script>
-	
-	
-
-  </body>
-
-</html>
+       </section> <!-- end of woz -->
+    
+    </div> 
+    
+ </body>
+</html> 
