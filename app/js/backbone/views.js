@@ -80,8 +80,8 @@ $(function(){
 		},
 		
 		updateStats : function(){
-			this.$('.word_count .current').text(this.model.countCurrentWords());
-			this.$('.speech_count .current').text(this.model.countCurrentSpeeches());
+//			this.$('.word_count .current').text(this.model.countCurrentWords());
+//			this.$('.speech_count .current').text(this.model.countCurrentSpeeches());
 		},
 		
 		onClick : function(){
@@ -222,12 +222,15 @@ $(function(){
 	/* other views */
 	ScotusViewer.Views.TranscriptGraph = Backbone.View.extend({
 		/* el should be provided*/
+		events : {
+			'click' : 'jumpToPosition' 
+		},
 		
 		initialize : function(){
-			_.bindAll(this, "render", "updateTick", "getScrollPosition");
+			_.bindAll(this, "jumpToPosition", "render", "updateTick", "getScrollPosition");
 			var self = this;
 			
-			this.transcript_height = $(document).height();
+			this.transcript_height = $("#transcript-view").height();
 			
 			// not very backbony but whatever
 			$(window).scroll(function(){self.updateTick();})
@@ -239,10 +242,17 @@ $(function(){
 			return this;
 		},
 		
+		jumpToPosition : function(e){
+			var offs = e.pageX - e.target.offsetLeft;
+			var ow = $(".container").width();
+			console.log("Jumping to: " + offs + ", out of " + ow);
+			console.log(offs / ow);
+		},
+		
 		getScrollPosition : function(with_pct){
 			// pre: uses the window object
 			// returns: decimal value, 0 - 1.0, representing relative position of window
-			this.transcript_height = $(document).height();
+			this.transcript_height = $("#transcript-view").height();			
 			
 			var t =  parseFloat($(document).scrollTop()) / parseFloat(this.transcript_height);
 			

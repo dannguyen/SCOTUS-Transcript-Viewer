@@ -79,7 +79,7 @@
 .person.mugbox{
 	border: thin solid #aaa;
 	height: 160px;
-	width: 120px;
+	width: 100%;
 }
 
 .person.mugbox:hover{
@@ -130,8 +130,8 @@
 	visibility: visible;
 }
 
-.speech.segment .row .person-wrap{
-	
+.speech.segment  .person-wrap{
+	padding: 0 5px;
 	
 }
 
@@ -140,8 +140,9 @@
 }
 
 .speech.segment .text p{
+	font-family: Georgia, "Times New Roman", serif;
 	font-size: 16px;
-	line-height: 20px;
+	line-height: 24px;
 }
 
 .speech.segment.brief{

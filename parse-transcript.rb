@@ -46,7 +46,6 @@ end
 
 def process_line_and_get_type(str)
   typ = content_line_type(str)
-  PAGE_STATUS['total_line_number'] += 1
 
   case typ
   when 'page_break'
@@ -54,6 +53,8 @@ def process_line_and_get_type(str)
     PAGE_STATUS['line_number'] = 0
   when 'content_line'
     PAGE_STATUS['line_number'] += 1
+    PAGE_STATUS['total_line_number'] += 1
+    
   end
   
   return typ
@@ -206,7 +207,7 @@ case_filenames.each do |case_filename|
         end
       
         if current_speech
-          current_speech['lines'] << {'content' => file_line, 'line_number'=>PAGE_STATUS['line_number'], 'page_number'=>PAGE_STATUS['page_number']}
+          current_speech['lines'] << {'content' => file_line, 'line_number'=>PAGE_STATUS['line_number'], 'page_number'=>PAGE_STATUS['page_number'], 'absolute_pos'=>PAGE_STATUS['total_line_number']}
         end
     
       else
@@ -233,7 +234,8 @@ case_filenames.each do |case_filename|
         'text'=>text,
         'word_count'=>word_count,
         'start_position'=>{'page'=>first_line['page_number'], 'line'=>first_line['line_number']},
-        'end_position'=>{'page'=>last_line['page_number'], 'line'=>last_line['line_number']}
+        'end_position'=>{'page'=>last_line['page_number'], 'line'=>last_line['line_number']},
+      #  'absolute_pos'=>first_line['absolute_pos']
       })
     
       speech.delete('lines')

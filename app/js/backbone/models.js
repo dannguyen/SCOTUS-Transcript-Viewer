@@ -12,7 +12,6 @@ $(function(){
 			this.on("change:is_visible", function(){
 				//warning untested
 				self.speeches.each(function(_s){
-					console.log("a speech  " + _s.cid);
 					_s.set({is_visible:self.get('is_visible')},
 				 {silent: true}
 				);})
@@ -89,8 +88,11 @@ $(function(){
 			this.word_count = this.get('word_count');
 			this.is_justice = this.person.is_justice;
 			
+			var ft = this.get("text").replace(/ -{1,2}/g, " &ndash; ");
+			
 			
 			this.set({
+				text : ft,
 				page_marker : this._page_marker(),
 				person_category : this.person.get('category')
 				/*
