@@ -4,14 +4,14 @@ define([
   'backbone',
 
   'models/person',
-  'collections/people',
+  'collections/focused',
   'views/people-panel'
  // 'views/todos',
 //  'text!templates/stats.html'
   ], 
  //function($, _, Backbone, Todos, TodoView, statsTemplate){
    function($, _, Backbone, 
-			PersonModel, PeopleCollection, PeoplePanelView
+			PersonModel, FocusedCollection, PeoplePanelView
  	){
 		
 		
@@ -28,7 +28,7 @@ define([
 
 	    initialize: function() {
 		  // member collections
-		  this.people = new PeopleCollection();
+		  this.people = new FocusedCollection();
 		  
 		  // panels
 		  this.panels = {};
@@ -92,9 +92,27 @@ define([
 			this.panels.people = new PeoplePanelView({collection:this.people, id : "people-panel"});
 			
 			// render panels
-			_.each(this.panels, function(_p){  
-				self.panels_el.append(_p.render().el);
+			_.each(this.panels, function(_panel){  
+				self.panels_el.append(_panel.render().el);
+				_panel.on("moveTranscript", self._moveTranscript, self);
 			});
+		},
+		
+		_moveTranscript : function(dir, modil){
+		
+			if(dir == "next"){
+				console.log("_moveTranscript forward");
+			}else if(dir == "prev"){
+				console.log("_moveTranscript backwards");
+			}else{
+				console.log("_moveTranscript to cid:  " + dir);
+			}
+			
+			if(!_.isUndefined(modil)){
+				console.log("  _moveTranscript filter by parent model.cid: " + modil.cid);
+				
+			}
+			
 		},
 		
 		

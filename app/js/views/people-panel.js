@@ -3,13 +3,13 @@ define([
   'underscore', 
   'backbone',
   'models/person',
-  'collections/people',
+  'collections/focused',
    'views/person-infobox',
   'text!templates/t-people-panel.html',
   'text!templates/t-people-panel-focusbox.html'
 
 	], function($,_,Backbone,
-		PersonModel, PeopleCollection, PersonInfoboxView, 
+		PersonModel, FocusedCollection, PersonInfoboxView, 
 		templatePeoplePanel, templatePeoplePanelFocusbox
 	){
 
@@ -25,14 +25,14 @@ define([
 		
 		
 		events : {
-			"click .apptk.next_asset" : "_on_next_asset",
-			"click .apptk.prev_asset" : "_on_prev_asset",
+			"click .apptk.next_focused_asset" : "_on_next_focused_asset",
+			"click .apptk.prev_focused_asset" : "_on_prev_focused_asset",
 			"click .apptk.show_all" : "_on_show_all" // could be done with meta-prog, TK			
 		},
 		
 		initialize : function(){
 			
-			_.bindAll(this, 'render', '_focusOn', '_focusOff', '_onInfoboxClick');
+			_.bindAll(this, 'render', '_focusOn', '_focusOff', '_gotoAsset', '_onInfoboxClick');
 			
 		},
 		
@@ -70,7 +70,7 @@ define([
 private
 *********/		
 	
-		_getFocused : function(){ return this.collection.getFocused(); },
+	
 		
 		_focusOn : function(m){
 			this.$('.apptk.show_all').slideDown(100); //TK spaghetti
@@ -88,16 +88,26 @@ private
 			this.$focus_box.slideUp(100);
 		},
 		
+		_getFocused : function(){ return this.collection.getFocused(); },
+
+		_gotoAsset : function(dir, m){
+			// pre: dir is either a direction(prev, next) or cid of an asset(a statement)
+			// post: triggers "moveTranscript" event which is read by App, which then
+			// 		applies it to the TranscriptView
+			
+			this.trigger("moveTranscript", dir, m);
+		},
+		
 		_onInfoboxClick : function(m){
 			this._focusOn(m);
 		},
 		
-		_on_next_asset : function(){
-			console.log("next asset");
+		_on_next_focused_asset : function(){
+			this._gotoAsset("next", this._getFocused());
 		},
 		
-		_on_prev_asset : function(){
-			
+		_on_prev_focused_asset : function(){
+			this._gotoAsset("prev", this._getFocused());
 		},
 		_on_show_all : function(){
 			this._focusOff();

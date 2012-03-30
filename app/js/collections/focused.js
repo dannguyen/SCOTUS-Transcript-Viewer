@@ -4,7 +4,7 @@ define([
   'models/person'
   ], function(_, Backbone, PersonModel){
 		
-  	var PeopleCollection = Backbone.Collection.extend({
+  	var FocusedCollection = Backbone.Collection.extend({
 		
 		model: PersonModel,
 		
@@ -41,5 +41,5 @@ define([
 
 
   });
-  return PeopleCollection;
+  return FocusedCollection;
 });
