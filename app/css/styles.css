@@ -1,4 +1,10 @@
 
+.apptk{
+	cursor: pointer;
+}
+
+
+
 .infobox{
 	cursor: pointer;
 }
@@ -7,4 +13,8 @@
 }
 .infobox.is_focus{
 	background: #ccc;
+}
+
+.panel .focusbox{
+	display: none;
 }

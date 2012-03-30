@@ -32,6 +32,10 @@ define([
 			// assumes there is only one focused object
 			var g = this.getFocused();
 			if(g){g.set({is_focus:false} ); }
+		},
+		
+		filterUnfocused : function(){
+			return this.chain().filter(function(g){return g.get('is_focus')==false});
 		}
 	   
 
