@@ -1,0 +1,22 @@
+require 'rubygems'
+require 'rake'
+require './lib/p_scootus'
+
+namespace :scotus do
+  desc "Visit the SCOTUS transcripts link, download PDFs"
+  task :fetch_transcripts do
+     PScootus.fetch_transcripts
+  end
+
+  desc "for each PDF, convert to raw txt using pdftotext"
+  task :convert_transcripts_to_text do
+   PScootus.convert_transcripts_to_text
+  end
+
+  desc "for each TXT, convert to parsed JSON"
+  task :parse_transcripts do
+    
+   PScootus.parse_transcripts
+  end
+  
+end

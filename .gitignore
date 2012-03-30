@@ -1,3 +1,5 @@
 .DS_Store
 *.tmproj
 app/datafiling.json
+data-hold/
+data-hold/*.*
