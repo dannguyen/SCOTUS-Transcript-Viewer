@@ -22,7 +22,6 @@ end
 
 
 namespace :n do
-  
     
   task :read_this_line, :line_num, :page_num do |t, args|
     line_num = args[:line_num].to_i

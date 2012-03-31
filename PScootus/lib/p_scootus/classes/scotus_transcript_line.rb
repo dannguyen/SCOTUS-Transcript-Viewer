@@ -134,30 +134,30 @@ module PScootus
     }
     
     NON_CONTENT_PATTERNS = {
-      :official_tagline => /^ *Official - Subject to Final *$/,
-      :reporter_meta => /Alderson Reporting Company|Official - Subject to Final/,
-      :page_number => /\s{8,}(\d{1,3})\s*$/
+      :official_tagline => /^ *(?:Official(?: - Subject to Final Review)?|OFFICIAL TRANSCRIPT|CERTIFICATION) *$/,
+    #  :reporter_meta => /Alderson Reporting Company/,
+      :page_number => /\s{8,}(?:Page *)?(\d{1,3})\s*$/
     }
     
     
     ALL_PATTERNS = BASE_PATTERNS.merge(CONTENT_STATEMENT_PATTERNS).merge(NON_CONTENT_PATTERNS)
     
-    # be careful that there is no conflict with previously defined methods
-    BASE_PATTERNS.each do |patt|
+    # this could be DRYer
+    BASE_PATTERNS.each_pair do |patt, pattex|
       define_method("matches_#{patt}?".to_sym) do 
-        self.raw_text =~ BASE_PATTERNS[patt]
+        self.raw_text =~ pattex ? true : false
       end      
     end
     
-    CONTENT_STATEMENT_PATTERNS.each do |patt|
+    CONTENT_STATEMENT_PATTERNS.each_pair do |patt, pattex|
       define_method("matches_#{patt}?".to_sym) do 
-        self.content_text =~ CONTENT_STATEMENT_PATTERNS[patt]
+        self.content_text =~ pattex ? true : false
       end      
     end
     
-    NON_CONTENT_PATTERNS.each do |patt|
+    NON_CONTENT_PATTERNS.each_pair do |patt, pattex|
       define_method("matches_#{patt}?".to_sym) do 
-        self.raw_text =~ NON_CONTENT_PATTERNS[patt]
+        self.raw_text =~ pattex ? true : false
       end      
     end
     

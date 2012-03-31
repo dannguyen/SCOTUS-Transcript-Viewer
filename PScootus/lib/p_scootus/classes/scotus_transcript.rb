@@ -44,7 +44,7 @@ module PScootus
       puts "Transcript#process\n"
       @page_filenames.each do |tname|
         page_number = tname.split(PScootus::Converter::PAGES_DELIMITER)[-1].to_i
-        
+                
         rlines = File.open(tname){|f| f.readlines.map{|x| x.chomp}}
         page = PScootus::ScotusTranscriptPage.new(rlines, {
           :page_number=>page_number,
@@ -56,22 +56,30 @@ module PScootus
         # page.lines, page.content_lines is set
         page.process
 
-
         # first check to see if page has content
         if !page.has_content?
           puts "Page #{page_number} has no content"
           next
         end
         
+       # page contains content, so check validations
+       if !page.validated?
+          raise ParseUnexpected, "Failed validations: #{page.invalidations.join(' ')}"
+        end
+        
         
         # now read each line
         puts "Back to Transcript#process, line by line: #{page.lines.length} lines"
-        page.lines.each do |line|
         
-          if line.first_raw_line?
-            puts "First raw line: #{line.raw_text}"
-          end
+        page.lines.each do |line|
           
+          
+          # very first page should be the intro
+          if docstate_start?
+            
+          end
+        
+        
           if line.first_content_line?
             puts "First content line: #{line.raw_text}"
           end
@@ -83,6 +91,10 @@ module PScootus
         
       end      
     end
+
+
+
+
 
     private
     

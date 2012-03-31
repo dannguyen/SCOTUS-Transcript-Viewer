@@ -26,10 +26,13 @@ module PScootus
       @transcript = params[:transcript]
       @page_number = params[:page_number]
       
+      @is_validated = false
       @lines = []
       @content_lines = []
       
+      
       puts "\nPage#initialize, #{@page_number}:\t#{self.raw_line_count} raw lines"
+      
       
     end
     
@@ -40,6 +43,9 @@ module PScootus
       # called from: ScotusTranscript
       # pre: raw_lines has been populated
       # post: @lines, @content_lines is populated with ScotusTranscriptLines
+      
+      # expected entities should also be filled
+      
       
       @raw_lines.each_with_index do |rline, l_num|  
         line = PScootus::ScotusTranscriptLine.new(rline, {
@@ -52,6 +58,7 @@ module PScootus
       end      
       
       puts "* Page#process, \t#{self.content_line_count} content lines"
+      validate_content! if has_content?
       
     end
     
@@ -70,6 +77,10 @@ module PScootus
       content_line_count > 0
     end
     
+    def is_validated?
+      @is_validated
+    end
+    
     
     def content_line_count
       @content_lines.length
@@ -82,8 +93,58 @@ module PScootus
     def raw_line_count
       @raw_lines.length
     end
-    
-    
-    
   end
 end
+
+# validation methods
+module PScootus
+  class ScotusTranscriptPage
+
+    # poor man's meta-validation
+    VALIDATORS = {
+      :has_lines => lambda{ |_p| return _p.lines.length > 0 || false},
+      :first_line_is_official_tagline => lambda{|_p| l = _p.lines.first; puts l.matches_official_tagline?;  l.matches_official_tagline? || _p.lines.first.raw_text}, 
+      :last_line_is_blank => lambda{|_p| l = _p.lines.last; return  l.matches_empty? || l.raw_text },
+      
+      # for content pages
+      
+      :second_line_is_blank_or_pgnumber => lambda{|_p| l=_p.lines[1]; return (l.matches_empty? || l.matches_page_number?) || l.raw_text }
+
+    }
+    
+    VALIDATORS.each_pair do |v_meth, v_proc|
+      define_method("validate_#{v_meth}".to_sym) do 
+        v_proc.call(self)
+      end
+    end
+    
+    
+    def invalidations
+      if @failed_validations.nil?
+        return nil 
+      else
+        @failed_validations
+      end
+    end
+    
+    def validated?
+      !invalidations.nil? && invalidations.empty?      
+    end
+    
+    private    
+    
+    def validate_content!
+      
+      # called by: at the end of process for pages with content
+      # post: @failed_validations has been set and populated
+         
+      @failed_validations = []
+      VALIDATORS.each_key do |v_name|
+        val = self.send("validate_#{v_name}")
+        @failed_validations << [v_name, val] if val != true
+      end
+    end
+
+  end
+end
+
