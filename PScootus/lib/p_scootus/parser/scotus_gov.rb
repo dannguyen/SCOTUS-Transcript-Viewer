@@ -5,34 +5,33 @@ require 'uri'
 
 
 module PScootus
-   
-   module Parser
-     
+   module Parser     
      module ScotusGov
       
      
-        def self.parse_transcripts
+        ### TOP LEVEL to be called by rake
+        def self.rake_parse_transcripts
           PScootus::Local.get_transcript_text_dirs.each do |tdirname|
             self._parse_transcript(tdirname)
           end
         end
+        #############
+        
+        
         
         def self._parse_transcript(dirname)
           # dirname is a directory corresponding to transcript pages
-          base_tname = File.basename(dirname)
+        
+          # intialize argument
+          argument = PScootus::ScotusArgument.new(dirname)  
           
-
+          # build argument
+          argument.build
           
-          pagenames = PScootus::Local.get_transcript_textfile_names(base_tname)
-          pagenames.each do |pagename|
-            self._parse_page(pagename)
-          end
+          ## create json
+          parsefile_name = File.join( PScootus::Local::DIRS[:scotus][:parsed], argument.uid ) +'.json'
           
-          parsefile_name = File.join( PScootus::Local::DIRS[:scotus][:parsed], base_tname ) +'.json'
-          
-          
-          
-          
+        
         end
         
         def self._parse_page(pagename)

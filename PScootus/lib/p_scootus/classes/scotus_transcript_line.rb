@@ -1,21 +1,34 @@
 module PScootus
+
+  # this class contains text cleaning methods
+  # but also contains non-OOP-seperated methods that require knowledge of transcript state 
+
   class ScotusTranscriptLine
 
     attr_reader :clean_text, :raw_text, :absolute_line_number, :content_line_number
-    attr_reader :page, :statement  # belongs_to
+    attr_reader :page, :transcript  # belongs_to
     
-    # private: @strip_text
+    # private: @content_text
     
     delegate :doc_intro?, :to => :page, :prefix=>false
     delegate :doc_toc?, :to => :page, :prefix=>false
     delegate :doc_proceedings?, :to => :page, :prefix=>false
     delegate :doc_index?, :to => :page, :prefix=>false
     
+    delegate :transcript, :to => :page, :prefix=>false
+    
     
     def initialize(rtxt, params={})
-      # params should have :page and :statement set
-      @raw_text = rtxt
+      # called from TranscriptPage
       
+      # rtxt is a string
+      # params should have :page, :argument set
+      @raw_text = rtxt      
+      
+      @page = params[:page]
+      
+      # needed to maintain state: e.g. where in the document are we?
+      @transcript = @page.transcript
       
     end
     
@@ -23,12 +36,10 @@ module PScootus
       
     end
     
-  
-    
     def determine_content
       # content? is true, so strip down and determine type
       
-      # do strip_text
+      # do content_text
     end
     
     def determine_speech
@@ -36,19 +47,23 @@ module PScootus
     end
     
     
+    def process
+      @clean_text = @raw_text
+    end
+    
     
     private
     
     def extract_speaker
-      if strip_text
-        @extract_speaker ||= (s = strip_text.match(CONTENT_STATEMENT_PATTERNS["speaker"])) ? s[1] : false
+      if content_text
+        @extract_speaker ||= (s = content_text.match(CONTENT_STATEMENT_PATTERNS["speaker"])) ? s[1] : false
       else
         @extract_speaker ||= false
       end
     end
     
-    def strip_text
-      @strip_text ||= (content? ? self.strip_content_number(@raw_text) : false)
+    def content_text
+      @content_text ||= (content? ? self.strip_content_number(@raw_text) : false)
     end
     
       
@@ -97,8 +112,8 @@ module PScootus
   class ScotusTranscriptLine
     
     BASE_PATTERNS = {
-      :content_line_start => /^(?: \d|\d{2})(?= +)/],                  # the pattern before a numbered line
-      :strict_content_line_start => /^(?: [1-9]|[12]\d)(?= +)/],       # assumes lines are numbered from 1-25
+      :content_line_start => /^(?: \d|\d{2})(?= +)/,                  # the pattern before a numbered line
+      :strict_content_line_start => /^(?: [1-9]|[12]\d)(?= +)/,       # assumes lines are numbered from 1-25
       :empty => /^\s*$/                                                # blank line
     }
     
@@ -124,7 +139,6 @@ module PScootus
       else
         raise ParseUnexpected, "Tried to strip a non-content line: #{line}"
       end
-      
     end
     
     

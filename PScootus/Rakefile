@@ -14,8 +14,7 @@ namespace :scotus do
   end
 
   desc "for each TXT, convert to parsed JSON"
-  task :parse_transcripts do
-    
+  task :parse_transcripts do    
    PScootus.parse_transcripts
   end
   

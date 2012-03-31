@@ -5,14 +5,6 @@ module PScootus
   ESCAPE           = lambda {|x| Shellwords.shellescape(x) }
   
   
-  
-  class FetchFailed < StandardError; end
-  class ConversionFailed < StandardError; end
-  class ParseFailed < StandardError; end
-  class ParseUnexpected < StandardError; end
-  
-  
-  
   def self.fetch_transcripts    
     PScootus::Fetcher::ScotusGov.fetch_transcripts
   end
@@ -25,9 +17,28 @@ module PScootus
     PScootus::Parser.parse_transcripts
   end
   
+
+
+
+  
+  class FetchFailed < StandardError; end
+  class ConversionFailed < StandardError; end
+  class ParseFailed < StandardError; end
+  class ParseUnexpected < StandardError; end
   
   
   
+
+  
+  
+  def self.get_uid(str)
+    # str is either a regular uid or a directory name or a file name
+    str = str.split('/')[-1].sub(/\.(?:pdf_txt)$/, '')
+  end
+  
+  def self.get_transcript_dir(str)
+    File.join(Local::DIRS[:scotus][:text], self.get_uid(str))
+  end
   
   # for local file retrieval and storage
   
@@ -44,15 +55,15 @@ module PScootus
     DIRS.each_value{|c| c.each_value{|d| FileUtils.makedirs(d)}}
     
     
+    
     def self.get_transcript_text_dirs
       # returns array of directory names corresponding to each file
       Dir.glob( "#{DIRS[:scotus][:text]}/*")[0..1] # TK FOR TESTING
     end
     
-    def self.get_transcript_textfile_names(kn)
+    def self.get_transcript_page_filenames(kn)
       # returns array of sorted text filenames by page number
-      keyname =  kn.split('/')[-1]  # handles whether full directory or just uid is sent
-      Dir.glob("#{File.join(DIRS[:scotus][:text], keyname)}/*.*")
+      Dir.glob("#{PScootus.get_transcript_dir(kn)}/*.txt").sort_by{|t| t.split(PScootus::Converter::PAGES_DELIMITER)[-1] }
     end
     
     def self.get_transcript_pdf_names
@@ -69,7 +80,7 @@ end
 require 'rubygems'
 require 'fileutils'
 require 'shellwords'
-
+require 'active_support/core_ext'
 require "#{PScootus::ROOT}/lib/p_scootus/fetcher"
 require "#{PScootus::ROOT}/lib/p_scootus/converter"
 require "#{PScootus::ROOT}/lib/p_scootus/parser"

@@ -8,7 +8,7 @@ module PScootus
      
      def self.parse_transcripts
        # just an alias
-        PScootus::Parser::ScotusGov.parse_transcripts
+        PScootus::Parser::ScotusGov.rake_parse_transcripts
      end   
    end
    
