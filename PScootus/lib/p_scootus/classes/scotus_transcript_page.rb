@@ -9,6 +9,15 @@ module PScootus
     # belongs_to
     attr_reader :transcript 
     
+    # spaghetti warning: require the knowledge of transcript docstate
+    delegate :docstate_start?, :to => :transcript, :prefix=>false
+    delegate :docstate_intro?, :to => :transcript, :prefix=>false
+    delegate :docstate_toc?, :to => :transcript, :prefix=>false
+    delegate :docstate_proceedings?, :to => :transcript, :prefix=>false
+    delegate :docstate_index?, :to => :transcript, :prefix=>false
+    
+    
+    
     def initialize(raw_line_array, params={})
     # raw_line_array is readlines result from textfile, with line-ending chomped
     
@@ -16,9 +25,11 @@ module PScootus
       @raw_lines = raw_line_array
       @transcript = params[:transcript]
       @page_number = params[:page_number]
-      @lines, @content_lines = [], []
       
-      puts "Page#initialize, #{@page_number}:\t#{self.raw_line_count} raw lines"
+      @lines = []
+      @content_lines = []
+      
+      puts "\nPage#initialize, #{@page_number}:\t#{self.raw_line_count} raw lines"
       
     end
     
@@ -36,7 +47,6 @@ module PScootus
         })  
               
         line.process
-        
         @lines << line
         @content_lines << line if line.content?
       end      
@@ -46,6 +56,8 @@ module PScootus
     end
     
     
+    
+    
   end
 end
 
@@ -53,6 +65,11 @@ end
 
 module PScootus
   class ScotusTranscriptPage
+    
+    def has_content?
+      content_line_count > 0
+    end
+    
     
     def content_line_count
       @content_lines.length

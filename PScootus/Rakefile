@@ -19,3 +19,39 @@ namespace :scotus do
   end
   
 end
+
+
+namespace :n do
+  
+    
+  task :read_this_line, :line_num, :page_num do |t, args|
+    line_num = args[:line_num].to_i
+    page_num = args[:page_num]
+    all_lines = []
+    
+    puts "Reading line #{line_num}#{ "from page #{page_num}" if page_num}"
+    PScootus::Local.get_transcript_text_dirs.each do |tdir|
+      tname = PScootus.get_uid(tdir)
+      
+      pnames = PScootus::Local.get_transcript_page_filenames(tdir).select{|x|
+        !(page_num) || x =~ /0+#{page_num}\.txt/
+      }
+      
+      pnames.each do |pname|
+        page_num = pname.match(/(\d+)\.txt/)[1].to_i
+        open(pname){|pagefile|
+           cline = pagefile.readlines[line_num]
+           all_lines << cline
+          puts "#{tname}\t#{page_num}: #{line_num}\n#{cline}\n"
+        }
+      end
+    end
+    
+    puts "\n\n\n**************************************************************\n"
+    all_lines.uniq.each{|line| puts line}
+    
+
+    
+  end  
+  
+end

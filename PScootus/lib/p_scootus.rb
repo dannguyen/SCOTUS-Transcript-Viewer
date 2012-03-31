@@ -58,7 +58,7 @@ module PScootus
     
     def self.get_transcript_text_dirs
       # returns array of directory names corresponding to each file
-      Dir.glob( "#{DIRS[:scotus][:text]}/*")[0..1] # TK FOR TESTING
+      Dir.glob( "#{DIRS[:scotus][:text]}/*")[0..-1] # TK FOR TESTING
     end
     
     def self.get_transcript_page_filenames(kn)
