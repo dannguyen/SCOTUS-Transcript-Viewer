@@ -4,14 +4,18 @@ define([
   'backbone',
 
   'models/person',
+  'models/statement',
+
   'collections/focused',
-  'views/people-panel'
+  'views/people-panel',
+  'views/transcript'
+
  // 'views/todos',
 //  'text!templates/stats.html'
   ], 
  //function($, _, Backbone, Todos, TodoView, statsTemplate){
    function($, _, Backbone, 
-			PersonModel, FocusedCollection, PeoplePanelView
+			PersonModel, StatementModel, FocusedCollection, PeoplePanelView, TranscriptView
  	){
 		
 		
@@ -29,12 +33,14 @@ define([
 	    initialize: function() {
 		  // member collections
 		  this.people = new FocusedCollection();
-		  
+		  this.statements = new FocusedCollection();
 		  // panels
 		  this.panels = {};
 		
 		  // standard elements
-		  this.people_info_el = this.$("#people-info");
+		  this.mainscreen_el = this.$("#mainscreen");
+		  this.panels_el = this.$('#panels');
+
 
 		  ///////
 	      _.bindAll(this, 'render',
@@ -45,11 +51,15 @@ define([
 		  $("#init-message").html("App is initialized");
 		
 		  this.render();
+		
+			
+		  // this occurs as default viewer, TK needs to change
 		  this._init_dataInitialization();
+		
+		
 	    },
 
 	    render: function() {
-			this.panels_el = this.$('#panels');
      		return this;
 	    },
 
@@ -67,10 +77,12 @@ define([
 			var __datafile_name = "datafiling-temp.json";
 			console.log(__datafile_name);
 			$.getJSON(__datafile_name, function(data){
+				
 				$("#init-message").html("Data is loaded");				
 				self._init_collectionInitialization(data);
 				self._init_viewCreation();
 			});			
+			console.log("getJson called")
 		},
 		
 		_init_collectionInitialization : function(data){
@@ -84,13 +96,31 @@ define([
 				self.people.add(person);					
 			});
 			$("#init-message").html("Collections are loaded");				
+			
+			
+			// statements
+			_.each(data.argument.statements, function(_s){
+				var statement = new StatementModel(_s);
+				self.statements.add(statement)
+				
+			});
+			
 		},
 		
 		_init_viewCreation : function(data){
-			
+			// should be specific to each mode !?
 			var self = this;
-			this.panels.people = new PeoplePanelView({collection:this.people, id : "people-panel"});
 			
+			////////////////////////
+			// for transcript viewer mode
+			
+			this.mainview = new TranscriptView({collection: this.statements, id: "transcript"});
+			
+			this.mainscreen_el.append(this.mainview.render().el)
+		
+			
+			/// append panels
+			this.panels.people = new PeoplePanelView({collection:this.people, id : "people-panel"});
 			// render panels
 			_.each(this.panels, function(_panel){  
 				self.panels_el.append(_panel.render().el);

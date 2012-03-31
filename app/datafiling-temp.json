@@ -1,7 +1,4413 @@
-{"people": {
+{
+  "case_code": "11-398",
+  "case_name": "Department of Health and Human Servs. v. Florida",
+  "argument": 
+    {
+      "argument_date": "2012-03-26",
+      "word_count": 13883,
+      "statements": [
+        {
+          "person_cat": "SCOTUS",
+          "person_key_name": "ROBERTS",
+          "text": "We will hear argument this morning in Case Number 11-398, Department of Health and Human Services v. Florida. Mr. Long.",
+          "word_count": 20,
+          "start_position": {
+            "page": 3,
+            "line": 3
+          },
+          "end_position": {
+            "page": 3,
+            "line": 6
+          },
+          "absolute_pos": 35
+        },
+        {
+          "person_cat": "Party",
+          "person_key_name": "ROBERT A. LONG, ESQ.",
+          "text": "Mr. Chief Justice, and may it please the Court: The Anti-Injunction Act imposes a \"pay first, litigate later\" rule that is central to Federal tax assessment and collection. The Act applies to essentially every tax penalty in the Internal Revenue Code. There is no reason to think that Congress made a special exception for the penalty imposed by section 5000A. On the contrary, there are three reasons to conclude that the Anti-Injunction Act applies here. First, Congress directed that the section 5000A penalty shall be assessed and collected in the same manner as taxes. Second, Congress provided that penalties are included in taxes for assessment purposes. And, third, the section 5000A penalty bears the key indicia of a tax. Congress directed that the section 5000A penalty shall be assessed and collected in the same manner as taxes. That directive triggers the Anti-Injunction Act, which provides that \"no suit for the purpose of restraining the assessment or collection of any tax may be maintained in any court by any person.\"",
+          "word_count": 169,
+          "start_position": {
+            "page": 3,
+            "line": 9
+          },
+          "end_position": {
+            "page": 4,
+            "line": 6
+          },
+          "absolute_pos": 41
+        },
+        {
+          "person_cat": "SCOTUS",
+          "person_key_name": "SCALIA",
+          "text": "Well, that depends, as -­ as the government points out, on whether that directive is a directive to the Secretary of the Treasury as to how he goes about getting this penalty, or rather a directive to him and to the courts. All of the other directives there seem to me to be addressed to the Secretary. Why should this one be directed to the courts? When you say \"in the same manner,\" he goes about doing it in the same manner, but the courts simply accept that -- that manner of proceeding but nonetheless adjudicate the cases.",
+          "word_count": 96,
+          "start_position": {
+            "page": 4,
+            "line": 7
+          },
+          "end_position": {
+            "page": 4,
+            "line": 17
+          },
+          "absolute_pos": 64
+        },
+        {
+          "person_cat": "Party",
+          "person_key_name": "ROBERT A. LONG, ESQ.",
+          "text": "Well, I think I have a three-part answer to that, Justice Scalia. First, the text does not say that the Secretary shall assess and collect taxes in the same manner; it just says that it shall be assessed in the same manner as a tax, without addressing any party particularly.",
+          "word_count": 50,
+          "start_position": {
+            "page": 4,
+            "line": 18
+          },
+          "end_position": {
+            "page": 4,
+            "line": 23
+          },
+          "absolute_pos": 75
+        },
+        {
+          "person_cat": "SCOTUS",
+          "person_key_name": "SCALIA",
+          "text": "Well, he's assessing and collecting it in the same manner as a tax.",
+          "word_count": 13,
+          "start_position": {
+            "page": 4,
+            "line": 24
+          },
+          "end_position": {
+            "page": 4,
+            "line": 25
+          },
+          "absolute_pos": 81
+        },
+        {
+          "person_cat": "Party",
+          "person_key_name": "ROBERT A. LONG, ESQ.",
+          "text": "Well, the assessment -- the other two parts of the answer are, as a practical matter, I don't think there's any dispute in this case that if the Anti-Injunction Act does not apply, this penalty, the section 5000A penalty, will as a practical matter be assessed and collected in a very different manner from other taxes and other tax penalties. There are three main differences. First, when the Anti-Injunction Act applies, you have to pay the tax or the penalty first and then litigate later to get it back with interest. Second, you have to exhaust administrative remedies. Even after you pay the tax, you can't immediately go to court. You have to go to the Secretary and give the Secretary at least 6 months to see if the matter can be resolved administratively. And, third, even in the very carefully defined situations in which Congress has permitted a challenge to a tax or a penalty before it's paid, the Secretary has to make the first move. The taxpayer is never allowed to rush into court before the tax -- before the Secretary sends a notice of deficiency to start the process. Now, if -- if the Anti-Injunction Act does not apply here, none of those rules apply. And that's not just for this case; it will be for every challenge to a section 5000A penalty going forward. The taxpayer will be able to go to court at any time without exhausting administrative remedies; there will be none of the limitations that apply in terms of you have to wait for the Secretary to make the -­",
+          "word_count": 263,
+          "start_position": {
+            "page": 5,
+            "line": 1
+          },
+          "end_position": {
+            "page": 6,
+            "line": 5
+          },
+          "absolute_pos": 83
+        },
+        {
+          "person_cat": "SCOTUS",
+          "person_key_name": "KENNEDY",
+          "text": "Why will the administrative remedies rule not be applicable, exhaustion rule not be applicable?",
+          "word_count": 14,
+          "start_position": {
+            "page": 6,
+            "line": 6
+          },
+          "end_position": {
+            "page": 6,
+            "line": 8
+          },
+          "absolute_pos": 113
+        },
+        {
+          "person_cat": "Party",
+          "person_key_name": "ROBERT A. LONG, ESQ.",
+          "text": "Well, because if the Anti-Injunction Act doesn't apply, there's no prohibition on courts restraining the assessment or collection of this penalty, and you can simply -­",
+          "word_count": 25,
+          "start_position": {
+            "page": 6,
+            "line": 9
+          },
+          "end_position": {
+            "page": 6,
+            "line": 12
+          },
+          "absolute_pos": 116
+        },
+        {
+          "person_cat": "SCOTUS",
+          "person_key_name": "KENNEDY",
+          "text": "Well, but courts apply the exhaustion rule. I mean, I know you've studied this. I'm just not following it. Why couldn't the court say, well, you haven't exhausted your remedies; no injunction?",
+          "word_count": 32,
+          "start_position": {
+            "page": 6,
+            "line": 13
+          },
+          "end_position": {
+            "page": 6,
+            "line": 17
+          },
+          "absolute_pos": 120
+        },
+        {
+          "person_cat": "Party",
+          "person_key_name": "ROBERT A. LONG, ESQ.",
+          "text": "Well, in -- you could do that, I think, as a matter of -- of common law or judicially imposed doctrine, but in the code itself, which is all -- I mean, the Anti-Injunction Act is an absolutely central statute to litigation -­",
+          "word_count": 39,
+          "start_position": {
+            "page": 6,
+            "line": 18
+          },
+          "end_position": {
+            "page": 6,
+            "line": 22
+          },
+          "absolute_pos": 125
+        },
+        {
+          "person_cat": "SCOTUS",
+          "person_key_name": "KENNEDY",
+          "text": "Yes. Yes.",
+          "word_count": 2,
+          "start_position": {
+            "page": 6,
+            "line": 23
+          },
+          "end_position": {
+            "page": 6,
+            "line": 23
+          },
+          "absolute_pos": 130
+        },
+        {
+          "person_cat": "Party",
+          "person_key_name": "ROBERT A. LONG, ESQ.",
+          "text": "-- about taxes. And the code says -- first it says you must pay the tax first and then litigate. So, that's the baseline. And then, in addition, it says you must -- I mean, it's not common law; it's in the code -- you must apply for a refund, you must wait at least 6 months. That's -- many of these provisions are extremely specific, with very specific time limits.",
+          "word_count": 66,
+          "start_position": {
+            "page": 6,
+            "line": 24
+          },
+          "end_position": {
+            "page": 7,
+            "line": 6
+          },
+          "absolute_pos": 131
+        },
+        {
+          "person_cat": "SCOTUS",
+          "person_key_name": "ROBERTS",
+          "text": "They would apply even if the rule is not jurisdictional. The only difference would be that the court could enforce it or not enforce it in particular cases, which brings me to the Davis case, which I think is your biggest hurdle. It's a case quite similar to this in which the constitutionality of the Social Security Act was at issue, and the government waived its right to insist upon the application of this Act. Of course, if it's jurisdictional, you can't waive it. So, are you asking us to overrule the Davis case?",
+          "word_count": 94,
+          "start_position": {
+            "page": 7,
+            "line": 7
+          },
+          "end_position": {
+            "page": 7,
+            "line": 18
+          },
+          "absolute_pos": 139
+        },
+        {
+          "person_cat": "Party",
+          "person_key_name": "ROBERT A. LONG, ESQ.",
+          "text": "Well, Helvering v. Davis was decided during a period when this Court interpreted the Anti-Injunction Act as simply codifying the pre-statutory equitable principles that usually, but not always, prohibited a court from enjoining the assessment or collection of taxes. So, that understanding, which is what was the basis for the Helvering v. Davis decision, was rejected by the Court in Williams Packing and a series of subsequent cases -- Bob Jones. And so, I would say, effectively, the Davis case has been overruled by subsequent decisions of this Court.",
+          "word_count": 88,
+          "start_position": {
+            "page": 7,
+            "line": 19
+          },
+          "end_position": {
+            "page": 8,
+            "line": 4
+          },
+          "absolute_pos": 151
+        },
+        {
+          "person_cat": "SCOTUS",
+          "person_key_name": "GINSBURG",
+          "text": "Mr. Long, why don't we simply follow the statutory language? I know that you've argued that the Davis case has been overtaken by later cases, but the language of the Anti-Injunction Act is \"no suit shall be maintained.\" It's remarkably similar to the language in -- that was at issue in Reed Elsevier: \"No civil action for infringement shall be instituted.\" And that formulation, \"no suit may be maintained,\" contrasts with of the Tax Injunction Act, that says the district court shall not enjoin. That Tax Injunction Act is the same pattern as 2283, which says \"courts of the United States may not stay a proceeding in State court.\" So, both of those formulas, the TIA and the \"no injunction against proceedings in State court\" are directed to \"court.\" The Anti-Injunction Act, like the statute at issue in Reed Elsevier, says \"no suit shall be maintained.\" And it has been argued that that is suitor-directed in contrast to court-directed.",
+          "word_count": 158,
+          "start_position": {
+            "page": 8,
+            "line": 5
+          },
+          "end_position": {
+            "page": 8,
+            "line": 23
+          },
+          "absolute_pos": 162
+        },
+        {
+          "person_cat": "Party",
+          "person_key_name": "ROBERT A. LONG, ESQ.",
+          "text": "Right. Well, I mean, this Court has said several times that the Tax Injunction Act was based on the Anti-Injunction Act. You're quite right, the language is different; but we submit that the Anti-Injunction Act itself, by saying that no suit shall be maintained, is addressed to courts as well as litigants. I mean, after all, a case cannot go from beginning to end without the active cooperation of the court.",
+          "word_count": 71,
+          "start_position": {
+            "page": 8,
+            "line": 24
+          },
+          "end_position": {
+            "page": 9,
+            "line": 7
+          },
+          "absolute_pos": 181
+        },
+        {
+          "person_cat": "SCOTUS",
+          "person_key_name": "GINSBURG",
+          "text": "But how is that different from \"no civil action for infringement shall be instituted\" -- \"maintained and instituted\"? Anything turn on that?",
+          "word_count": 21,
+          "start_position": {
+            "page": 9,
+            "line": 8
+          },
+          "end_position": {
+            "page": 9,
+            "line": 11
+          },
+          "absolute_pos": 190
+        },
+        {
+          "person_cat": "Party",
+          "person_key_name": "ROBERT A. LONG, ESQ.",
+          "text": "Well, it's -- I mean -- perhaps a party could initiate an action without the act of cooperation of the court, but to maintain it from beginning to end, again, requires the court's cooperation. And even if -- I mean, if the Court were inclined to say as an initial matter, if this statute were coming before us for the first time today, given all of your recent decisions on jurisdiction, that you might be inclined to say this is not a jurisdictional statute, a lot of water has gone over the dam here. The Court has said multiple times that this is a jurisdictional statute. Congress has not disturbed those decisions. To the contrary -­",
+          "word_count": 112,
+          "start_position": {
+            "page": 9,
+            "line": 12
+          },
+          "end_position": {
+            "page": 9,
+            "line": 25
+          },
+          "absolute_pos": 194
+        },
+        {
+          "person_cat": "SCOTUS",
+          "person_key_name": "SOTOMAYOR",
+          "text": "Counsel -­",
+          "word_count": 1,
+          "start_position": {
+            "page": 10,
+            "line": 1
+          },
+          "end_position": {
+            "page": 10,
+            "line": 1
+          },
+          "absolute_pos": 208
+        },
+        {
+          "person_cat": "SCOTUS",
+          "person_key_name": "ALITO",
+          "text": "Well, the Court said that many times, but is there any case in which the result would have been different if the Anti-Injunction Act were not viewed as jurisdictional but instead were viewed as a mandatory claims-processing -­",
+          "word_count": 37,
+          "start_position": {
+            "page": 10,
+            "line": 2
+          },
+          "end_position": {
+            "page": 10,
+            "line": 6
+          },
+          "absolute_pos": 209
+        },
+        {
+          "person_cat": "Party",
+          "person_key_name": "ROBERT A. LONG, ESQ.",
+          "text": "There's -­",
+          "word_count": 1,
+          "start_position": {
+            "page": 10,
+            "line": 7
+          },
+          "end_position": {
+            "page": 10,
+            "line": 7
+          },
+          "absolute_pos": 214
+        },
+        {
+          "person_cat": "SCOTUS",
+          "person_key_name": "ALITO",
+          "text": "-- rule.",
+          "word_count": 1,
+          "start_position": {
+            "page": 10,
+            "line": 8
+          },
+          "end_position": {
+            "page": 10,
+            "line": 8
+          },
+          "absolute_pos": 215
+        },
+        {
+          "person_cat": "Party",
+          "person_key_name": "ROBERT A. LONG, ESQ.",
+          "text": "There -- there are certainly a number of cases where the Court dismissed saying it is jurisdictional. As I read the cases, I don't think any of them would necessarily have come out differently, because I don't think we had a case where the argument was, well, you know, the Government has waived this, so, you know, even -- if it's not jurisdictional -­",
+          "word_count": 61,
+          "start_position": {
+            "page": 10,
+            "line": 9
+          },
+          "end_position": {
+            "page": 10,
+            "line": 16
+          },
+          "absolute_pos": 216
+        },
+        {
+          "person_cat": "SCOTUS",
+          "person_key_name": "ALITO",
+          "text": "Well, the clearest -- the clearest way of distinguishing between the jurisdictional provision and a mandatory claims processing rule is whether it can be waived and whether the Court feels that it has an obligation to raise the issue sua sponte. Now, if there are a lot of cases that call it jurisdictional, but none of them would have come out differently if the Anti-Injunction Act were simply a mandatory claims processing rule, you have that on one side. And on the other side, you have Davis, where the Court accepted a waiver by the Solicitor General; the Sunshine Anthracite coal case, where there also was a waiver; and, there's the Williams Packing case, which is somewhat hard to understand as viewing the Anti-Injunction Act as a jurisdictional provision. The Court said that there could be a suit if there is no way the Government could win, and the Plaintiff would suffer irreparable harm. Now, doesn't that sound like an equitable exception to the Anti-Injunction Act?",
+          "word_count": 165,
+          "start_position": {
+            "page": 10,
+            "line": 17
+          },
+          "end_position": {
+            "page": 11,
+            "line": 13
+          },
+          "absolute_pos": 224
+        },
+        {
+          "person_cat": "Party",
+          "person_key_name": "ROBERT A. LONG, ESQ.",
+          "text": "No, I think the -- I think the best interpretation of the Court's cases is that it was interpreting a jurisdictional statute. And, indeed, in Williams Packing, the Court said it was a jurisdictional statute. But, again, even if you have doubt about simply the cases, there is more than that because Congress has -- has not only not disturbed this Court's decision stating that the statute is jurisdictional, they've passed numerous amendments to this Anti-Injunction Act.",
+          "word_count": 75,
+          "start_position": {
+            "page": 11,
+            "line": 14
+          },
+          "end_position": {
+            "page": 11,
+            "line": 24
+          },
+          "absolute_pos": 246
+        },
+        {
+          "person_cat": "SCOTUS",
+          "person_key_name": "ROBERTS",
+          "text": "Well, it seems -­ you can't separate those two points. The idea that Congress has acquiesced in what we have said only helps you if what we have said is fairly consistent. And you, yourself, point out in your brief that we've kind of gone back and forth on whether this is a jurisdictional provision or not. So, even if Congress acquiesced in it, I'm not sure what they acquiesced in.",
+          "word_count": 70,
+          "start_position": {
+            "page": 11,
+            "line": 25
+          },
+          "end_position": {
+            "page": 12,
+            "line": 7
+          },
+          "absolute_pos": 257
+        },
+        {
+          "person_cat": "Party",
+          "person_key_name": "ROBERT A. LONG, ESQ.",
+          "text": "Well, what you have said, Mr. Chief Justice, has been absolutely consistent for 50 years, since the Williams Packing case. The period of inconsistency was after the first 50 years, since the statute was enacted in 1867. And there was a period, as I said, when the Court was allowing extraordinary circumstances exceptions and equitable exceptions, but then, very quickly, it cut back on that. And since -­ and since Williams Packing, you have been utterly consistent -­",
+          "word_count": 76,
+          "start_position": {
+            "page": 12,
+            "line": 8
+          },
+          "end_position": {
+            "page": 12,
+            "line": 17
+          },
+          "absolute_pos": 265
+        },
+        {
+          "person_cat": "SCOTUS",
+          "person_key_name": "KAGAN",
+          "text": "Well, even since Williams Packing, there was South Carolina v. Regan. And that case can also be understood as a kind of equitable exception to the rule, which would be inconsistent with thinking that the rule is jurisdictional.",
+          "word_count": 38,
+          "start_position": {
+            "page": 12,
+            "line": 18
+          },
+          "end_position": {
+            "page": 12,
+            "line": 23
+          },
+          "absolute_pos": 275
+        },
+        {
+          "person_cat": "Party",
+          "person_key_name": "ROBERT A. LONG, ESQ.",
+          "text": "Well, again, I mean, I think the best understanding of South Carolina v. Regan is not that its an equitable exception, but it's the Court interpreting a jurisdictional statute as it would interpret any statute in light of its purpose, and deciding in that very special case, it's a very narrow exception, where the -­",
+          "word_count": 54,
+          "start_position": {
+            "page": 12,
+            "line": 24
+          },
+          "end_position": {
+            "page": 13,
+            "line": 5
+          },
+          "absolute_pos": 281
+        },
+        {
+          "person_cat": "SCOTUS",
+          "person_key_name": "SOTOMAYOR",
+          "text": "Mr. Long, in Bowles, the Court looked to the long history of appellate issues as being jurisdictional, in its traditional sense, not as a claim processing rule, but as a pure jurisdiction rule, the power of the Court to hear a case. From all the questions here, I count at least four cases in the Court's history where the Court has accepted a waiver by the Solicitor General and reached a tax issue. I have at least three cases, one of them just mentioned by Justice Kagan, where exceptions to that rule were read in. Given that history, regardless of how we define jurisdictional statutes versus claim processing statutes in recent times, isn't the fairer statement that Congress has accepted that in the extraordinary case, we will hear the case?",
+          "word_count": 130,
+          "start_position": {
+            "page": 13,
+            "line": 6
+          },
+          "end_position": {
+            "page": 13,
+            "line": 21
+          },
+          "absolute_pos": 288
+        },
+        {
+          "person_cat": "Party",
+          "person_key_name": "ROBERT A. LONG, ESQ.",
+          "text": "No. No, Justice Sotomayor, because in many of these amendments which have come in the '70s and the '90s and the 2000s, the Congress has actually framed the limited exceptions to the Anti-Injunction Act in jurisdictional terms. And it has written many of the express exceptions by saying notwithstanding Section 7421 -­",
+          "word_count": 51,
+          "start_position": {
+            "page": 13,
+            "line": 22
+          },
+          "end_position": {
+            "page": 14,
+            "line": 3
+          },
+          "absolute_pos": 304
+        },
+        {
+          "person_cat": "SCOTUS",
+          "person_key_name": "SOTOMAYOR",
+          "text": "But doesn't that just prove that it knows that the Court will impose a claim processing rule in many circumstances, and so, in those in which it specifically doesn't want the Court to, it has to be clearer?",
+          "word_count": 38,
+          "start_position": {
+            "page": 14,
+            "line": 4
+          },
+          "end_position": {
+            "page": 14,
+            "line": 8
+          },
+          "absolute_pos": 311
+        },
+        {
+          "person_cat": "Party",
+          "person_key_name": "ROBERT A. LONG, ESQ.",
+          "text": "Well, but Congress says, notwithstanding 7421, the Court \"shall have jurisdiction to restrain the assessment and collection of taxes in very limited\" -­",
+          "word_count": 22,
+          "start_position": {
+            "page": 14,
+            "line": 9
+          },
+          "end_position": {
+            "page": 14,
+            "line": 12
+          },
+          "absolute_pos": 316
+        },
+        {
+          "person_cat": "SCOTUS",
+          "person_key_name": "SOTOMAYOR",
+          "text": "Could you go back to the question that Justice Alito asked? Assuming we find that this is not jurisdictional, what is the parade of horribles that you see occurring if we call this a mandatory claim processing rule? What kinds of cases do you imagine that courts will reach?",
+          "word_count": 49,
+          "start_position": {
+            "page": 14,
+            "line": 13
+          },
+          "end_position": {
+            "page": 14,
+            "line": 18
+          },
+          "absolute_pos": 320
+        },
+        {
+          "person_cat": "Party",
+          "person_key_name": "ROBERT A. LONG, ESQ.",
+          "text": "Right. Well, first of all, I think you would be saying that for the refund statute, as well as for the Anti-Injunction Act -- which has very similar wording, so if the Anti-Injunction Act is not jurisdictional, I think that's also going to apply to the refund statute, the statute that says you have to first ask for a refund and then file, you know, within certain time -- so it would be -- it would be both of those statutes. And, you know, we are dealing with taxes here, if people -­",
+          "word_count": 89,
+          "start_position": {
+            "page": 14,
+            "line": 19
+          },
+          "end_position": {
+            "page": 15,
+            "line": 3
+          },
+          "absolute_pos": 326
+        },
+        {
+          "person_cat": "SCOTUS",
+          "person_key_name": "SOTOMAYOR",
+          "text": "That wasn't my question.",
+          "word_count": 4,
+          "start_position": {
+            "page": 15,
+            "line": 4
+          },
+          "end_position": {
+            "page": 15,
+            "line": 4
+          },
+          "absolute_pos": 336
+        },
+        {
+          "person_cat": "Party",
+          "person_key_name": "ROBERT A. LONG, ESQ.",
+          "text": "I'm sorry.",
+          "word_count": 2,
+          "start_position": {
+            "page": 15,
+            "line": 5
+          },
+          "end_position": {
+            "page": 15,
+            "line": 5
+          },
+          "absolute_pos": 337
+        },
+        {
+          "person_cat": "SCOTUS",
+          "person_key_name": "SOTOMAYOR",
+          "text": "My question was, if we deem this a mandatory claim processing rule -­",
+          "word_count": 12,
+          "start_position": {
+            "page": 15,
+            "line": 6
+          },
+          "end_position": {
+            "page": 15,
+            "line": 7
+          },
+          "absolute_pos": 338
+        },
+        {
+          "person_cat": "Party",
+          "person_key_name": "ROBERT A. LONG, ESQ.",
+          "text": "Right.",
+          "word_count": 1,
+          "start_position": {
+            "page": 15,
+            "line": 8
+          },
+          "end_position": {
+            "page": 15,
+            "line": 8
+          },
+          "absolute_pos": 340
+        },
+        {
+          "person_cat": "SCOTUS",
+          "person_key_name": "SOTOMAYOR",
+          "text": "-- what cases do you imagine courts will reach on what grounds? Assuming the Government does its job and comes in and raises the AIA as an immediate defense -­",
+          "word_count": 28,
+          "start_position": {
+            "page": 15,
+            "line": 9
+          },
+          "end_position": {
+            "page": 15,
+            "line": 12
+          },
+          "absolute_pos": 341
+        },
+        {
+          "person_cat": "Party",
+          "person_key_name": "ROBERT A. LONG, ESQ.",
+          "text": "Well, that's -­",
+          "word_count": 2,
+          "start_position": {
+            "page": 15,
+            "line": 13
+          },
+          "end_position": {
+            "page": 15,
+            "line": 13
+          },
+          "absolute_pos": 345
+        },
+        {
+          "person_cat": "SCOTUS",
+          "person_key_name": "SOTOMAYOR",
+          "text": "-- where can a court then reach the question, despite -­",
+          "word_count": 9,
+          "start_position": {
+            "page": 15,
+            "line": 14
+          },
+          "end_position": {
+            "page": 15,
+            "line": 15
+          },
+          "absolute_pos": 346
+        },
+        {
+          "person_cat": "Party",
+          "person_key_name": "ROBERT A. LONG, ESQ.",
+          "text": "That would certainly be the first class of cases, it occurs to me, where, if the Government does not raise it in a timely way, it could be waived. I would think plaintiffs would see if there was some clever way they could get a suit going that wouldn't immediately be apparent that -­",
+          "word_count": 53,
+          "start_position": {
+            "page": 15,
+            "line": 16
+          },
+          "end_position": {
+            "page": 15,
+            "line": 21
+          },
+          "absolute_pos": 348
+        },
+        {
+          "person_cat": "SCOTUS",
+          "person_key_name": "SOTOMAYOR",
+          "text": "Assumes the lack of competency of the Government, which I don't, but what other types of cases?",
+          "word_count": 17,
+          "start_position": {
+            "page": 15,
+            "line": 22
+          },
+          "end_position": {
+            "page": 15,
+            "line": 24
+          },
+          "absolute_pos": 354
+        },
+        {
+          "person_cat": "SCOTUS",
+          "person_key_name": "SCALIA",
+          "text": "Mr. Long, I don't think you are going to come up with any, but I think your response is you could say that about any jurisdictional rule. If it's not jurisdictional, what's going to happen is you are going to have an intelligent federal court deciding whether you are going to make an exception. And there will be no parade of horribles because all federal courts are intelligent. So it seems to me it's a question you can't answer. It's a question which asks \"why should there be any jurisdictional rules?\" And you think there should be.",
+          "word_count": 97,
+          "start_position": {
+            "page": 15,
+            "line": 25
+          },
+          "end_position": {
+            "page": 16,
+            "line": 11
+          },
+          "absolute_pos": 357
+        },
+        {
+          "person_cat": "Party",
+          "person_key_name": "ROBERT A. LONG, ESQ.",
+          "text": "Well, and, Justice Scalia, I mean, honestly, I can't predict what would happen, but I would say that not all people who litigate about federal taxes are necessarily rational. And I think there would be a great -­",
+          "word_count": 37,
+          "start_position": {
+            "page": 16,
+            "line": 12
+          },
+          "end_position": {
+            "page": 16,
+            "line": 16
+          },
+          "absolute_pos": 369
+        },
+        {
+          "person_cat": "SCOTUS",
+          "person_key_name": "BREYER",
+          "text": "I just don't want you to lose the second half of your argument. And we have spent all the time so far on jurisdiction. And I accept, pretty much, I'm probably leaning in your favor on jurisdiction, but where I see the problem is in the second part, because the second part says \"restraining the assessment or collection of any tax.\" Now, here, Congress has nowhere used the word \"tax.\" What it says is penalty. Moreover, this is not in the Internal Revenue Code \"but for purposes of collection.\" And so why is this a tax? And I know you point to certain sentences that talk about taxes within the Code -­",
+          "word_count": 111,
+          "start_position": {
+            "page": 16,
+            "line": 17
+          },
+          "end_position": {
+            "page": 17,
+            "line": 5
+          },
+          "absolute_pos": 374
+        },
+        {
+          "person_cat": "Party",
+          "person_key_name": "ROBERT A. LONG, ESQ.",
+          "text": "Right.",
+          "word_count": 1,
+          "start_position": {
+            "page": 17,
+            "line": 6
+          },
+          "end_position": {
+            "page": 17,
+            "line": 6
+          },
+          "absolute_pos": 388
+        },
+        {
+          "person_cat": "SCOTUS",
+          "person_key_name": "BREYER",
+          "text": "-- and this is not attached to a tax. It is attached to a health care requirement.",
+          "word_count": 16,
+          "start_position": {
+            "page": 17,
+            "line": 7
+          },
+          "end_position": {
+            "page": 17,
+            "line": 8
+          },
+          "absolute_pos": 389
+        },
+        {
+          "person_cat": "Party",
+          "person_key_name": "ROBERT A. LONG, ESQ.",
+          "text": "Right.",
+          "word_count": 1,
+          "start_position": {
+            "page": 17,
+            "line": 9
+          },
+          "end_position": {
+            "page": 17,
+            "line": 9
+          },
+          "absolute_pos": 391
+        },
+        {
+          "person_cat": "SCOTUS",
+          "person_key_name": "BREYER",
+          "text": "So why does it fall within that word?",
+          "word_count": 8,
+          "start_position": {
+            "page": 17,
+            "line": 10
+          },
+          "end_position": {
+            "page": 17,
+            "line": 11
+          },
+          "absolute_pos": 392
+        },
+        {
+          "person_cat": "Party",
+          "person_key_name": "ROBERT A. LONG, ESQ.",
+          "text": "Well, I mean, the first point is -- our initial submission is you don't have to determine that this is a tax in order to find that the Anti-Injunction Act applies, because Congress very specifically said that it shall be assessed and collected in the same manner as a tax, even if it's a tax penalty and not a tax. So that's one -­",
+          "word_count": 62,
+          "start_position": {
+            "page": 17,
+            "line": 12
+          },
+          "end_position": {
+            "page": 17,
+            "line": 18
+          },
+          "absolute_pos": 394
+        },
+        {
+          "person_cat": "SCOTUS",
+          "person_key_name": "BREYER",
+          "text": "But that doesn't mean the AIA applies. I mean -- and then they provide some exceptions, but it doesn't mean the AIA applies. It says, \"in the same manner as.\" It is then attached to Chapter 68, when that -- it references that as \"being the manner of.\" Well, that it's being applied -- or if it's being collected in the same manner as a tax doesn't automatically make it a tax, particularly since the reasons for the AIA are to prevent interference with revenue sources. And here, an advance attack on this does not interfere with the collection of revenues. I mean, that's -- you have read the arguments, as have I. But I would like to know what you say succinctly in response to those arguments.",
+          "word_count": 124,
+          "start_position": {
+            "page": 17,
+            "line": 19
+          },
+          "end_position": {
+            "page": 18,
+            "line": 8
+          },
+          "absolute_pos": 401
+        },
+        {
+          "person_cat": "Party",
+          "person_key_name": "ROBERT A. LONG, ESQ.",
+          "text": "So, specifically on the argument that it is actually a tax, even setting aside the point that it should be assessed and collected in the same manner as a tax, the Anti-Injunction Act uses the term \"tax\"; it doesn't define it. Somewhat to my surprise, \"tax\" is not defined anywhere in the Internal Revenue Code. In about the time that Congress passed the Anti-Injunction Act, \"tax\" had a very broad definition. It's broad enough to include this exaction, which is codified in the Internal Revenue Code. It's part of the taxpayer's annual income tax return. The amount of the liability and whether you owe the liability is based in part on your income. It's assessed and collected by the IRS.",
+          "word_count": 120,
+          "start_position": {
+            "page": 18,
+            "line": 9
+          },
+          "end_position": {
+            "page": 18,
+            "line": 22
+          },
+          "absolute_pos": 416
+        },
+        {
+          "person_cat": "SCOTUS",
+          "person_key_name": "SCALIA",
+          "text": "There's at least some doubt about it, Mr. Long, for the reasons that Justice Breyer said, and I thought that we had a -- a principle that ousters of jurisdiction are narrowly construed; that, unless it's clear, courts are not deprived of jurisdiction. And I find it hard to think that this is clear. Whatever else it is, it's easy to think that it's not clear.",
+          "word_count": 65,
+          "start_position": {
+            "page": 18,
+            "line": 23
+          },
+          "end_position": {
+            "page": 19,
+            "line": 5
+          },
+          "absolute_pos": 430
+        },
+        {
+          "person_cat": "Party",
+          "person_key_name": "ROBERT A. LONG, ESQ.",
+          "text": "Well, I mean, the Anti-Injunction Act applies not only to every tax in the code but, as far as I can tell, to every tax penalty in the code. And -­",
+          "word_count": 30,
+          "start_position": {
+            "page": 19,
+            "line": 6
+          },
+          "end_position": {
+            "page": 19,
+            "line": 9
+          },
+          "absolute_pos": 438
+        },
+        {
+          "person_cat": "SCOTUS",
+          "person_key_name": "GINSBURG",
+          "text": "Mr. Long, you said before -- and I think you were quite right -- that the Tax Injunction Act is modeled on the Anti-Injunction Act. And, under the Tax Injunction Act, what can't be enjoined is an assessment for the purpose of raising revenue. The Tax Injunction Act does not apply to penalties that are designed to induce compliance with the law, rather than to raise revenue. And this is not a revenue-raising measure because, if it's successful, they -- nobody will pay the penalty, and there will be no revenue to raise.",
+          "word_count": 90,
+          "start_position": {
+            "page": 19,
+            "line": 10
+          },
+          "end_position": {
+            "page": 19,
+            "line": 20
+          },
+          "absolute_pos": 442
+        },
+        {
+          "person_cat": "Party",
+          "person_key_name": "ROBERT A. LONG, ESQ.",
+          "text": "Well, in Bob Jones the Court said that they had gotten out of the business of trying to determine whether an exaction is primarily revenue-raising or primarily regulatory. And this one certainly raises -- is expected to raise very substantial amounts of revenues, at least $4 billion a year by the -­",
+          "word_count": 50,
+          "start_position": {
+            "page": 19,
+            "line": 21
+          },
+          "end_position": {
+            "page": 20,
+            "line": 2
+          },
+          "absolute_pos": 453
+        },
+        {
+          "person_cat": "SCOTUS",
+          "person_key_name": "SOTOMAYOR",
+          "text": "But Bob Jones involved a statute where it denominated the exaction as a tax.",
+          "word_count": 14,
+          "start_position": {
+            "page": 20,
+            "line": 3
+          },
+          "end_position": {
+            "page": 20,
+            "line": 4
+          },
+          "absolute_pos": 460
+        },
+        {
+          "person_cat": "Party",
+          "person_key_name": "ROBERT A. LONG, ESQ.",
+          "text": "That's -­",
+          "word_count": 1,
+          "start_position": {
+            "page": 20,
+            "line": 5
+          },
+          "end_position": {
+            "page": 20,
+            "line": 5
+          },
+          "absolute_pos": 462
+        },
+        {
+          "person_cat": "SCOTUS",
+          "person_key_name": "SOTOMAYOR",
+          "text": "Here we have one where the Congress is not denominating it a -- as a tax; it's denominating it as a penalty.",
+          "word_count": 21,
+          "start_position": {
+            "page": 20,
+            "line": 6
+          },
+          "end_position": {
+            "page": 20,
+            "line": 8
+          },
+          "absolute_pos": 463
+        },
+        {
+          "person_cat": "Party",
+          "person_key_name": "ROBERT A. LONG, ESQ.",
+          "text": "That's -- that's absolutely right, and that's obviously why -- if it were called a tax, there would be absolutely no question that the Anti-Injunction Act applies.",
+          "word_count": 25,
+          "start_position": {
+            "page": 20,
+            "line": 9
+          },
+          "end_position": {
+            "page": 20,
+            "line": 12
+          },
+          "absolute_pos": 466
+        },
+        {
+          "person_cat": "SCOTUS",
+          "person_key_name": "SOTOMAYOR",
+          "text": "Absolutely. But even the section of the code that you referred to previously, the one following 7421, the AIA, it does very clearly make a difference -- 7422 -- make a difference between tax and penalties. It's very explicit.",
+          "word_count": 37,
+          "start_position": {
+            "page": 20,
+            "line": 13
+          },
+          "end_position": {
+            "page": 20,
+            "line": 17
+          },
+          "absolute_pos": 470
+        },
+        {
+          "person_cat": "Party",
+          "person_key_name": "ROBERT A. LONG, ESQ.",
+          "text": "Yes, that's -- it does; that is correct. And there are many other places in the code where tax is -­",
+          "word_count": 19,
+          "start_position": {
+            "page": 20,
+            "line": 18
+          },
+          "end_position": {
+            "page": 20,
+            "line": 20
+          },
+          "absolute_pos": 475
+        },
+        {
+          "person_cat": "SCOTUS",
+          "person_key_name": "BREYER",
+          "text": "The best collection I've found in your favor, I think, is in Mortimer Caplin's brief on page 16, 17. He has a whole list. All right. So -- I got my law clerk to look all those up. And it seems to me that they all fall into the categories of either, one, these are penalties that were penalties assessed for not paying taxes; or, two, they involve matters that were called by the court taxes; or, three, in some instances they were deemed by the code to be taxes. Now, what we have here is something that's in a different statute that doesn't use the word \"tax\" once except for a collection device, and, in fact, in addition, the underlying AIA reason, which is to say to the Solicitor General: We don't care what you think; we, in Congress, don't want you in court where the revenue of a state -- Tax Injunction Act -- or the revenue of the federal government is at stake, and, therefore, you can't waive it. Now, I got that. Here it's not at stake, and here there are all the differences I just mentioned. So, I ask that because I want to hear your response.",
+          "word_count": 199,
+          "start_position": {
+            "page": 20,
+            "line": 21
+          },
+          "end_position": {
+            "page": 21,
+            "line": 17
+          },
+          "absolute_pos": 478
+        },
+        {
+          "person_cat": "Party",
+          "person_key_name": "ROBERT A. LONG, ESQ.",
+          "text": "Well, I mean, there are penalties in the Internal Revenue Code that you really couldn't say are related in any -- in any close way to some other tax provision. There's a penalty -- it's discussed in the briefs -- for selling diesel fuel that doesn't comply with EPA's regulations, you know. So, there are all kinds of penalties in the code, and I think it's -­ that you could rely upon.",
+          "word_count": 68,
+          "start_position": {
+            "page": 21,
+            "line": 18
+          },
+          "end_position": {
+            "page": 21,
+            "line": 25
+          },
+          "absolute_pos": 500
+        },
+        {
+          "person_cat": "SCOTUS",
+          "person_key_name": "KAGAN",
+          "text": "Mr. Long, aren't there places in this Act -- fees and penalties -- that were specifically put under the Anti-Injunction Act? There's one on health care plans, there's one on pharmaceutical manufacturers, where Congress specifically said the Anti-Injunction Act is triggered for those. It does not say that here. Wouldn't that suggest that Congress meant for a different result to obtain?",
+          "word_count": 59,
+          "start_position": {
+            "page": 22,
+            "line": 1
+          },
+          "end_position": {
+            "page": 22,
+            "line": 8
+          },
+          "absolute_pos": 508
+        },
+        {
+          "person_cat": "Party",
+          "person_key_name": "ROBERT A. LONG, ESQ.",
+          "text": "Well, I mean, Congress didn't use the language the Anti-Injunction Act \"shall apply\" -­",
+          "word_count": 13,
+          "start_position": {
+            "page": 22,
+            "line": 9
+          },
+          "end_position": {
+            "page": 22,
+            "line": 10
+          },
+          "absolute_pos": 516
+        },
+        {
+          "person_cat": "SCOTUS",
+          "person_key_name": "KAGAN",
+          "text": "No, but it -- it in section 9008 and in section 9010 -­",
+          "word_count": 11,
+          "start_position": {
+            "page": 22,
+            "line": 11
+          },
+          "end_position": {
+            "page": 22,
+            "line": 12
+          },
+          "absolute_pos": 518
+        },
+        {
+          "person_cat": "Party",
+          "person_key_name": "ROBERT A. LONG, ESQ.",
+          "text": "Right.",
+          "word_count": 1,
+          "start_position": {
+            "page": 22,
+            "line": 13
+          },
+          "end_position": {
+            "page": 22,
+            "line": 13
+          },
+          "absolute_pos": 520
+        },
+        {
+          "person_cat": "SCOTUS",
+          "person_key_name": "KAGAN",
+          "text": "-- it specifically referred --",
+          "word_count": 3,
+          "start_position": {
+            "page": 22,
+            "line": 14
+          },
+          "end_position": {
+            "page": 22,
+            "line": 15
+          },
+          "absolute_pos": 521
+        },
+        {
+          "person_cat": "Party",
+          "person_key_name": "ROBERT A. LONG, ESQ.",
+          "text": "Right.",
+          "word_count": 1,
+          "start_position": {
+            "page": 22,
+            "line": 16
+          },
+          "end_position": {
+            "page": 22,
+            "line": 16
+          },
+          "absolute_pos": 523
+        },
+        {
+          "person_cat": "SCOTUS",
+          "person_key_name": "KAGAN",
+          "text": "-- to the part of the code where the Anti-Injunction Act is.",
+          "word_count": 11,
+          "start_position": {
+            "page": 22,
+            "line": 17
+          },
+          "end_position": {
+            "page": 22,
+            "line": 18
+          },
+          "absolute_pos": 524
+        },
+        {
+          "person_cat": "Party",
+          "person_key_name": "ROBERT A. LONG, ESQ.",
+          "text": "Right, all of subtitle F, which picks up lots of administration and procedure provisions, but those -- those are fees, and they're not -- Congress did not provide, you know, in the sections themselves that they should be paid as part of a tax return. So they were free-standing fees, and by using that subtitle F language, Congress plugged in a whole set of rules for how to collect and administer the fees, and it went not just to assessment and collection -- and the IRS has recognized this -- but to examination, privacy, a whole series of additional things. So I think it would be a mistake to look at that language and say, oh, here's Congress saying they want the Anti-Injunction Act to apply. They're actually doing more than that. And, yes, I grant you, you could look at section 5000A, the individual coverage requirement, and say, well, they could have been clearer about saying the Anti-Injunction Act applied, and that's certainly true, but, again, they were trying to accomplish a lot. And it's -­",
+          "word_count": 172,
+          "start_position": {
+            "page": 22,
+            "line": 19
+          },
+          "end_position": {
+            "page": 23,
+            "line": 15
+          },
+          "absolute_pos": 526
+        },
+        {
+          "person_cat": "SCOTUS",
+          "person_key_name": "KENNEDY",
+          "text": "Maybe it's easier to talk about this case if we just forget the words \"for the purpose of restraining assessment and collection.\" In a sense, that brings the jurisdictional question and Justice Breyer's question together. It seems to me -- maybe you could just comment on that language. Is that sort of language usually contained in a jurisdictional provision? I mean, you often don't know the purpose of a suit until after the thing is under way. I can see it with malicious prosecution and some civil rights cases. Does it strike you as somewhat unusual to have this provision in a jurisdictional case?",
+          "word_count": 103,
+          "start_position": {
+            "page": 23,
+            "line": 16
+          },
+          "end_position": {
+            "page": 24,
+            "line": 3
+          },
+          "absolute_pos": 548
+        },
+        {
+          "person_cat": "Party",
+          "person_key_name": "ROBERT A. LONG, ESQ.",
+          "text": "It does strike me, honestly -­",
+          "word_count": 5,
+          "start_position": {
+            "page": 24,
+            "line": 4
+          },
+          "end_position": {
+            "page": 24,
+            "line": 4
+          },
+          "absolute_pos": 561
+        },
+        {
+          "person_cat": "SCOTUS",
+          "person_key_name": "KENNEDY",
+          "text": "Yes.",
+          "word_count": 1,
+          "start_position": {
+            "page": 24,
+            "line": 5
+          },
+          "end_position": {
+            "page": 24,
+            "line": 5
+          },
+          "absolute_pos": 562
+        },
+        {
+          "person_cat": "Party",
+          "person_key_name": "ROBERT A. LONG, ESQ.",
+          "text": "-- as a bit unusual, but this is an old statute. I mean, this -- the core language is essentially unchanged since 1867, and it -- you know, I think that's part of the explanation for it. And, again, it's, you know, become the center of a series of provisions that very carefully control the circumstances in which litigation about federal taxes can take place.",
+          "word_count": 62,
+          "start_position": {
+            "page": 24,
+            "line": 6
+          },
+          "end_position": {
+            "page": 24,
+            "line": 12
+          },
+          "absolute_pos": 563
+        },
+        {
+          "person_cat": "SCOTUS",
+          "person_key_name": "GINSBURG",
+          "text": "Mr. Long, there's another argument that has been made that I would like you to address, and that is all this talk about tax penalty -­ it's all beside the point because this suit is not challenging the penalty. This is a suit that is challenging the must-buy provision, and the argument is made that, if, indeed, \"must-buy\" is constitutional, then these complainants will not resist the penalty. So, what they're seeking is a determination that that the \"must-buy\" requirement, stated separately from the penalty, that \"must-buy\" is unconstitutional. And, if that's so, that's the end of the case; if it's not so, they're not resisting the penalty.",
+          "word_count": 107,
+          "start_position": {
+            "page": 24,
+            "line": 13
+          },
+          "end_position": {
+            "page": 24,
+            "line": 25
+          },
+          "absolute_pos": 570
+        },
+        {
+          "person_cat": "Party",
+          "person_key_name": "ROBERT A. LONG, ESQ.",
+          "text": "Well, I think that argument doesn't work for two reasons. I mean, first, if you look at the plaintiffs' own complaint, they clearly challenge both the minimum coverage requirement and the penalty. At page 122 of the Joint Appendix, they challenge the requirement that the individuals obtain health care coverage or pay a penalty.",
+          "word_count": 54,
+          "start_position": {
+            "page": 25,
+            "line": 1
+          },
+          "end_position": {
+            "page": 25,
+            "line": 7
+          },
+          "absolute_pos": 583
+        },
+        {
+          "person_cat": "SCOTUS",
+          "person_key_name": "ALITO",
+          "text": "Well, why is that?",
+          "word_count": 4,
+          "start_position": {
+            "page": 25,
+            "line": 8
+          },
+          "end_position": {
+            "page": 25,
+            "line": 8
+          },
+          "absolute_pos": 590
+        },
+        {
+          "person_cat": "SCOTUS",
+          "person_key_name": "GINSBURG",
+          "text": "If that's -- if that's the problem, it's easier to amend the complaint. They can just take that out of the complaint. So, it can't turn on that.",
+          "word_count": 27,
+          "start_position": {
+            "page": 25,
+            "line": 9
+          },
+          "end_position": {
+            "page": 25,
+            "line": 12
+          },
+          "absolute_pos": 591
+        },
+        {
+          "person_cat": "Party",
+          "person_key_name": "ROBERT A. LONG, ESQ.",
+          "text": "Well -- and -- yes, I mean, it's -- or another complaint would be filed, but, still, I think that's a serious problem. But even if they had filed a different complaint, I don't think you -- in this case, I don't think you can separate the minimum coverage requirement from the penalty because the penalty is the sole means of enforcing the minimum coverage requirement. So, first, I mean, I think these plaintiffs would not be satisfied if the Court were to render a judgment saying the minimum coverage requirement is invalidated; the penalty, however, remains standing. Anybody who doesn't have insurance has to pay the penalty. Then they'd have to pay a penalty equal to the cost of insurance and they wouldn't even have insurance. So, I don't think that would be -­",
+          "word_count": 130,
+          "start_position": {
+            "page": 25,
+            "line": 13
+          },
+          "end_position": {
+            "page": 26,
+            "line": 3
+          },
+          "absolute_pos": 595
+        },
+        {
+          "person_cat": "SCOTUS",
+          "person_key_name": "ALITO",
+          "text": "Well, they say they want to obey the law -­",
+          "word_count": 9,
+          "start_position": {
+            "page": 26,
+            "line": 4
+          },
+          "end_position": {
+            "page": 26,
+            "line": 5
+          },
+          "absolute_pos": 611
+        },
+        {
+          "person_cat": "Party",
+          "person_key_name": "ROBERT A. LONG, ESQ.",
+          "text": "Right.",
+          "word_count": 1,
+          "start_position": {
+            "page": 26,
+            "line": 6
+          },
+          "end_position": {
+            "page": 26,
+            "line": 6
+          },
+          "absolute_pos": 613
+        },
+        {
+          "person_cat": "SCOTUS",
+          "person_key_name": "ALITO",
+          "text": "-- and they say that your argument puts them in the position of having to disobey the law in order to obtain review of their claim. And what is your answer to that?",
+          "word_count": 32,
+          "start_position": {
+            "page": 26,
+            "line": 7
+          },
+          "end_position": {
+            "page": 26,
+            "line": 10
+          },
+          "absolute_pos": 614
+        },
+        {
+          "person_cat": "Party",
+          "person_key_name": "ROBERT A. LONG, ESQ.",
+          "text": "Well, I mean, first of all, I can't find that in the record, in their declarations. I don't see a statement that they will, you know, never incur a penalty under any circumstances. But -- but even if that were so, what this Court has said in Americans United is the Anti-Injunction Act bars any suit, not just to enjoin the collection of your own taxes, but to enjoin the collection of anyone's taxes. And so even if it were really true that these plaintiffs were not interested in the penalty and would never pay the penalty, if they were to succeed in this case in striking down the minimum coverage requirement, the inevitable result would be that the penalty would fall as well, because the Government couldn't collect a penalty for failing to follow an unconstitutional requirement, and so it would still be barred because it would be a suit that would prevent the collection of some of the -­",
+          "word_count": 159,
+          "start_position": {
+            "page": 26,
+            "line": 11
+          },
+          "end_position": {
+            "page": 27,
+            "line": 3
+          },
+          "absolute_pos": 618
+        },
+        {
+          "person_cat": "SCOTUS",
+          "person_key_name": "ALITO",
+          "text": "Well, let me take us back to Justice Kennedy's question about the \"for the purpose of\" language. I take it you interpret the statute to mean the following: \"For the purpose of\" means having the effect of. Is that correct?",
+          "word_count": 40,
+          "start_position": {
+            "page": 27,
+            "line": 4
+          },
+          "end_position": {
+            "page": 27,
+            "line": 8
+          },
+          "absolute_pos": 636
+        },
+        {
+          "person_cat": "Party",
+          "person_key_name": "ROBERT A. LONG, ESQ.",
+          "text": "Well, I mean, this Court in the Bob Jones case, where a similar kind of argument was being made by the plaintiff in that case, said, you know, look, you know, where the -- where it's inevitable that this is what the suit is about, they're sort of two sides of the same coin, that clearly is a primary purpose of the suit. And it's -- and you can't by clever pleading get away from that. That's just the nature of the situation.",
+          "word_count": 81,
+          "start_position": {
+            "page": 27,
+            "line": 9
+          },
+          "end_position": {
+            "page": 27,
+            "line": 17
+          },
+          "absolute_pos": 641
+        },
+        {
+          "person_cat": "SCOTUS",
+          "person_key_name": "KAGAN",
+          "text": "But, Mr. Long, aren't you trying to rewrite the statute, in a way? The statute has two sections. One is the you have to have insurance section and the other is the sanction. The statute has two different sets of exceptions corresponding to those two different sections. You are trying to suggest that the statute says: Well, it's your choice, either buy insurance or pay a -- or pay a fee. But that's not the way the statute reads. And Congress, it must be supposed, you know, made a decision that that shouldn't be the way the statute reads, that it should instead be a regulatory command and a penalty attached to that command.",
+          "word_count": 113,
+          "start_position": {
+            "page": 27,
+            "line": 18
+          },
+          "end_position": {
+            "page": 28,
+            "line": 5
+          },
+          "absolute_pos": 650
+        },
+        {
+          "person_cat": "Party",
+          "person_key_name": "ROBERT A. LONG, ESQ.",
+          "text": "Well, I would not argue that this statute is a perfect model of clarity, but I do think the most reasonable way to read the entire statute is that it does impose a single obligation to pay a penalty if you are an applicable individual and you are not subject to an exemption. And the reason I say that, if you look at the exemptions from the penalty, the very first one is, you are exempt from the penalty because you can't afford to purchase insurance. And it just doesn't seem reasonable to me to interpret the statute as Congress having said, well, you know, this person is exempt from paying a penalty because we find they can't afford to buy insurance, however they still have a legal obligation to buy insurance. That just doesn't seem reasonable. So I -- so I do think, although it's -- I certainly wouldn't argue it's clear -- that that's the best way to understand the statute as a whole. But again, I would say, you know, that's not essential to the question we're discussing now of whether the Anti-Injunction Act applies. Again, you know, I think -­",
+          "word_count": 190,
+          "start_position": {
+            "page": 28,
+            "line": 6
+          },
+          "end_position": {
+            "page": 29,
+            "line": 3
+          },
+          "absolute_pos": 663
+        },
+        {
+          "person_cat": "SCOTUS",
+          "person_key_name": "SOTOMAYOR",
+          "text": "Could you tell me why you think the Solicitor General's reading creates a problem?",
+          "word_count": 14,
+          "start_position": {
+            "page": 29,
+            "line": 4
+          },
+          "end_position": {
+            "page": 29,
+            "line": 6
+          },
+          "absolute_pos": 686
+        },
+        {
+          "person_cat": "Party",
+          "person_key_name": "ROBERT A. LONG, ESQ.",
+          "text": "Well, in going back to -- so if the result were to say simply, this is not -- oh, I'm sorry. The Solicitor General's reading. So now it's not -­",
+          "word_count": 27,
+          "start_position": {
+            "page": 29,
+            "line": 7
+          },
+          "end_position": {
+            "page": 29,
+            "line": 10
+          },
+          "absolute_pos": 689
+        },
+        {
+          "person_cat": "SCOTUS",
+          "person_key_name": "SOTOMAYOR",
+          "text": "That it is a jurisdictional bar, but there's an exemption for those items that Congress has designated solely as penalties that are not like taxes.",
+          "word_count": 25,
+          "start_position": {
+            "page": 29,
+            "line": 11
+          },
+          "end_position": {
+            "page": 29,
+            "line": 14
+          },
+          "absolute_pos": 693
+        },
+        {
+          "person_cat": "Party",
+          "person_key_name": "ROBERT A. LONG, ESQ.",
+          "text": "Right. Well, I mean, I think the Solicitor General's reading would probably create the fewest problems, as I understand it. I mean, my -- my main objection to the Solicitor General's reading is I don't think it makes a whole lot of sense. I mean, basically, the Solicitor General says every penalty in the Internal Revenue Code, every other penalty in the Affordable Care Act is -­",
+          "word_count": 65,
+          "start_position": {
+            "page": 29,
+            "line": 15
+          },
+          "end_position": {
+            "page": 29,
+            "line": 22
+          },
+          "absolute_pos": 697
+        },
+        {
+          "person_cat": "SCOTUS",
+          "person_key_name": "SOTOMAYOR",
+          "text": "But that's not -- that's carrying it too far, because he says if a penalty is designated as a tax by Congress, then it's subject to the AIA, and that's most of the code, the tax code. And he says for those portions of the Affordable Care Act that designate things as taxes, the AIA applies. So it's only -- and I haven't found another statute. I'm going to ask him if there's another one. It's only for those statutes in which Congress has designated something solely as a penalty.",
+          "word_count": 88,
+          "start_position": {
+            "page": 29,
+            "line": 23
+          },
+          "end_position": {
+            "page": 30,
+            "line": 7
+          },
+          "absolute_pos": 705
+        },
+        {
+          "person_cat": "Party",
+          "person_key_name": "ROBERT A. LONG, ESQ.",
+          "text": "Right.",
+          "word_count": 1,
+          "start_position": {
+            "page": 30,
+            "line": 8
+          },
+          "end_position": {
+            "page": 30,
+            "line": 8
+          },
+          "absolute_pos": 715
+        },
+        {
+          "person_cat": "SCOTUS",
+          "person_key_name": "SOTOMAYOR",
+          "text": "And not indicated that it is a tax.",
+          "word_count": 8,
+          "start_position": {
+            "page": 30,
+            "line": 9
+          },
+          "end_position": {
+            "page": 30,
+            "line": 10
+          },
+          "absolute_pos": 716
+        },
+        {
+          "person_cat": "Party",
+          "person_key_name": "ROBERT A. LONG, ESQ.",
+          "text": "Right.",
+          "word_count": 1,
+          "start_position": {
+            "page": 30,
+            "line": 11
+          },
+          "end_position": {
+            "page": 30,
+            "line": 11
+          },
+          "absolute_pos": 718
+        },
+        {
+          "person_cat": "SCOTUS",
+          "person_key_name": "SOTOMAYOR",
+          "text": "They don't fall within the AIA.",
+          "word_count": 6,
+          "start_position": {
+            "page": 30,
+            "line": 12
+          },
+          "end_position": {
+            "page": 30,
+            "line": 13
+          },
+          "absolute_pos": 719
+        },
+        {
+          "person_cat": "Party",
+          "person_key_name": "ROBERT A. LONG, ESQ.",
+          "text": "I think my -- my take on it is if you adopted the Solicitor General's approach, there are probably three penalties for alcohol and tobacco-related offenses at 5114(c), 5684, and 5761 that I think would be very difficult to distinguish from this one, and possibly the 527(j) penalty for failure to disclose political contributions. If there are no further questions, I would like to reserve my time.",
+          "word_count": 66,
+          "start_position": {
+            "page": 30,
+            "line": 14
+          },
+          "end_position": {
+            "page": 30,
+            "line": 22
+          },
+          "absolute_pos": 721
+        },
+        {
+          "person_cat": "SCOTUS",
+          "person_key_name": "ROBERTS",
+          "text": "Thank you, Mr. Long. General Verrilli.",
+          "word_count": 6,
+          "start_position": {
+            "page": 30,
+            "line": 23
+          },
+          "end_position": {
+            "page": 30,
+            "line": 24
+          },
+          "absolute_pos": 730
+        },
+        {
+          "person_cat": "Party",
+          "person_key_name": "DONALD B. VERRILLI, JR., ESQ.",
+          "text": "Mr. Chief Justice and may it please the Court: This case presents issues of great moment, and the Anti-Injunction Act does not bar the Court's consideration of those issues. That is so even though the Anti-Injunction Act is a jurisdictional limit that serves what this Court described in Clintwood Elkhorn as an exceedingly strong interest in protecting the financial stability of the Federal Government, and even though the minimum coverage provision of the Affordable Care Act is an exercise of Congress's taxing power as well as its commerce power. Congress has authority under the taxing power to enact a measure not labeled as a tax, and it did so when it put section 5000A into the Internal Revenue Code. But for purposes of the Anti-Injunction Act, the precise language Congress used is determinative. And there is no language in the Anti-Injunction Act -- excuse me, no language in section 5000A of the Affordable Care Act or in the Internal Revenue Code generally that provides a textual instruction that -­",
+          "word_count": 167,
+          "start_position": {
+            "page": 31,
+            "line": 2
+          },
+          "end_position": {
+            "page": 31,
+            "line": 23
+          },
+          "absolute_pos": 734
+        },
+        {
+          "person_cat": "SCOTUS",
+          "person_key_name": "ALITO",
+          "text": "General Verrilli, today you are arguing that the penalty is not a tax. Tomorrow you are going to be back and you will be arguing that the penalty is a tax. Has the Court ever held that something that is a tax for purposes of the taxing power under the Constitution is not a tax under the Anti-Injunction Act?",
+          "word_count": 59,
+          "start_position": {
+            "page": 31,
+            "line": 24
+          },
+          "end_position": {
+            "page": 32,
+            "line": 5
+          },
+          "absolute_pos": 756
+        },
+        {
+          "person_cat": "Party",
+          "person_key_name": "DONALD B. VERRILLI, JR., ESQ.",
+          "text": "No, Justice Alito, but the Court has held in the license tax cases that something can be a constitutional exercise of the taxing power whether or not it is called a tax. And that's because the nature of the inquiry that we will conduct tomorrow is different from the nature of the inquiry that we will conduct today. Tomorrow the question is whether Congress has the authority under the taxing power to enact it and the form of words doesn't have a dispositive effect on that analysis. Today we are construing statutory text where the precise choice of words does have a dispositive effect on the analysis.",
+          "word_count": 107,
+          "start_position": {
+            "page": 32,
+            "line": 6
+          },
+          "end_position": {
+            "page": 32,
+            "line": 18
+          },
+          "absolute_pos": 763
+        },
+        {
+          "person_cat": "SCOTUS",
+          "person_key_name": "SOTOMAYOR",
+          "text": "Well, General, you also have the Bailey child labor tax cases, because there the Court said that the tax, which was a prohibitory tax alone, was a tax subject to the AIA, and then it said it was beyond the Court's taxing power in a separate case, correct?",
+          "word_count": 48,
+          "start_position": {
+            "page": 32,
+            "line": 19
+          },
+          "end_position": {
+            "page": 32,
+            "line": 24
+          },
+          "absolute_pos": 776
+        },
+        {
+          "person_cat": "Party",
+          "person_key_name": "DONALD B. VERRILLI, JR., ESQ.",
+          "text": "Yes. I do think, Justice Sotomayor, that with respect to one of the arguments that my friend from the NFIB has made in of the brief, that Bailey against George is a significant problem because I think their argument on the constitutionality under the taxing power is essentially that the Affordable Care Act provision is the same thing as the provision that was held unconstitutional in Bailey against Drexel Furniture.",
+          "word_count": 70,
+          "start_position": {
+            "page": 32,
+            "line": 25
+          },
+          "end_position": {
+            "page": 33,
+            "line": 8
+          },
+          "absolute_pos": 782
+        },
+        {
+          "person_cat": "SCOTUS",
+          "person_key_name": "SOTOMAYOR",
+          "text": "That's a different issue. The question Justice -­",
+          "word_count": 7,
+          "start_position": {
+            "page": 33,
+            "line": 9
+          },
+          "end_position": {
+            "page": 33,
+            "line": 10
+          },
+          "absolute_pos": 791
+        },
+        {
+          "person_cat": "Party",
+          "person_key_name": "DONALD B. VERRILLI, JR., ESQ.",
+          "text": "But on the same day -­ right, but on the same day as Bailey against Drexel Furniture, the Court issued Bailey against George, which held that the Anti-Injunction Act did bar a challenge to that provision, even though the Court had concluded that it was invalid under the tax power. So -- and I think the reason for that has been -- is clear now after Williams Packing and Bob Jones, in that, in order to find that the Anti-Injunction Act doesn't apply to something that otherwise would be a tax that triggers it, you have to conclude essentially that there is no substantial argument that can be made in defense of it as a tax. We don't have that here, so I don't think you can get around the Anti-Injunction Act if the Court were to read it, as the amicus suggest it should be read, on that theory, but -­",
+          "word_count": 148,
+          "start_position": {
+            "page": 33,
+            "line": 11
+          },
+          "end_position": {
+            "page": 34,
+            "line": 2
+          },
+          "absolute_pos": 793
+        },
+        {
+          "person_cat": "SCOTUS",
+          "person_key_name": "GINSBURG",
+          "text": "Mr. Verrilli, a basic question about your argument. If you are right about the second part, that is, for purposes of the statute, the Anti-Injunction statute, this penalty does not constitute a tax, then does the Court need to decide whether the Anti-Injunction Act in other cases, where it does involve a tax, is jurisdictional?",
+          "word_count": 55,
+          "start_position": {
+            "page": 34,
+            "line": 3
+          },
+          "end_position": {
+            "page": 34,
+            "line": 9
+          },
+          "absolute_pos": 810
+        },
+        {
+          "person_cat": "Party",
+          "person_key_name": "DONALD B. VERRILLI, JR., ESQ.",
+          "text": "No. I apologize if I'm creating any confusion about that, Justice Ginsburg. We think by far the better route here is to understand the statute as we have proposed that it be construed as not applying here. From the perspective of the United States -- and if I could, I'd like to take a minute on this -- the idea that the Anti-Injunction Act would be construed as not being a jurisdictional provision is very troubling, and we don't think it's correct. And I would, if I could, follow up on a question, Justice Ginsburg, that you asked Mr. Long in terms of the language of the Anti-Injunction Act, 7421(a), which can be found at page 16a of the appendix to our brief. I'd ask the Court to compare that to the language of the very next provision in the code, which is on the next page of our statutory appendix, 17a, which is the refund statute, which we've talked about a little bit so far this morning, 7422(a). The refund statute this Court held in Dolan was jurisdictional, and the Court in both Dolan and Brockamp held that the statute of limitations that applies to the refund statute cases is jurisdictional. The language in 7422(a) is virtually identical to the language in 7421(a) -­",
+          "word_count": 212,
+          "start_position": {
+            "page": 34,
+            "line": 10
+          },
+          "end_position": {
+            "page": 35,
+            "line": 9
+          },
+          "absolute_pos": 817
+        },
+        {
+          "person_cat": "SCOTUS",
+          "person_key_name": "KENNEDY",
+          "text": "That is correct, although in the refund context, you have the sovereign immunity problem, in which we presume that has not been waived.",
+          "word_count": 23,
+          "start_position": {
+            "page": 35,
+            "line": 10
+          },
+          "end_position": {
+            "page": 35,
+            "line": 12
+          },
+          "absolute_pos": 842
+        },
+        {
+          "person_cat": "Party",
+          "person_key_name": "DONALD B. VERRILLI, JR., ESQ.",
+          "text": "Right. But I -- 7421(a) --",
+          "word_count": 4,
+          "start_position": {
+            "page": 35,
+            "line": 13
+          },
+          "end_position": {
+            "page": 35,
+            "line": 14
+          },
+          "absolute_pos": 845
+        },
+        {
+          "person_cat": "SCOTUS",
+          "person_key_name": "KENNEDY",
+          "text": "But you're -­",
+          "word_count": 2,
+          "start_position": {
+            "page": 35,
+            "line": 15
+          },
+          "end_position": {
+            "page": 35,
+            "line": 15
+          },
+          "absolute_pos": 847
+        },
+        {
+          "person_cat": "Party",
+          "person_key_name": "DONALD B. VERRILLI, JR., ESQ.",
+          "text": "-- and 7422(a) were the same -­",
+          "word_count": 5,
+          "start_position": {
+            "page": 35,
+            "line": 16
+          },
+          "end_position": {
+            "page": 35,
+            "line": 17
+          },
+          "absolute_pos": 848
+        },
+        {
+          "person_cat": "SCOTUS",
+          "person_key_name": "KENNEDY",
+          "text": "The language is quite parallel.",
+          "word_count": 5,
+          "start_position": {
+            "page": 35,
+            "line": 18
+          },
+          "end_position": {
+            "page": 35,
+            "line": 19
+          },
+          "absolute_pos": 850
+        },
+        {
+          "person_cat": "Party",
+          "person_key_name": "DONALD B. VERRILLI, JR., ESQ.",
+          "text": "And, originally, they were the same statutory provision. They were only separated out later. So, I do think that's the strongest textual indication, Justice Ginsburg, that -­ that 7421(a) is jurisdictional.",
+          "word_count": 30,
+          "start_position": {
+            "page": 35,
+            "line": 20
+          },
+          "end_position": {
+            "page": 35,
+            "line": 24
+          },
+          "absolute_pos": 852
+        },
+        {
+          "person_cat": "SCOTUS",
+          "person_key_name": "KAGAN",
+          "text": "General -­",
+          "word_count": 1,
+          "start_position": {
+            "page": 35,
+            "line": 25
+          },
+          "end_position": {
+            "page": 35,
+            "line": 25
+          },
+          "absolute_pos": 857
+        },
+        {
+          "person_cat": "SCOTUS",
+          "person_key_name": "GINSBURG",
+          "text": "But the question that I asked you is, if you're right that this penalty is not covered by section 7421, if you're right about that, why should we deal with the jurisdictional question at all? Because this statute, correct, the way you're reading -­ read it, doesn't involve a tax that's subject to the Anti-Injunction Act.",
+          "word_count": 55,
+          "start_position": {
+            "page": 36,
+            "line": 1
+          },
+          "end_position": {
+            "page": 36,
+            "line": 7
+          },
+          "absolute_pos": 858
+        },
+        {
+          "person_cat": "Party",
+          "person_key_name": "DONALD B. VERRILLI, JR., ESQ.",
+          "text": "Yes, that is exactly our position. And the reason we don't -­",
+          "word_count": 11,
+          "start_position": {
+            "page": 36,
+            "line": 8
+          },
+          "end_position": {
+            "page": 36,
+            "line": 9
+          },
+          "absolute_pos": 865
+        },
+        {
+          "person_cat": "SCOTUS",
+          "person_key_name": "GINSBURG",
+          "text": "So -- so, you agree that we would not -- if we agree with you about the correct interpretation of the statute, we need not decide the jurisdiction.",
+          "word_count": 26,
+          "start_position": {
+            "page": 36,
+            "line": 10
+          },
+          "end_position": {
+            "page": 36,
+            "line": 13
+          },
+          "absolute_pos": 867
+        },
+        {
+          "person_cat": "Party",
+          "person_key_name": "DONALD B. VERRILLI, JR., ESQ.",
+          "text": "There would be no reason to decide the jurisdictional issue.",
+          "word_count": 10,
+          "start_position": {
+            "page": 36,
+            "line": 14
+          },
+          "end_position": {
+            "page": 36,
+            "line": 15
+          },
+          "absolute_pos": 871
+        },
+        {
+          "person_cat": "SCOTUS",
+          "person_key_name": "KENNEDY",
+          "text": "Don't you want to know the answer? (Laughter.)",
+          "word_count": 8,
+          "start_position": {
+            "page": 36,
+            "line": 16
+          },
+          "end_position": {
+            "page": 36,
+            "line": 18
+          },
+          "absolute_pos": 873
+        },
+        {
+          "person_cat": "Party",
+          "person_key_name": "DONALD B. VERRILLI, JR., ESQ.",
+          "text": "Justice Kennedy, I think we all want to know the answer to a lot of things in this case. But -- but I do -- but I do think that the prudent course here is to construe the statute in the manner that we read it.",
+          "word_count": 44,
+          "start_position": {
+            "page": 36,
+            "line": 19
+          },
+          "end_position": {
+            "page": 36,
+            "line": 23
+          },
+          "absolute_pos": 876
+        },
+        {
+          "person_cat": "SCOTUS",
+          "person_key_name": "KENNEDY",
+          "text": "But you indicated -- there was a discussion earlier about why does the government really care, they have competent attorneys, et cetera. But -- and you began your argument by saying it would be very troubling to say that it's not jurisdictional. I'd like you to comment on that. It's not for us to tell a party what's in its best interests. It would seem to me that there might be some instances in which the government would want to litigate the validity of a tax right away and would want to waive. But you say it's -- that's not true; that it's very troubling.",
+          "word_count": 102,
+          "start_position": {
+            "page": 36,
+            "line": 24
+          },
+          "end_position": {
+            "page": 37,
+            "line": 9
+          },
+          "absolute_pos": 881
+        },
+        {
+          "person_cat": "Party",
+          "person_key_name": "DONALD B. VERRILLI, JR., ESQ.",
+          "text": "I think there are two problems. One is the problem that Justice Scalia identified, that if it's not jurisdictional, then courts have authority to craft equitable exceptions. And it may seem from where we stand now that that authority is or could be very, very tightly cabined, but if -- if this Court were to conclude that it isn't jurisdictional, that does empower courts to find other circumstances in which they might find it equitable to allow cases to go forward in the absence of -- despite the existence of the Anti-Injunction Act. And, second, although I certainly am not going to stand up here and disparage the attorneys from the United States in the slightest, the reality is that if this isn't jurisdictional, then it's -- the argument -- it's open to the argument that it's subject to forfeiture by a simple omission in failing to raise it in an answer. And that -- and that's a troubling prospect.",
+          "word_count": 155,
+          "start_position": {
+            "page": 37,
+            "line": 10
+          },
+          "end_position": {
+            "page": 38,
+            "line": 3
+          },
+          "absolute_pos": 892
+        },
+        {
+          "person_cat": "SCOTUS",
+          "person_key_name": "KAGAN",
+          "text": "General, can I ask -­",
+          "word_count": 4,
+          "start_position": {
+            "page": 38,
+            "line": 4
+          },
+          "end_position": {
+            "page": 38,
+            "line": 4
+          },
+          "absolute_pos": 911
+        },
+        {
+          "person_cat": "SCOTUS",
+          "person_key_name": "GINSBURG",
+          "text": "How likely is it -­",
+          "word_count": 4,
+          "start_position": {
+            "page": 38,
+            "line": 5
+          },
+          "end_position": {
+            "page": 38,
+            "line": 5
+          },
+          "absolute_pos": 912
+        },
+        {
+          "person_cat": "SCOTUS",
+          "person_key_name": "ROBERTS",
+          "text": "Justice Ginsburg.",
+          "word_count": 2,
+          "start_position": {
+            "page": 38,
+            "line": 6
+          },
+          "end_position": {
+            "page": 38,
+            "line": 6
+          },
+          "absolute_pos": 913
+        },
+        {
+          "person_cat": "SCOTUS",
+          "person_key_name": "GINSBURG",
+          "text": "How likely is it -- I mean, the government is going to be defending these suits. How likely is it that the government will overlook the Anti-Injunction Act? It seems to me that this is arming the government by saying it's waivable at the government's option.",
+          "word_count": 45,
+          "start_position": {
+            "page": 38,
+            "line": 7
+          },
+          "end_position": {
+            "page": 38,
+            "line": 12
+          },
+          "absolute_pos": 914
+        },
+        {
+          "person_cat": "Party",
+          "person_key_name": "DONALD B. VERRILLI, JR., ESQ.",
+          "text": "That's -- that is not our assessment of the institutional interests of the United States, Justice Ginsburg. And we do think that the -­ the right way to go in this case is to read the statute as not applying to the minimum coverage provision of -­ of the Affordable Care Act.",
+          "word_count": 49,
+          "start_position": {
+            "page": 38,
+            "line": 13
+          },
+          "end_position": {
+            "page": 38,
+            "line": 18
+          },
+          "absolute_pos": 920
+        },
+        {
+          "person_cat": "SCOTUS",
+          "person_key_name": "ROBERTS",
+          "text": "It was -- it was the calculation of the interests of the United States that your predecessor made in the Davis case. There, the Solicitor General exercised the authority that we sanctioned to waive the Anti-Injunction Act. And, of course, that couldn't be done if it were jurisdictional.",
+          "word_count": 47,
+          "start_position": {
+            "page": 38,
+            "line": 19
+          },
+          "end_position": {
+            "page": 38,
+            "line": 25
+          },
+          "absolute_pos": 926
+        },
+        {
+          "person_cat": "Party",
+          "person_key_name": "DONALD B. VERRILLI, JR., ESQ.",
+          "text": "That's true, Mr. Chief Justice. Several points about that, though. We do agree with Mr. Long's analysis that Davis occurred in -- during a time in -- in which under the Standard Nut case, the Court had interpreted the Anti-Injunction Act as doing no more than codifying the traditional equitable principles which allowed courts discretion to conclude that in certain circumstances, a case could go forward. Williams Packing repudiated that analysis, and Bob Jones v. Simon again repudiated that analysis and said, no, we're no longer abiding by that. It is true that the Davis case has not formally been overruled, but we do think it's fundamentally inconsistent with the Court's understanding now of -­",
+          "word_count": 112,
+          "start_position": {
+            "page": 39,
+            "line": 1
+          },
+          "end_position": {
+            "page": 39,
+            "line": 15
+          },
+          "absolute_pos": 933
+        },
+        {
+          "person_cat": "SCOTUS",
+          "person_key_name": "BREYER",
+          "text": "Davis was the case that -­ where a shareholder sues the corporation.",
+          "word_count": 11,
+          "start_position": {
+            "page": 39,
+            "line": 16
+          },
+          "end_position": {
+            "page": 39,
+            "line": 17
+          },
+          "absolute_pos": 948
+        },
+        {
+          "person_cat": "Party",
+          "person_key_name": "DONALD B. VERRILLI, JR., ESQ.",
+          "text": "Yes.",
+          "word_count": 1,
+          "start_position": {
+            "page": 39,
+            "line": 18
+          },
+          "end_position": {
+            "page": 39,
+            "line": 18
+          },
+          "absolute_pos": 950
+        },
+        {
+          "person_cat": "SCOTUS",
+          "person_key_name": "BREYER",
+          "text": "And the remedy is that the corporation shouldn't pay the money to the tax authority. Now, it's a little technical, but that isn't actually an injunction against the tax authority collecting. He's not -- they're not restraining the collection of the tax. They're saying to the taxpayer, don't pay it.",
+          "word_count": 49,
+          "start_position": {
+            "page": 39,
+            "line": 19
+          },
+          "end_position": {
+            "page": 39,
+            "line": 25
+          },
+          "absolute_pos": 951
+        },
+        {
+          "person_cat": "Party",
+          "person_key_name": "DONALD B. VERRILLI, JR., ESQ.",
+          "text": "Yes. And -­",
+          "word_count": 2,
+          "start_position": {
+            "page": 40,
+            "line": 1
+          },
+          "end_position": {
+            "page": 40,
+            "line": 1
+          },
+          "absolute_pos": 958
+        },
+        {
+          "person_cat": "SCOTUS",
+          "person_key_name": "BREYER",
+          "text": "I don't know how far that gets you.",
+          "word_count": 8,
+          "start_position": {
+            "page": 40,
+            "line": 2
+          },
+          "end_position": {
+            "page": 40,
+            "line": 3
+          },
+          "absolute_pos": 959
+        },
+        {
+          "person_cat": "Party",
+          "person_key_name": "DONALD B. VERRILLI, JR., ESQ.",
+          "text": "Well, in fairness, Justice Breyer, the United States did intervene in the -- in the Davis case and was a party, and so -- not as far as I'd like, I guess, is the answer.",
+          "word_count": 33,
+          "start_position": {
+            "page": 40,
+            "line": 4
+          },
+          "end_position": {
+            "page": 40,
+            "line": 7
+          },
+          "absolute_pos": 961
+        },
+        {
+          "person_cat": "SCOTUS",
+          "person_key_name": "SCALIA",
+          "text": "Don't do it again, because I think that goes too far. I don't think that's restraining the collection of a tax. It's restraining the payment of a tax.",
+          "word_count": 28,
+          "start_position": {
+            "page": 40,
+            "line": 8
+          },
+          "end_position": {
+            "page": 40,
+            "line": 11
+          },
+          "absolute_pos": 965
+        },
+        {
+          "person_cat": "Party",
+          "person_key_name": "DONALD B. VERRILLI, JR., ESQ.",
+          "text": "Well -­",
+          "word_count": 1,
+          "start_position": {
+            "page": 40,
+            "line": 12
+          },
+          "end_position": {
+            "page": 40,
+            "line": 12
+          },
+          "absolute_pos": 969
+        },
+        {
+          "person_cat": "SCOTUS",
+          "person_key_name": "SCALIA",
+          "text": "You don't want to let that bone go, right? (Laughter.)",
+          "word_count": 10,
+          "start_position": {
+            "page": 40,
+            "line": 13
+          },
+          "end_position": {
+            "page": 40,
+            "line": 15
+          },
+          "absolute_pos": 970
+        },
+        {
+          "person_cat": "Party",
+          "person_key_name": "DONALD B. VERRILLI, JR., ESQ.",
+          "text": "Our view here is that it is jurisdictional. Because it's jurisdictional as this Court understands jurisdiction now, it's not waivable. And, therefore, we don't think that -- that that part of the Davis decision is good law.",
+          "word_count": 36,
+          "start_position": {
+            "page": 40,
+            "line": 16
+          },
+          "end_position": {
+            "page": 40,
+            "line": 20
+          },
+          "absolute_pos": 973
+        },
+        {
+          "person_cat": "SCOTUS",
+          "person_key_name": "KAGAN",
+          "text": "General, can I ask you about Reed Elsevier? Justice Ginsburg suggested that the language was very similar in Reed Elsevier as it is here, but there are even further similarities. Reed Elsevier pointed out that the provision in question wasn't in Title 28. Here, too, it's not in Title 28. In Reed Elsevier, it was pointed out that the provision there had numerous exceptions to it. Here, too, there are numerous exceptions that we find that have been created by the courts over the years. In Reed Elsevier, the question was essentially one about timing. Come to court after you file your registration. Here, too, the question is one about timing. Come to court after you make -- after you pay your taxes. So, Reed Elsevier seems in multiple respects on all fours with this case. Why is that wrong?",
+          "word_count": 139,
+          "start_position": {
+            "page": 40,
+            "line": 21
+          },
+          "end_position": {
+            "page": 41,
+            "line": 13
+          },
+          "absolute_pos": 978
+        },
+        {
+          "person_cat": "Party",
+          "person_key_name": "DONALD B. VERRILLI, JR., ESQ.",
+          "text": "I don't think so, Justice Kagan. First, we think -- I guess I'm repeating myself and I apologize. But we think the closest analogue is the very next provision in the United States Code, 7422(a), which this Court has held is jurisdictional, and is phrased in exactly the same way as 7421(a). In fact, as I said, they were the same provision back in the earlier days. That's the closest analogue. This isn't -- and it's actually 7422 that's a statute that says do something first. But this statute is just a flat-out command that no suit shall be maintained to restrain -­",
+          "word_count": 100,
+          "start_position": {
+            "page": 41,
+            "line": 14
+          },
+          "end_position": {
+            "page": 41,
+            "line": 25
+          },
+          "absolute_pos": 996
+        },
+        {
+          "person_cat": "SCOTUS",
+          "person_key_name": "KAGAN",
+          "text": "I take the point -­",
+          "word_count": 4,
+          "start_position": {
+            "page": 42,
+            "line": 1
+          },
+          "end_position": {
+            "page": 42,
+            "line": 1
+          },
+          "absolute_pos": 1008
+        },
+        {
+          "person_cat": "Party",
+          "person_key_name": "DONALD B. VERRILLI, JR., ESQ.",
+          "text": "-- the assessment or collection.",
+          "word_count": 4,
+          "start_position": {
+            "page": 42,
+            "line": 2
+          },
+          "end_position": {
+            "page": 42,
+            "line": 3
+          },
+          "absolute_pos": 1009
+        },
+        {
+          "person_cat": "SCOTUS",
+          "person_key_name": "KAGAN",
+          "text": "-- but if you would comment on the similarities of Reed Elsevier to this case. How do you think it's different, at all?",
+          "word_count": 22,
+          "start_position": {
+            "page": 42,
+            "line": 4
+          },
+          "end_position": {
+            "page": 42,
+            "line": 6
+          },
+          "absolute_pos": 1011
+        },
+        {
+          "person_cat": "Party",
+          "person_key_name": "DONALD B. VERRILLI, JR., ESQ.",
+          "text": "Well, because the -- I think the best answer to that is there are no magic words, and that history and context matter, as the Court said in Henderson. And the history and context here is that 7422 and 7421 function together to protect an exceedingly strong interest that the Court has held with respect to 7422, sufficiently strong that it explains the jurisdictional nature of that. The same interest applies here. This isn't just a matter of do X and then you can -- and then you can come to court. It's just a fundamentally different set of interests at stake. So, we do think that that makes a big difference. And -­",
+          "word_count": 111,
+          "start_position": {
+            "page": 42,
+            "line": 7
+          },
+          "end_position": {
+            "page": 42,
+            "line": 20
+          },
+          "absolute_pos": 1014
+        },
+        {
+          "person_cat": "SCOTUS",
+          "person_key_name": "GINSBURG",
+          "text": "Why isn't Reed Elsevier -- if you're dividing jurisdiction from claims processing -- it says you have to register before you can sue. There are a lot of things you have to do before you can sue. So, why isn't Reed Elsevier like you have to pay a filing fee before you can file a complaint?",
+          "word_count": 54,
+          "start_position": {
+            "page": 42,
+            "line": 21
+          },
+          "end_position": {
+            "page": 43,
+            "line": 2
+          },
+          "absolute_pos": 1028
+        },
+        {
+          "person_cat": "Party",
+          "person_key_name": "DONALD B. VERRILLI, JR., ESQ.",
+          "text": "It is -- we do think it's very much in that nature and different from this case, Your Honor. And one way I think it's helpful to get at this is to look at the history. We've cited a string of court of appeals cases in a footnote in our opening brief, and over time, it's been very consistent that the courts of appeals have treated the Anti-Injunction Act as a jurisdictional provision. Again, if the Court agrees with our statutory construction, you don't need to reach this issue. But they have -- in fact, one of those cases, the Hansen case, the district court in that case had dismissed the complaint under Federal Rule of Civil Procedure 12(b)(6). The Court of Appeals vacated and sent it back with instructions to dismiss under 12(b)(1), which is the subject matter jurisdiction provision. So I do think that, to the extent this issue is before the Court, it is jurisdictional, but it doesn't need to be before the Court because of the statutory construction argument that we had offered.",
+          "word_count": 175,
+          "start_position": {
+            "page": 43,
+            "line": 3
+          },
+          "end_position": {
+            "page": 43,
+            "line": 24
+          },
+          "absolute_pos": 1035
+        },
+        {
+          "person_cat": "SCOTUS",
+          "person_key_name": "GINSBURG",
+          "text": "On your statutory construction argument, is there any other exaction imposed under the Internal Revenue Code that would not qualify as a tax for Anti-Injunction Act purposes, or is 5000A just out there all by itself?",
+          "word_count": 36,
+          "start_position": {
+            "page": 43,
+            "line": 25
+          },
+          "end_position": {
+            "page": 44,
+            "line": 4
+          },
+          "absolute_pos": 1057
+        },
+        {
+          "person_cat": "Party",
+          "person_key_name": "DONALD B. VERRILLI, JR., ESQ.",
+          "text": "It's not quite out there all by itself. There are other provisions that fall outside of subchapter B of chapter 68 and, therefore, wouldn't be governed by the instruction in Section 6671(a), which answers the question about the applicability of the Act for most penalties. The ones that we've identified, and I may be overlapping a little bit with Mr. Long here, one is 26 U.S.C. 857, which imposes certain penalties in connection with the administration of real estate investment trusts. There are provisions that Mr. Long identified in his brief, Sections 6038(a) through (c) of the Code, which impose certain penalties with respect to reporting requirements for foreign corporations. We have, in addition, in footnote 22 at page 36 of our brief, identified three provisions that Mr. Long also identified about -- about alcohol and tobacco. Now -­",
+          "word_count": 137,
+          "start_position": {
+            "page": 44,
+            "line": 5
+          },
+          "end_position": {
+            "page": 44,
+            "line": 23
+          },
+          "absolute_pos": 1062
+        },
+        {
+          "person_cat": "SCOTUS",
+          "person_key_name": "SOTOMAYOR",
+          "text": "Could we address, General, the question of whether there are any collateral consequences for the failure to buy -- to not buy health insurance? Is the only consequence the payment of the penalty? The private respondents argue that there are other collateral consequences such as for people on probation who are disobeying the law, if they don't buy health insurance, they would be disobeying the law and could be subject to having their supervised release revoked.",
+          "word_count": 75,
+          "start_position": {
+            "page": 44,
+            "line": 24
+          },
+          "end_position": {
+            "page": 45,
+            "line": 9
+          },
+          "absolute_pos": 1081
+        },
+        {
+          "person_cat": "Party",
+          "person_key_name": "DONALD B. VERRILLI, JR., ESQ.",
+          "text": "Yes. That is not a correct reading of the statute, Justice Sotomayor. The only consequence that ensues is the tax penalty. And the -- we have made a representation, and it was a carefully made representation, in our brief that it is the interpretation of the agencies charged with interpreting this statute, the Treasury Department and the Department of Health and Human Services, that there is no other consequence apart from the tax penalty. And I do think, if I could talk for a couple of minutes about the argument that was discussed as to whether this can be conceived of as a suit just challenging the requirement, which is entirely stand-alone based on inferences drawn from the exemptions. I really don't think that's right. And if I could spend a minute on it, I think it's important. The exemptions in section 5000A, it is true that there are two categories of exemptions. There are exemptions to the penalty and exemptions to the subsection (a) requirement. But the -- but I think, not only as a practical matter, but I think there's a textual indication and even as a legal matter, they are -- they both function as exceptions to the requirement. First, as a practical matter, one of those exemptions is a hardship exemption. And if the Court will just bear with me for one minute here, it's at page 11A of the appendix to our brief. It provides that a person can go to the Secretary of HHS and obtain a hardship exemption for -- which would, as a formal matter here, excuse compliance with the penalty. It seems to me to make very little sense to say that someone who has gone to an official of the United States and obtained an exemption would, nonetheless, be in a position of being a law breaker. We think another way in which you can get to the same conclusion slightly differently is by considering the provision on the prior page, 10A, which is 5000A -- 5000A(e)(3), members of Indian tribes. Members of Indian tribes are exempt only from the penalty as a formal matter under the structure of the statute here; but, the reason for that is because members of Indian tribes obtain their healthcare through the Indian Health Service, which is a clinic-based system that doesn't involve insurance at all. It's an entirely different system. They were taken out of this statute because they get their healthcare through a different system. And it doesn't make any sense to think that persons getting their health care through the Indian Health Service are violating the law because -- exempt only from the penalty, but still under a legal obligation to have insurance, when the whole point of this is that they're supposed to be in a clinic-based system.",
+          "word_count": 462,
+          "start_position": {
+            "page": 45,
+            "line": 10
+          },
+          "end_position": {
+            "page": 47,
+            "line": 13
+          },
+          "absolute_pos": 1092
+        },
+        {
+          "person_cat": "SCOTUS",
+          "person_key_name": "SOTOMAYOR",
+          "text": "Is your whole point that this was inartful drafting by Congress, that, to the extent that there is an exemption under the penalty, it's an exemption from the legal obligation?",
+          "word_count": 30,
+          "start_position": {
+            "page": 47,
+            "line": 14
+          },
+          "end_position": {
+            "page": 47,
+            "line": 17
+          },
+          "absolute_pos": 1146
+        },
+        {
+          "person_cat": "Party",
+          "person_key_name": "DONALD B. VERRILLI, JR., ESQ.",
+          "text": "I guess what I would say about it, Your Honor, is that the way in which this statute is drafted doesn't permit the inference that my friends from the NFIB are trying to draw from it. And there is an additional textual indication of that, which one can find at page 13 of our reply brief. This is a provision that is 42 U.S.C. A, section 18022(e). This is a provision that provides for a certification that certain individuals can get. And it's the paragraph starting with the words \"other provisions,\" contains the quote. And it says, an individual with a certification that the individual is exempt from the requirement under section 5000A, by reason of section 5000A(e)(1) of such code, is entitled to a certificate that allows for enrollment in a particular program for this category of people. But you can see here, Congress is saying it's an exemption under 5000A(e)(1), which is the exemption from the penalty, and not the underlying requirement is, as Congress says, an exemption from the requirement of section 5000A.",
+          "word_count": 176,
+          "start_position": {
+            "page": 47,
+            "line": 18
+          },
+          "end_position": {
+            "page": 48,
+            "line": 14
+          },
+          "absolute_pos": 1150
+        },
+        {
+          "person_cat": "SCOTUS",
+          "person_key_name": "ALITO",
+          "text": "Subsection A says directly, \"an applicable individual shall ensure that the individual has the minimum essential coverage.\" And you are saying it doesn't really mean that, that if you're not subject to the penalty, you're not under an obligation to maintain the minimum essential coverage?",
+          "word_count": 45,
+          "start_position": {
+            "page": 48,
+            "line": 15
+          },
+          "end_position": {
+            "page": 48,
+            "line": 20
+          },
+          "absolute_pos": 1172
+        },
+        {
+          "person_cat": "Party",
+          "person_key_name": "DONALD B. VERRILLI, JR., ESQ.",
+          "text": "That's correct. And we think that is what Congress is saying, both in the provision I just pointed to, Your Honor, and by virtue of the fact -- by virtue of the way the exemptions work. I just think that's the -- reading this in context, that is the stronger reading of the statute.",
+          "word_count": 52,
+          "start_position": {
+            "page": 48,
+            "line": 21
+          },
+          "end_position": {
+            "page": 49,
+            "line": 1
+          },
+          "absolute_pos": 1178
+        },
+        {
+          "person_cat": "SCOTUS",
+          "person_key_name": "ROBERTS",
+          "text": "It makes it easy for the Government to drop the other shoe in the future, right? You have been under the law subject to this mandate all along. You have been exempt from the penalty, so all they have to do is take away the penalty.",
+          "word_count": 46,
+          "start_position": {
+            "page": 49,
+            "line": 2
+          },
+          "end_position": {
+            "page": 49,
+            "line": 7
+          },
+          "absolute_pos": 1184
+        },
+        {
+          "person_cat": "Party",
+          "person_key_name": "DONALD B. VERRILLI, JR., ESQ.",
+          "text": "I don't -- I don't think so, Mr. Chief Justice. I don't think it makes it easy for the Government in the future. We think this is the fairest reading of the statute, that the -- that the -­ you cannot infer from the fact that someone is exempt from the penalty, that they are still under an obligation to have insurance. That's just not the fairest reading of the statute.",
+          "word_count": 68,
+          "start_position": {
+            "page": 49,
+            "line": 8
+          },
+          "end_position": {
+            "page": 49,
+            "line": 15
+          },
+          "absolute_pos": 1190
+        },
+        {
+          "person_cat": "SCOTUS",
+          "person_key_name": "KAGAN",
+          "text": "Could I -­",
+          "word_count": 2,
+          "start_position": {
+            "page": 49,
+            "line": 16
+          },
+          "end_position": {
+            "page": 49,
+            "line": 16
+          },
+          "absolute_pos": 1198
+        },
+        {
+          "person_cat": "SCOTUS",
+          "person_key_name": "ALITO",
+          "text": "I'm sorry, go ahead.",
+          "word_count": 4,
+          "start_position": {
+            "page": 49,
+            "line": 17
+          },
+          "end_position": {
+            "page": 49,
+            "line": 17
+          },
+          "absolute_pos": 1199
+        },
+        {
+          "person_cat": "SCOTUS",
+          "person_key_name": "KAGAN",
+          "text": "The nature of the representation you made, that the only consequence is the penalty, suppose a person does not purchase insurance, a person who is obligated to do so under the statute, doesn't do it, pays the penalty instead, and that person finds herself in a position where she is asked the question, have you ever violated any federal law, would that person have violated a federal law?",
+          "word_count": 68,
+          "start_position": {
+            "page": 49,
+            "line": 18
+          },
+          "end_position": {
+            "page": 49,
+            "line": 25
+          },
+          "absolute_pos": 1200
+        },
+        {
+          "person_cat": "Party",
+          "person_key_name": "DONALD B. VERRILLI, JR., ESQ.",
+          "text": "No. Our position is that person should give the answer \"no.\"",
+          "word_count": 11,
+          "start_position": {
+            "page": 50,
+            "line": 1
+          },
+          "end_position": {
+            "page": 50,
+            "line": 2
+          },
+          "absolute_pos": 1208
+        },
+        {
+          "person_cat": "SCOTUS",
+          "person_key_name": "KAGAN",
+          "text": "And that's because -­",
+          "word_count": 3,
+          "start_position": {
+            "page": 50,
+            "line": 3
+          },
+          "end_position": {
+            "page": 50,
+            "line": 3
+          },
+          "absolute_pos": 1210
+        },
+        {
+          "person_cat": "Party",
+          "person_key_name": "DONALD B. VERRILLI, JR., ESQ.",
+          "text": "That if they don't pay the tax, they violated a federal law.",
+          "word_count": 12,
+          "start_position": {
+            "page": 50,
+            "line": 4
+          },
+          "end_position": {
+            "page": 50,
+            "line": 5
+          },
+          "absolute_pos": 1211
+        },
+        {
+          "person_cat": "SCOTUS",
+          "person_key_name": "KAGAN",
+          "text": "But as long as they pay the penalty -­",
+          "word_count": 8,
+          "start_position": {
+            "page": 50,
+            "line": 6
+          },
+          "end_position": {
+            "page": 50,
+            "line": 7
+          },
+          "absolute_pos": 1213
+        },
+        {
+          "person_cat": "Party",
+          "person_key_name": "DONALD B. VERRILLI, JR., ESQ.",
+          "text": "If they pay the tax, then they are in compliance with the law.",
+          "word_count": 13,
+          "start_position": {
+            "page": 50,
+            "line": 8
+          },
+          "end_position": {
+            "page": 50,
+            "line": 9
+          },
+          "absolute_pos": 1215
+        },
+        {
+          "person_cat": "SCOTUS",
+          "person_key_name": "BREYER",
+          "text": "Why do you keep saying it's a tax?",
+          "word_count": 8,
+          "start_position": {
+            "page": 50,
+            "line": 10
+          },
+          "end_position": {
+            "page": 50,
+            "line": 11
+          },
+          "absolute_pos": 1217
+        },
+        {
+          "person_cat": "Party",
+          "person_key_name": "DONALD B. VERRILLI, JR., ESQ.",
+          "text": "If they pay the tax penalty, they're in compliance with the law.",
+          "word_count": 12,
+          "start_position": {
+            "page": 50,
+            "line": 12
+          },
+          "end_position": {
+            "page": 50,
+            "line": 13
+          },
+          "absolute_pos": 1219
+        },
+        {
+          "person_cat": "SCOTUS",
+          "person_key_name": "BREYER",
+          "text": "Thank you.",
+          "word_count": 2,
+          "start_position": {
+            "page": 50,
+            "line": 14
+          },
+          "end_position": {
+            "page": 50,
+            "line": 14
+          },
+          "absolute_pos": 1221
+        },
+        {
+          "person_cat": "Party",
+          "person_key_name": "DONALD B. VERRILLI, JR., ESQ.",
+          "text": "Thank you, Justice Breyer.",
+          "word_count": 4,
+          "start_position": {
+            "page": 50,
+            "line": 15
+          },
+          "end_position": {
+            "page": 50,
+            "line": 16
+          },
+          "absolute_pos": 1222
+        },
+        {
+          "person_cat": "SCOTUS",
+          "person_key_name": "BREYER",
+          "text": "The penalty.",
+          "word_count": 2,
+          "start_position": {
+            "page": 50,
+            "line": 17
+          },
+          "end_position": {
+            "page": 50,
+            "line": 17
+          },
+          "absolute_pos": 1224
+        },
+        {
+          "person_cat": "Party",
+          "person_key_name": "DONALD B. VERRILLI, JR., ESQ.",
+          "text": "Right. That's right.",
+          "word_count": 3,
+          "start_position": {
+            "page": 50,
+            "line": 18
+          },
+          "end_position": {
+            "page": 50,
+            "line": 18
+          },
+          "absolute_pos": 1225
+        },
+        {
+          "person_cat": "SCOTUS",
+          "person_key_name": "ALITO",
+          "text": "Suppose a person who has been receiving medical care in an emergency room -- has no health insurance but, over the years, goes to the emergency room when the person wants medical care -­ goes to the emergency room, and the hospital says, well, fine, you are eligible for Medicaid, enroll in Medicaid. And the person says, no, I don't want that. I want to continue to get -- just get care here from the emergency room. Will the hospital be able to point to the mandate and say, well, you're obligated to enroll?",
+          "word_count": 91,
+          "start_position": {
+            "page": 50,
+            "line": 19
+          },
+          "end_position": {
+            "page": 51,
+            "line": 3
+          },
+          "absolute_pos": 1226
+        },
+        {
+          "person_cat": "Party",
+          "person_key_name": "DONALD B. VERRILLI, JR., ESQ.",
+          "text": "No, I don't think so, Justice Alito, for the same reason I just gave. I think that the -- that the answer in that situation is that that person, assuming that person -- well, if that person is eligible for Medicaid, they may well not be in a situation where they are going to face any tax penalty and therefore -­",
+          "word_count": 58,
+          "start_position": {
+            "page": 51,
+            "line": 4
+          },
+          "end_position": {
+            "page": 51,
+            "line": 10
+          },
+          "absolute_pos": 1236
+        },
+        {
+          "person_cat": "SCOTUS",
+          "person_key_name": "ALITO",
+          "text": "No, they are not facing the tax penalty.",
+          "word_count": 8,
+          "start_position": {
+            "page": 51,
+            "line": 11
+          },
+          "end_position": {
+            "page": 51,
+            "line": 12
+          },
+          "absolute_pos": 1243
+        },
+        {
+          "person_cat": "Party",
+          "person_key_name": "DONALD B. VERRILLI, JR., ESQ.",
+          "text": "Right, right.",
+          "word_count": 2,
+          "start_position": {
+            "page": 51,
+            "line": 13
+          },
+          "end_position": {
+            "page": 51,
+            "line": 13
+          },
+          "absolute_pos": 1245
+        },
+        {
+          "person_cat": "SCOTUS",
+          "person_key_name": "ALITO",
+          "text": "So the hospital will have to continue to give them care and pay for it themselves, and not require them to be enrolled in Medicaid.",
+          "word_count": 25,
+          "start_position": {
+            "page": 51,
+            "line": 14
+          },
+          "end_position": {
+            "page": 51,
+            "line": 16
+          },
+          "absolute_pos": 1246
+        },
+        {
+          "person_cat": "Party",
+          "person_key_name": "DONALD B. VERRILLI, JR., ESQ.",
+          "text": "Right.",
+          "word_count": 1,
+          "start_position": {
+            "page": 51,
+            "line": 17
+          },
+          "end_position": {
+            "page": 51,
+            "line": 17
+          },
+          "absolute_pos": 1249
+        },
+        {
+          "person_cat": "SCOTUS",
+          "person_key_name": "ALITO",
+          "text": "Will they be able to take this out and say, well, you really should -- you have a moral obligation to do it; the Congress of the United States has said, you have to enroll? No, they can't say that?",
+          "word_count": 39,
+          "start_position": {
+            "page": 51,
+            "line": 18
+          },
+          "end_position": {
+            "page": 51,
+            "line": 22
+          },
+          "absolute_pos": 1250
+        },
+        {
+          "person_cat": "Party",
+          "person_key_name": "DONALD B. VERRILLI, JR., ESQ.",
+          "text": "I do think it's -- I think it's certainly fair to say that Congress wants people in that position to sign up for Medicaid. I think that's absolutely right. And I think the statute is structured to accomplish that objective; but, the reality still is that the only consequence of noncompliance is the penalty.",
+          "word_count": 53,
+          "start_position": {
+            "page": 51,
+            "line": 23
+          },
+          "end_position": {
+            "page": 52,
+            "line": 4
+          },
+          "absolute_pos": 1255
+        },
+        {
+          "person_cat": "SCOTUS",
+          "person_key_name": "SOTOMAYOR",
+          "text": "General, but I thought the people who were eligible for Medicaid weren't subject to the penalty. Am I wrong? I could be just factually wrong.",
+          "word_count": 25,
+          "start_position": {
+            "page": 52,
+            "line": 5
+          },
+          "end_position": {
+            "page": 52,
+            "line": 8
+          },
+          "absolute_pos": 1262
+        },
+        {
+          "person_cat": "Party",
+          "person_key_name": "DONALD B. VERRILLI, JR., ESQ.",
+          "text": "Well, it all -- the penalty is keyed to income.",
+          "word_count": 9,
+          "start_position": {
+            "page": 52,
+            "line": 9
+          },
+          "end_position": {
+            "page": 52,
+            "line": 10
+          },
+          "absolute_pos": 1266
+        },
+        {
+          "person_cat": "SCOTUS",
+          "person_key_name": "SOTOMAYOR",
+          "text": "Yes.",
+          "word_count": 1,
+          "start_position": {
+            "page": 52,
+            "line": 11
+          },
+          "end_position": {
+            "page": 52,
+            "line": 11
+          },
+          "absolute_pos": 1268
+        },
+        {
+          "person_cat": "Party",
+          "person_key_name": "DONALD B. VERRILLI, JR., ESQ.",
+          "text": "And the -- it's keyed to a number of things. One is are -- are you making so little money that you aren't obligated to file a tax return. And if you're in that situation, you're not subject to the penalty. It's also if the cost of insurance would be more than 8 percent of your income, you aren't subject to the penalty. So, there isn't necessarily a precise mapping between somebody's income level and their Medicaid eligibility at the present moment. That will depend on where things are and what the eligibility requirements are in the State.",
+          "word_count": 96,
+          "start_position": {
+            "page": 52,
+            "line": 12
+          },
+          "end_position": {
+            "page": 52,
+            "line": 23
+          },
+          "absolute_pos": 1269
+        },
+        {
+          "person_cat": "SCOTUS",
+          "person_key_name": "SOTOMAYOR",
+          "text": "But those people below -­",
+          "word_count": 4,
+          "start_position": {
+            "page": 52,
+            "line": 24
+          },
+          "end_position": {
+            "page": 52,
+            "line": 25
+          },
+          "absolute_pos": 1281
+        },
+        {
+          "person_cat": "Party",
+          "person_key_name": "DONALD B. VERRILLI, JR., ESQ.",
+          "text": "But, as a general matter, for people below the poverty line, it's almost inconceivable that they're ever going to be subject to the penalty, and they would, after the Act's Medicaid reforms go into place, be eligible for Medicaid.",
+          "word_count": 39,
+          "start_position": {
+            "page": 53,
+            "line": 1
+          },
+          "end_position": {
+            "page": 53,
+            "line": 5
+          },
+          "absolute_pos": 1283
+        },
+        {
+          "person_cat": "SCOTUS",
+          "person_key_name": "BREYER",
+          "text": "So, is your point that the tax -- what we want to do is get money from these people. Most of them will bet -- get the money by buying the insurance, and that will help pay. But if they don't, they're going to pay this penalty, and that will help, too. And the fact that we put the latter in brings it within the taxing power. But as far as this Act is concerned, about the injunction, they called it a penalty and not a tax for a reason. They wanted it to fall outside that -­",
+          "word_count": 95,
+          "start_position": {
+            "page": 53,
+            "line": 6
+          },
+          "end_position": {
+            "page": 53,
+            "line": 15
+          },
+          "absolute_pos": 1288
+        },
+        {
+          "person_cat": "Party",
+          "person_key_name": "DONALD B. VERRILLI, JR., ESQ.",
+          "text": "Yes.",
+          "word_count": 1,
+          "start_position": {
+            "page": 53,
+            "line": 16
+          },
+          "end_position": {
+            "page": 53,
+            "line": 16
+          },
+          "absolute_pos": 1298
+        },
+        {
+          "person_cat": "SCOTUS",
+          "person_key_name": "BREYER",
+          "text": "-- it's in a different chapter, et cetera. Is that what the heart of what you're saying?",
+          "word_count": 16,
+          "start_position": {
+            "page": 53,
+            "line": 17
+          },
+          "end_position": {
+            "page": 53,
+            "line": 20
+          },
+          "absolute_pos": 1299
+        },
+        {
+          "person_cat": "Party",
+          "person_key_name": "DONALD B. VERRILLI, JR., ESQ.",
+          "text": "That's the essence of it. They called it a penalty. They didn't give any other textural instruction in the Affordable Care Act or in the Internal Revenue Code that that penalty should be treated as a tax -­",
+          "word_count": 37,
+          "start_position": {
+            "page": 53,
+            "line": 21
+          },
+          "end_position": {
+            "page": 53,
+            "line": 25
+          },
+          "absolute_pos": 1303
+        },
+        {
+          "person_cat": "SCOTUS",
+          "person_key_name": "ROBERTS",
+          "text": "Well, except you -­",
+          "word_count": 3,
+          "start_position": {
+            "page": 54,
+            "line": 1
+          },
+          "end_position": {
+            "page": 54,
+            "line": 1
+          },
+          "absolute_pos": 1308
+        },
+        {
+          "person_cat": "Party",
+          "person_key_name": "DONALD B. VERRILLI, JR., ESQ.",
+          "text": "-- for Anti-Injunction Act purposes.",
+          "word_count": 4,
+          "start_position": {
+            "page": 54,
+            "line": 2
+          },
+          "end_position": {
+            "page": 54,
+            "line": 3
+          },
+          "absolute_pos": 1309
+        },
+        {
+          "person_cat": "SCOTUS",
+          "person_key_name": "ROBERTS",
+          "text": "You agree with Mr. Long, isn't -- I mean, I thought you just agreed with Justice Breyer that one of the purposes of the provision is to raise revenue.",
+          "word_count": 28,
+          "start_position": {
+            "page": 54,
+            "line": 4
+          },
+          "end_position": {
+            "page": 54,
+            "line": 7
+          },
+          "absolute_pos": 1311
+        },
+        {
+          "person_cat": "Party",
+          "person_key_name": "DONALD B. VERRILLI, JR., ESQ.",
+          "text": "It will -- well, it will raise revenue. It has been predicted by the CBO that it will raise revenue, Your Honor. But even though that's the case -- and I think that would be true of any -- of any penalty, that it will raise some revenue, but even though that's the case, there still needs to be textual instruction in the statute that this penalty should be treated as a tax for Anti-Injunction Act purposes, and that's what's lacking here.",
+          "word_count": 79,
+          "start_position": {
+            "page": 54,
+            "line": 8
+          },
+          "end_position": {
+            "page": 54,
+            "line": 16
+          },
+          "absolute_pos": 1315
+        },
+        {
+          "person_cat": "SCOTUS",
+          "person_key_name": "ALITO",
+          "text": "After this takes effect, there may be a lot of people who are assessed the penalty and disagree either with whether they should be assessed the penalty at all or with the calculation of the amount of their penalty. So, under your interpretation of the Act, all of them can now go to court? None of them are barred by the Anti-Injunction Act?",
+          "word_count": 63,
+          "start_position": {
+            "page": 54,
+            "line": 17
+          },
+          "end_position": {
+            "page": 54,
+            "line": 24
+          },
+          "absolute_pos": 1324
+        },
+        {
+          "person_cat": "Party",
+          "person_key_name": "DONALD B. VERRILLI, JR., ESQ.",
+          "text": "Those are two different things, Justice Alito. I think for reasons that Justice Kennedy, I think, suggested in one of his questions to Mr. Long, all of the other doctrines, exhaustion of remedies and related doctrines, would still be there, and the United States would rely on them in those circumstances. And -- and so, I don't think the answer is that they can all go to court, no.",
+          "word_count": 68,
+          "start_position": {
+            "page": 54,
+            "line": 25
+          },
+          "end_position": {
+            "page": 55,
+            "line": 7
+          },
+          "absolute_pos": 1332
+        },
+        {
+          "person_cat": "SCOTUS",
+          "person_key_name": "SOTOMAYOR",
+          "text": "Well, why isn't -­",
+          "word_count": 3,
+          "start_position": {
+            "page": 55,
+            "line": 8
+          },
+          "end_position": {
+            "page": 55,
+            "line": 8
+          },
+          "absolute_pos": 1340
+        },
+        {
+          "person_cat": "SCOTUS",
+          "person_key_name": "ALITO",
+          "text": "Two former -- two former commissioners of the IRS have filed a brief saying that your interpretation is going to lead to a flood of litigation. Are they wrong on that?",
+          "word_count": 30,
+          "start_position": {
+            "page": 55,
+            "line": 9
+          },
+          "end_position": {
+            "page": 55,
+            "line": 12
+          },
+          "absolute_pos": 1341
+        },
+        {
+          "person_cat": "Party",
+          "person_key_name": "DONALD B. VERRILLI, JR., ESQ.",
+          "text": "Yes. We don't -- you know -- we've taken this position after very careful consideration, and we've assessed the institutional interests of the United States, and we think we're in the right place.",
+          "word_count": 31,
+          "start_position": {
+            "page": 55,
+            "line": 13
+          },
+          "end_position": {
+            "page": 55,
+            "line": 17
+          },
+          "absolute_pos": 1345
+        },
+        {
+          "person_cat": "SCOTUS",
+          "person_key_name": "SOTOMAYOR",
+          "text": "But tell me something, why isn't this case subject to the same bars that -­ that you list in your brief? The Tax Court, at least so far, considers constitutional challenges to statutes. So, why aren't we -- why isn't this case subject to a dismissal for failure to exhaust?",
+          "word_count": 48,
+          "start_position": {
+            "page": 55,
+            "line": 18
+          },
+          "end_position": {
+            "page": 55,
+            "line": 23
+          },
+          "absolute_pos": 1350
+        },
+        {
+          "person_cat": "Party",
+          "person_key_name": "DONALD B. VERRILLI, JR., ESQ.",
+          "text": "Because we don't -­ because the exhaustion would go to the individual amount owed, we think, and that's a different situation from this case. If the Court has no further questions.",
+          "word_count": 30,
+          "start_position": {
+            "page": 55,
+            "line": 24
+          },
+          "end_position": {
+            "page": 56,
+            "line": 3
+          },
+          "absolute_pos": 1356
+        },
+        {
+          "person_cat": "SCOTUS",
+          "person_key_name": "ROBERTS",
+          "text": "Thank you, General.",
+          "word_count": 3,
+          "start_position": {
+            "page": 56,
+            "line": 4
+          },
+          "end_position": {
+            "page": 56,
+            "line": 4
+          },
+          "absolute_pos": 1361
+        },
+        {
+          "person_cat": "Party",
+          "person_key_name": "DONALD B. VERRILLI, JR., ESQ.",
+          "text": "Thank you.",
+          "word_count": 2,
+          "start_position": {
+            "page": 56,
+            "line": 5
+          },
+          "end_position": {
+            "page": 56,
+            "line": 5
+          },
+          "absolute_pos": 1362
+        },
+        {
+          "person_cat": "SCOTUS",
+          "person_key_name": "ROBERTS",
+          "text": "Mr. Katsas.",
+          "word_count": 2,
+          "start_position": {
+            "page": 56,
+            "line": 6
+          },
+          "end_position": {
+            "page": 56,
+            "line": 6
+          },
+          "absolute_pos": 1363
+        },
+        {
+          "person_cat": "Party",
+          "person_key_name": "GREGORY G. KATSAS, ESQ.",
+          "text": "Mr. Chief Justice, and may it please the Court: Let me begin with the question whether the Anti-Injunction Act is jurisdictional. Justice Ginsburg, for reasons you suggested, we think the text of the Anti-Injunction Act is indistinguishable from the text of the statute that was unanimously held to be non-jurisdictional in Reed Elsevier. That statute said no suit shall be instituted. This statute says no suit shall be maintained. No -­",
+          "word_count": 70,
+          "start_position": {
+            "page": 56,
+            "line": 9
+          },
+          "end_position": {
+            "page": 56,
+            "line": 19
+          },
+          "absolute_pos": 1366
+        },
+        {
+          "person_cat": "SCOTUS",
+          "person_key_name": "GINSBURG",
+          "text": "They are different things.",
+          "word_count": 4,
+          "start_position": {
+            "page": 56,
+            "line": 20
+          },
+          "end_position": {
+            "page": 56,
+            "line": 21
+          },
+          "absolute_pos": 1377
+        },
+        {
+          "person_cat": "SCOTUS",
+          "person_key_name": "SOTOMAYOR",
+          "text": "Big difference, though -­",
+          "word_count": 3,
+          "start_position": {
+            "page": 56,
+            "line": 22
+          },
+          "end_position": {
+            "page": 56,
+            "line": 23
+          },
+          "absolute_pos": 1379
+        },
+        {
+          "person_cat": "SCOTUS",
+          "person_key_name": "GINSBURG",
+          "text": "This says \"immediately\" -- the Reed Elsevier statute says immediately after instituted unless a copyright is registered.",
+          "word_count": 16,
+          "start_position": {
+            "page": 56,
+            "line": 24
+          },
+          "end_position": {
+            "page": 57,
+            "line": 2
+          },
+          "absolute_pos": 1381
+        },
+        {
+          "person_cat": "Party",
+          "person_key_name": "GREGORY G. KATSAS, ESQ.",
+          "text": "Unless the copyright is registered. And this goes -- this goes to the character of the lawsuit. The statute in Reed Elsevier says register your copyright and then come back to court.",
+          "word_count": 31,
+          "start_position": {
+            "page": 57,
+            "line": 3
+          },
+          "end_position": {
+            "page": 57,
+            "line": 6
+          },
+          "absolute_pos": 1385
+        },
+        {
+          "person_cat": "SCOTUS",
+          "person_key_name": "GINSBURG",
+          "text": "So, why isn't that like a filing fee? Before you can maintain a suit for copyright infringement, you have to register your copyright?",
+          "word_count": 23,
+          "start_position": {
+            "page": 57,
+            "line": 7
+          },
+          "end_position": {
+            "page": 57,
+            "line": 10
+          },
+          "absolute_pos": 1389
+        },
+        {
+          "person_cat": "Party",
+          "person_key_name": "GREGORY G. KATSAS, ESQ.",
+          "text": "It -- it's a precondition to filing suit. The -- the analogous precondition here is pay your taxes and then come back to court. The point is -­",
+          "word_count": 25,
+          "start_position": {
+            "page": 57,
+            "line": 11
+          },
+          "end_position": {
+            "page": 57,
+            "line": 14
+          },
+          "absolute_pos": 1393
+        },
+        {
+          "person_cat": "SCOTUS",
+          "person_key_name": "SOTOMAYOR",
+          "text": "No, that -- that's not true. The suit here has nothing to do with hearing the action. It has to do with the form of relief that Congress is barring. It's not permitting -- it is not a tax case; you can come in afterwards. It's not permitting the court to exercise what otherwise would be one of its powers.",
+          "word_count": 58,
+          "start_position": {
+            "page": 57,
+            "line": 15
+          },
+          "end_position": {
+            "page": 57,
+            "line": 21
+          },
+          "absolute_pos": 1397
+        },
+        {
+          "person_cat": "Party",
+          "person_key_name": "GREGORY G. KATSAS, ESQ.",
+          "text": "It has to be the same challenge, Justice Sotomayor, or else South Carolina v. Regan would say the Anti-Injunction Act doesn't apply. You are right that once you file -- once you pay your taxes and then file the refund action, the act of filing the taxes converts the suit from one seeking prospective relief into one seeking money damages. And in that sense, you could think of the statute as a remedial limitation on the courts. But whether you think of it as an exhaustion requirement or a remedial limitation, neither of those characterizations is jurisdictional. In Davis v. Passman you said that a remedial limitation doesn't go -­",
+          "word_count": 108,
+          "start_position": {
+            "page": 57,
+            "line": 22
+          },
+          "end_position": {
+            "page": 58,
+            "line": 10
+          },
+          "absolute_pos": 1404
+        },
+        {
+          "person_cat": "SCOTUS",
+          "person_key_name": "SOTOMAYOR",
+          "text": "It does seem strange to think of a -- a law that says no court can entertain a certain action and give a certain remedy as merely a claim-processing rule. What the -- the court is being ousted from -- from what would otherwise be its power to hear something.",
+          "word_count": 47,
+          "start_position": {
+            "page": 58,
+            "line": 11
+          },
+          "end_position": {
+            "page": 58,
+            "line": 16
+          },
+          "absolute_pos": 1418
+        },
+        {
+          "person_cat": "Party",
+          "person_key_name": "GREGORY G. KATSAS, ESQ.",
+          "text": "The suit is being delayed, I think is the right way of looking at it. The jurisdictional apparatus in the district court is present. Prospective relief under 1331, money damages action under 1346. If the Anti-Injunction Act were jurisdiction-ousting, one might have expected it to be in Title 28 and to qualify those statutes and to use jurisdictional limits.",
+          "word_count": 59,
+          "start_position": {
+            "page": 58,
+            "line": 17
+          },
+          "end_position": {
+            "page": 58,
+            "line": 24
+          },
+          "absolute_pos": 1424
+        },
+        {
+          "person_cat": "SCOTUS",
+          "person_key_name": "SOTOMAYOR",
+          "text": "So, how do you deal with this case and our Gonzalez -- our recent Gonzalez case, where we talked about -­",
+          "word_count": 19,
+          "start_position": {
+            "page": 58,
+            "line": 25
+          },
+          "end_position": {
+            "page": 59,
+            "line": 2
+          },
+          "absolute_pos": 1432
+        },
+        {
+          "person_cat": "Party",
+          "person_key_name": "GREGORY G. KATSAS, ESQ.",
+          "text": "Right.",
+          "word_count": 1,
+          "start_position": {
+            "page": 59,
+            "line": 3
+          },
+          "end_position": {
+            "page": 59,
+            "line": 3
+          },
+          "absolute_pos": 1435
+        },
+        {
+          "person_cat": "SCOTUS",
+          "person_key_name": "SOTOMAYOR",
+          "text": "-- the language of the COA statute that no appeal will be heard absent the issuance of?",
+          "word_count": 16,
+          "start_position": {
+            "page": 59,
+            "line": 4
+          },
+          "end_position": {
+            "page": 59,
+            "line": 6
+          },
+          "absolute_pos": 1436
+        },
+        {
+          "person_cat": "Party",
+          "person_key_name": "GREGORY G. KATSAS, ESQ.",
+          "text": "Gonzalez -- Gonzalez v. Thaler rests on a special rule that applies with respect to appeals from one Article III court to another. That's -- that explains Gonzalez, and it explains Bowles before it. You have five unanimous opinions in the last decade in which you have strongly gone the other direction on what counts as jurisdictional.",
+          "word_count": 55,
+          "start_position": {
+            "page": 59,
+            "line": 7
+          },
+          "end_position": {
+            "page": 59,
+            "line": 14
+          },
+          "absolute_pos": 1439
+        },
+        {
+          "person_cat": "SCOTUS",
+          "person_key_name": "SOTOMAYOR",
+          "text": "There is an argument that we should just simply say that Bowles applies only to appeals, but we haven't said that.",
+          "word_count": 21,
+          "start_position": {
+            "page": 59,
+            "line": 15
+          },
+          "end_position": {
+            "page": 59,
+            "line": 17
+          },
+          "absolute_pos": 1447
+        },
+        {
+          "person_cat": "Party",
+          "person_key_name": "GREGORY G. KATSAS, ESQ.",
+          "text": "No, you came very close. In Henderson, Justice Sotomayor, you said that Bowles, which is akin to Thaler, is explained by the special rule and understandings governing appeals from one Article III court to another. And you specifically said that it does not apply to situations involving a party seeking initial judicial review of agency action, which is what we have here. So, while you're right, the texts in Bowles and Thaler are not terribly different, those cases are explained by that principle. Under Henderson, it doesn't apply to this case. The text in this case speaks to the suit, the cause of action of the litigant. It doesn't speak to the jurisdiction or power of the court. The Anti-Injunction Act is placed in a section of the tax code governing procedure. It's not placed in -­",
+          "word_count": 136,
+          "start_position": {
+            "page": 59,
+            "line": 18
+          },
+          "end_position": {
+            "page": 60,
+            "line": 9
+          },
+          "absolute_pos": 1450
+        },
+        {
+          "person_cat": "SCOTUS",
+          "person_key_name": "SOTOMAYOR",
+          "text": "Counsel, all of those -­ all of that in particular -­",
+          "word_count": 9,
+          "start_position": {
+            "page": 60,
+            "line": 10
+          },
+          "end_position": {
+            "page": 60,
+            "line": 11
+          },
+          "absolute_pos": 1467
+        },
+        {
+          "person_cat": "Party",
+          "person_key_name": "GREGORY G. KATSAS, ESQ.",
+          "text": "You did rely on that in Reed Elsevier as one consideration.",
+          "word_count": 11,
+          "start_position": {
+            "page": 60,
+            "line": 12
+          },
+          "end_position": {
+            "page": 60,
+            "line": 13
+          },
+          "absolute_pos": 1469
+        },
+        {
+          "person_cat": "SCOTUS",
+          "person_key_name": "SOTOMAYOR",
+          "text": "And we haven't relied on it in other cases.",
+          "word_count": 9,
+          "start_position": {
+            "page": 60,
+            "line": 14
+          },
+          "end_position": {
+            "page": 60,
+            "line": 15
+          },
+          "absolute_pos": 1471
+        },
+        {
+          "person_cat": "Party",
+          "person_key_name": "GREGORY G. KATSAS, ESQ.",
+          "text": "Another -- another consideration in Reed Elsevier that cuts in our favor is the presence of exceptions. You said three in Reed Elsevier cut against jurisdictional characterization. Here, there are 11. And -­",
+          "word_count": 31,
+          "start_position": {
+            "page": 60,
+            "line": 16
+          },
+          "end_position": {
+            "page": 60,
+            "line": 20
+          },
+          "absolute_pos": 1473
+        },
+        {
+          "person_cat": "SCOTUS",
+          "person_key_name": "SOTOMAYOR",
+          "text": "Many of which themselves speak in very clear jurisdictional language.",
+          "word_count": 10,
+          "start_position": {
+            "page": 60,
+            "line": 21
+          },
+          "end_position": {
+            "page": 60,
+            "line": 22
+          },
+          "absolute_pos": 1478
+        },
+        {
+          "person_cat": "Party",
+          "person_key_name": "GREGORY G. KATSAS, ESQ.",
+          "text": "Well, some of them have no jurisdictional language at all, and not a single one of them uses the word \"jurisdiction\" to describe the ability of the court to restrain the assessment and collection of taxes, which is what one would have expected -­",
+          "word_count": 43,
+          "start_position": {
+            "page": 60,
+            "line": 23
+          },
+          "end_position": {
+            "page": 61,
+            "line": 3
+          },
+          "absolute_pos": 1480
+        },
+        {
+          "person_cat": "SCOTUS",
+          "person_key_name": "BREYER",
+          "text": "Basically, it begs the difference -- language is relevant. There are a lot of relevant things. But one thing that's relevant in my mind is that taxes are, for better or for worse, the life's blood of government.",
+          "word_count": 37,
+          "start_position": {
+            "page": 61,
+            "line": 4
+          },
+          "end_position": {
+            "page": 61,
+            "line": 8
+          },
+          "absolute_pos": 1486
+        },
+        {
+          "person_cat": "Party",
+          "person_key_name": "GREGORY G. KATSAS, ESQ.",
+          "text": "Yes.",
+          "word_count": 1,
+          "start_position": {
+            "page": 61,
+            "line": 9
+          },
+          "end_position": {
+            "page": 61,
+            "line": 9
+          },
+          "absolute_pos": 1491
+        },
+        {
+          "person_cat": "SCOTUS",
+          "person_key_name": "BREYER",
+          "text": "And so what Congress is trying to do is to say there is a procedure here that you go through. You can get your money back, or you go through the Tax Court, but don't do this in advance for the reason that we don't want 500 Federal judge -­ judges substituting their idea of what is a proper equitable defense, of when there is going to be an exception made about da, da, da, for the basic rule. No. Okay? And so there is strong reason that is there. You tried to apply that reason to the copyright law. You can't find it. Registration for the copyright register is not the life's blood of anything. Copyright exists regardless. So the reasoning isn't there. The language -- I see the similarity of language. I've got that. But it's the reasoning, the sort of underlying reason for not wanting a waiver here that --that is -- has a significant role in my mind of finding that it is jurisdictional. Plus the fact that we have said it nonstop since that Northrop or whatever that other case is.",
+          "word_count": 183,
+          "start_position": {
+            "page": 61,
+            "line": 10
+          },
+          "end_position": {
+            "page": 62,
+            "line": 5
+          },
+          "absolute_pos": 1492
+        },
+        {
+          "person_cat": "Party",
+          "person_key_name": "GREGORY G. KATSAS, ESQ.",
+          "text": "Justice Breyer, as to reasoning, you -- you give an argument -- you give an argument why, as a policy matter, it might make sense to have a non-jurisdictional statute. But of course, this Court's recent cases time and again say Congress has to clearly rank the statute as non-jurisdictional in its text and structure. It seems to me a general appeal to statutory policies doesn't speak with sufficient clarity -­",
+          "word_count": 68,
+          "start_position": {
+            "page": 62,
+            "line": 6
+          },
+          "end_position": {
+            "page": 62,
+            "line": 14
+          },
+          "absolute_pos": 1513
+        },
+        {
+          "person_cat": "SCOTUS",
+          "person_key_name": "BREYER",
+          "text": "That's fine. I just wanted to ask the question in case you wanted to answer the policy question.",
+          "word_count": 18,
+          "start_position": {
+            "page": 62,
+            "line": 15
+          },
+          "end_position": {
+            "page": 62,
+            "line": 17
+          },
+          "absolute_pos": 1522
+        },
+        {
+          "person_cat": "Party",
+          "person_key_name": "GREGORY G. KATSAS, ESQ.",
+          "text": "As to policy -- as to policy, I think Helvering against Davis is the refutation of this view. It is true that in most cases, the Government doesn't want and Congress doesn't want people coming into court. But Davis shows there may be some cases including, for instance, constitutional challenges to landmark Federal statutes where the Government sensibly decides that its revenue-raising purposes are better served by allowing a party to come into court and waiving its defense. That's what the Solicitor General did in Davis, and this Court accepted that waiver. As for prior cases, we have the holding in Davis and the holding in all of the equitable exception cases like Williams Packing, the Government -­",
+          "word_count": 116,
+          "start_position": {
+            "page": 62,
+            "line": 18
+          },
+          "end_position": {
+            "page": 63,
+            "line": 6
+          },
+          "absolute_pos": 1525
+        },
+        {
+          "person_cat": "SCOTUS",
+          "person_key_name": "SOTOMAYOR",
+          "text": "So why don't we say -­ why don't we say it's jurisdictional except when the Solicitor General waives?",
+          "word_count": 17,
+          "start_position": {
+            "page": 63,
+            "line": 7
+          },
+          "end_position": {
+            "page": 63,
+            "line": 9
+          },
+          "absolute_pos": 1539
+        },
+        {
+          "person_cat": "Party",
+          "person_key_name": "GREGORY G. KATSAS, ESQ.",
+          "text": "You have used -­",
+          "word_count": 3,
+          "start_position": {
+            "page": 63,
+            "line": 10
+          },
+          "end_position": {
+            "page": 63,
+            "line": 10
+          },
+          "absolute_pos": 1542
+        },
+        {
+          "person_cat": "SCOTUS",
+          "person_key_name": "SOTOMAYOR",
+          "text": "Why would that not promote Congress's policy of ensuring -- or Congress, explicitly says -­",
+          "word_count": 13,
+          "start_position": {
+            "page": 63,
+            "line": 11
+          },
+          "end_position": {
+            "page": 63,
+            "line": 13
+          },
+          "absolute_pos": 1543
+        },
+        {
+          "person_cat": "Party",
+          "person_key_name": "GREGORY G. KATSAS, ESQ.",
+          "text": "It's jurisdictional except when the Solicitor General waives it?",
+          "word_count": 9,
+          "start_position": {
+            "page": 63,
+            "line": 14
+          },
+          "end_position": {
+            "page": 63,
+            "line": 15
+          },
+          "absolute_pos": 1546
+        },
+        {
+          "person_cat": "SCOTUS",
+          "person_key_name": "SOTOMAYOR",
+          "text": "Yes. It's a contradiction in terms. I don't disagree. I don't disagree.",
+          "word_count": 12,
+          "start_position": {
+            "page": 63,
+            "line": 16
+          },
+          "end_position": {
+            "page": 63,
+            "line": 18
+          },
+          "absolute_pos": 1548
+        },
+        {
+          "person_cat": "Party",
+          "person_key_name": "GREGORY G. KATSAS, ESQ.",
+          "text": "It is a contradiction in terms. All of your cases analyze the situation as if the statute is jurisdictional, then it's not subject to waiver. If you were to construe this as such a one-of unique statute, it seems to me we would still win because the Solicitor General with full knowledge of the Anti-Injunction Act argument available to him affirmatively gave it up. This is not just a forfeiture where a Government lawyer is -- through inadvertence fails to raise an argument. This is a case where the Government -­",
+          "word_count": 89,
+          "start_position": {
+            "page": 63,
+            "line": 19
+          },
+          "end_position": {
+            "page": 64,
+            "line": 4
+          },
+          "absolute_pos": 1551
+        },
+        {
+          "person_cat": "SCOTUS",
+          "person_key_name": "SOTOMAYOR",
+          "text": "They raised it and then gave it up.",
+          "word_count": 8,
+          "start_position": {
+            "page": 64,
+            "line": 5
+          },
+          "end_position": {
+            "page": 64,
+            "line": 6
+          },
+          "absolute_pos": 1562
+        },
+        {
+          "person_cat": "Party",
+          "person_key_name": "GREGORY G. KATSAS, ESQ.",
+          "text": "They made it below. They know what it is; and not only are they not pursuing it here, they are affirmatively pursuing an argument on the other side.",
+          "word_count": 28,
+          "start_position": {
+            "page": 64,
+            "line": 7
+          },
+          "end_position": {
+            "page": 64,
+            "line": 10
+          },
+          "absolute_pos": 1564
+        },
+        {
+          "person_cat": "SCOTUS",
+          "person_key_name": "KAGAN",
+          "text": "Mr. Katsas, is your basic position that when we are talking about the jurisdiction of the district courts, a statute has to say it's jurisdictional to be jurisdictional?",
+          "word_count": 28,
+          "start_position": {
+            "page": 64,
+            "line": 11
+          },
+          "end_position": {
+            "page": 64,
+            "line": 14
+          },
+          "absolute_pos": 1568
+        },
+        {
+          "person_cat": "Party",
+          "person_key_name": "GREGORY G. KATSAS, ESQ.",
+          "text": "I wouldn't go quite that far. I think at a minimum, it has -- it has to either say that or at least be directed to the courts which is a formulation you have used in your cases and which is the formulation that Congress used in the Tax Injunction Act, but did not use in this Statute.",
+          "word_count": 57,
+          "start_position": {
+            "page": 64,
+            "line": 15
+          },
+          "end_position": {
+            "page": 64,
+            "line": 20
+          },
+          "absolute_pos": 1572
+        },
+        {
+          "person_cat": "SCOTUS",
+          "person_key_name": "KAGAN",
+          "text": "Well, how would -- I mean, I suppose one could try to make a distinction between this case and Reed Elsevier by focusing on the difference between instituting something and maintaining something, and suggesting that instituting is more what a litigant does, and maintaining, as opposed to dismissing, is more of what judge does.",
+          "word_count": 53,
+          "start_position": {
+            "page": 64,
+            "line": 21
+          },
+          "end_position": {
+            "page": 65,
+            "line": 2
+          },
+          "absolute_pos": 1578
+        },
+        {
+          "person_cat": "Party",
+          "person_key_name": "GREGORY G. KATSAS, ESQ.",
+          "text": "I don't think so, Justice Kagan, because we have an adversarial system, not an inquisitorial one. The parties maintain their lawsuits, I think, is the more natural way of thinking of it. If I could turn -- if I could turn to the merits question on the AIA before my time runs out. The purpose of this lawsuit is to challenge a requirement -- a Federal requirement to buy health insurance. That requirement itself is not a tax. And for that reason alone, we think the Anti-Injunction Act doesn't apply. What the amicus effectively seeks to do is extend the Anti-Injunction Act, not just to taxes which is how the statute is written, but to free-standing nontax legal duties. And it's just -­",
+          "word_count": 120,
+          "start_position": {
+            "page": 65,
+            "line": 3
+          },
+          "end_position": {
+            "page": 65,
+            "line": 17
+          },
+          "absolute_pos": 1585
+        },
+        {
+          "person_cat": "SCOTUS",
+          "person_key_name": "ROBERTS",
+          "text": "The whole point -­ the whole point of the suit is to prevent the collection of penalties.",
+          "word_count": 16,
+          "start_position": {
+            "page": 65,
+            "line": 18
+          },
+          "end_position": {
+            "page": 65,
+            "line": 20
+          },
+          "absolute_pos": 1600
+        },
+        {
+          "person_cat": "Party",
+          "person_key_name": "GREGORY G. KATSAS, ESQ.",
+          "text": "Of taxes, Mr. Chief Justice.",
+          "word_count": 5,
+          "start_position": {
+            "page": 65,
+            "line": 21
+          },
+          "end_position": {
+            "page": 65,
+            "line": 21
+          },
+          "absolute_pos": 1603
+        },
+        {
+          "person_cat": "SCOTUS",
+          "person_key_name": "ROBERTS",
+          "text": "Well, prevent the collection of taxes. But the idea that the mandate is something separate from whether you want to call it a penalty or tax just doesn't seem to make much sense.",
+          "word_count": 33,
+          "start_position": {
+            "page": 65,
+            "line": 22
+          },
+          "end_position": {
+            "page": 65,
+            "line": 25
+          },
+          "absolute_pos": 1604
+        },
+        {
+          "person_cat": "Party",
+          "person_key_name": "GREGORY G. KATSAS, ESQ.",
+          "text": "It's entirely separate, and let me explain to you why.",
+          "word_count": 10,
+          "start_position": {
+            "page": 66,
+            "line": 1
+          },
+          "end_position": {
+            "page": 66,
+            "line": 2
+          },
+          "absolute_pos": 1608
+        },
+        {
+          "person_cat": "SCOTUS",
+          "person_key_name": "ROBERTS",
+          "text": "It's a command. A mandate is a command. Now, if there is nothing behind the command, it's sort of, well, what happens if you don't follow the mandate? And the answer is nothing, it seems very artificial to separate the punishment from the crime.",
+          "word_count": 44,
+          "start_position": {
+            "page": 66,
+            "line": 3
+          },
+          "end_position": {
+            "page": 66,
+            "line": 8
+          },
+          "absolute_pos": 1610
+        },
+        {
+          "person_cat": "Party",
+          "person_key_name": "GREGORY G. KATSAS, ESQ.",
+          "text": "I'm not sure the answer is nothing, but even assuming it were nothing, it seems to me there is a difference between what the law requires and what enforcement consequences happen to you. This statute was very deliberately written to separate mandate from penalty in several different ways. They are put in separate sections. The mandate is described as a \"legal requirement\" no fewer than 20 times, three times in the operative text and 17 times in the findings. It's imposed through use of a mandatory verb \"shall.\" The requirement is very well defined in the statute, so it can't be sloughed off as a general exhortation, and it's backed up by a penalty. Congress then separated out mandate exceptions from penalty exceptions. It defined one category of people not subject to the mandate. One would think those are the category of people as to whom Congress is saying: You need not follow this law. It then defined a separate category of people not subject to the penalty, but subject to the mandate. I don't know what that could mean other than -­",
+          "word_count": 182,
+          "start_position": {
+            "page": 66,
+            "line": 9
+          },
+          "end_position": {
+            "page": 67,
+            "line": 4
+          },
+          "absolute_pos": 1616
+        },
+        {
+          "person_cat": "SCOTUS",
+          "person_key_name": "ROBERTS",
+          "text": "Why would you have a requirement that is completely toothless? You know, buy insurance or else. Or else what? Or else nothing.",
+          "word_count": 22,
+          "start_position": {
+            "page": 67,
+            "line": 5
+          },
+          "end_position": {
+            "page": 67,
+            "line": 7
+          },
+          "absolute_pos": 1637
+        },
+        {
+          "person_cat": "Party",
+          "person_key_name": "GREGORY G. KATSAS, ESQ.",
+          "text": "Because Congress reasonably could think that at least some people will follow the law precisely because it is the law. And let me give you an example of one category of person that might be -- the very poor, who are exempt from the penalty but subject to the mandate. Mr. Long says this must be a mandate exemption because it would be wholly harsh and unreasonable for Congress to expect people who are very poor to comply with the requirement to obtain health insurance when they have no means of doing so. That gets things exactly backwards. The very poor are the people Congress would be most concerned about with respect to the mandate to the extent one of the justifications for the mandate is to prevent emergency room cost shifting when people receive uncompensated care. So they would have had very good reason to make the very poor subject to the mandate, and then they didn't do it in a draconian way; they gave the very poor a means of complying with the insurance mandate, and that is through the Medicaid system.",
+          "word_count": 183,
+          "start_position": {
+            "page": 67,
+            "line": 8
+          },
+          "end_position": {
+            "page": 68,
+            "line": 2
+          },
+          "absolute_pos": 1640
+        },
+        {
+          "person_cat": "SCOTUS",
+          "person_key_name": "KAGAN",
+          "text": "Mr. Katsas, do you think a person who is subject to the mandate but not subject to the penalty would have standing?",
+          "word_count": 22,
+          "start_position": {
+            "page": 68,
+            "line": 3
+          },
+          "end_position": {
+            "page": 68,
+            "line": 5
+          },
+          "absolute_pos": 1660
+        },
+        {
+          "person_cat": "Party",
+          "person_key_name": "GREGORY G. KATSAS, ESQ.",
+          "text": "Yes, I think that person would, because that person is injured by compliance with the mandate.",
+          "word_count": 16,
+          "start_position": {
+            "page": 68,
+            "line": 6
+          },
+          "end_position": {
+            "page": 68,
+            "line": 8
+          },
+          "absolute_pos": 1663
+        },
+        {
+          "person_cat": "SCOTUS",
+          "person_key_name": "KAGAN",
+          "text": "What would that look like? What would the argument be as to what the injury was?",
+          "word_count": 16,
+          "start_position": {
+            "page": 68,
+            "line": 9
+          },
+          "end_position": {
+            "page": 68,
+            "line": 10
+          },
+          "absolute_pos": 1666
+        },
+        {
+          "person_cat": "Party",
+          "person_key_name": "GREGORY G. KATSAS, ESQ.",
+          "text": "The injury -- when that subject to the mandate, that person is required to purchase health insurance. That is a forced acquisition of an unwanted good. It's a classic pocketbook injury. But even if I'm wrong about that question, Justice Kagan, the question of who has standing to bring the challenge that we seek to bring seems to me very different -- your hypothetical plaintiff is very different from the actual plaintiffs. We have individuals who are planning for compliance in order to avoid a penalty, which is what their affidavits say. And we have the States, who will be subject no doubt to all sorts of adverse ramifications if they refuse to enroll in Medicaid the people who are forced into Medicaid by virtue of the mandate. So we don't have the problem of no adverse consequences in the case. And then, we have the separate distinction between the question of who has Article III standing in order to maintain a suit and the question of who is subject to a legal obligation. And you've said in your cases that even if there may be no one who has standing to challenge a legal obligation like the incompatibility clause or something, that doesn't somehow convert the legal obligation into a legal nullity. Finally, with respect to the States, even if we are wrong about everything I've said so far, the States clearly fall within the exception recognized in South Carolina against Regan. They are injured by the mandate because the mandate forces 6 million new people onto their Medicaid rolls. But they are not directly subject to the mandate, nor could they violate the mandate and incur a penalty.",
+          "word_count": 278,
+          "start_position": {
+            "page": 68,
+            "line": 11
+          },
+          "end_position": {
+            "page": 69,
+            "line": 18
+          },
+          "absolute_pos": 1668
+        },
+        {
+          "person_cat": "SCOTUS",
+          "person_key_name": "KAGAN",
+          "text": "Could I just understand, Mr. Katsas, when the States say that they are injured, are they talking about the people who are eligible now, but who are not enrolled? Or are they also talking about people who will become newly eligible?",
+          "word_count": 41,
+          "start_position": {
+            "page": 69,
+            "line": 19
+          },
+          "end_position": {
+            "page": 69,
+            "line": 23
+          },
+          "absolute_pos": 1701
+        },
+        {
+          "person_cat": "Party",
+          "person_key_name": "GREGORY G. KATSAS, ESQ.",
+          "text": "It's people who will enroll -­ people who wouldn't have enrolled had they been given a voluntary choice.",
+          "word_count": 17,
+          "start_position": {
+            "page": 69,
+            "line": 24
+          },
+          "end_position": {
+            "page": 70,
+            "line": 1
+          },
+          "absolute_pos": 1706
+        },
+        {
+          "person_cat": "SCOTUS",
+          "person_key_name": "KAGAN",
+          "text": "But who are eligible now.",
+          "word_count": 5,
+          "start_position": {
+            "page": 70,
+            "line": 2
+          },
+          "end_position": {
+            "page": 70,
+            "line": 2
+          },
+          "absolute_pos": 1709
+        },
+        {
+          "person_cat": "Party",
+          "person_key_name": "GREGORY G. KATSAS, ESQ.",
+          "text": "That's the largest category. I think there could be future eligibles who would enroll because they are subject to a legal obligation but wouldn't have enrolled if given a voluntary choice. But I'm happy to -- I'm happy to focus on currently eligible people who haven't enrolled in Medicaid. That particular class is the one that gives rise to, simply in Florida alone, a pocketbook injury on the order of 500 to $600 million per year.",
+          "word_count": 75,
+          "start_position": {
+            "page": 70,
+            "line": 3
+          },
+          "end_position": {
+            "page": 70,
+            "line": 11
+          },
+          "absolute_pos": 1710
+        },
+        {
+          "person_cat": "SCOTUS",
+          "person_key_name": "KAGAN",
+          "text": "But that does seem odd, to suggest that the State is being injured because people who could show up tomorrow with or without this law will -- will show up in greater numbers. I mean, presumably the State wants to cover people whom it has declared eligible for this benefit.",
+          "word_count": 49,
+          "start_position": {
+            "page": 70,
+            "line": 12
+          },
+          "end_position": {
+            "page": 70,
+            "line": 17
+          },
+          "absolute_pos": 1719
+        },
+        {
+          "person_cat": "Party",
+          "person_key_name": "GREGORY G. KATSAS, ESQ.",
+          "text": "They -- they could, but they don't. What the State wants to do is make Medicaid available to all who are eligible and choose to obtain it. And in any event -­",
+          "word_count": 30,
+          "start_position": {
+            "page": 70,
+            "line": 18
+          },
+          "end_position": {
+            "page": 70,
+            "line": 21
+          },
+          "absolute_pos": 1725
+        },
+        {
+          "person_cat": "SCOTUS",
+          "person_key_name": "GINSBURG",
+          "text": "Why would somebody not choose to obtain it? Why -- that's one puzzle to me. There's this category of people who are Medicaid eligible; Medicaid doesn't cost them anything. Why would they resist enrolling?",
+          "word_count": 33,
+          "start_position": {
+            "page": 70,
+            "line": 22
+          },
+          "end_position": {
+            "page": 71,
+            "line": 1
+          },
+          "absolute_pos": 1729
+        },
+        {
+          "person_cat": "Party",
+          "person_key_name": "GREGORY G. KATSAS, ESQ.",
+          "text": "I -- I don't know, Justice Ginsburg. All I know is that the difference between current enrollees and people who could enroll but have not is, as I said, on the -- is a $600 million delta. And -­",
+          "word_count": 36,
+          "start_position": {
+            "page": 71,
+            "line": 2
+          },
+          "end_position": {
+            "page": 71,
+            "line": 6
+          },
+          "absolute_pos": 1734
+        },
+        {
+          "person_cat": "SCOTUS",
+          "person_key_name": "GINSBURG",
+          "text": "But it may be just that they haven't been given sufficient information to understand that this is a benefit for them.",
+          "word_count": 21,
+          "start_position": {
+            "page": 71,
+            "line": 7
+          },
+          "end_position": {
+            "page": 71,
+            "line": 9
+          },
+          "absolute_pos": 1739
+        },
+        {
+          "person_cat": "Party",
+          "person_key_name": "GREGORY G. KATSAS, ESQ.",
+          "text": "It's possible, but all we're talking about right now is the standing of the States. And the only arguments made against the standing of the States -- I mean, there is a classic pocketbook injury here. The only arguments made about -- against the standing of the States are, number one, this results from third-party actions. That doesn't work, because the third-party actions are not unfettered in -- in the sense of Lujan; they are coerced in the sense of Bennett v. Spear. Those people are enrolling because they are under a legal obligation to do so. The second argument made against the States' standing is that the States somehow forfeit their ability to challenge the constitutionality of a provision of Federal law because they voluntarily choose to participate -­",
+          "word_count": 126,
+          "start_position": {
+            "page": 71,
+            "line": 10
+          },
+          "end_position": {
+            "page": 71,
+            "line": 25
+          },
+          "absolute_pos": 1742
+        },
+        {
+          "person_cat": "SCOTUS",
+          "person_key_name": "SOTOMAYOR",
+          "text": "I'm -- I'm a little bit confused. And this is what I'm confused about. There -- there is a challenge to the individual mandate.",
+          "word_count": 22,
+          "start_position": {
+            "page": 72,
+            "line": 1
+          },
+          "end_position": {
+            "page": 72,
+            "line": 3
+          },
+          "absolute_pos": 1758
+        },
+        {
+          "person_cat": "Party",
+          "person_key_name": "GREGORY G. KATSAS, ESQ.",
+          "text": "Yes.",
+          "word_count": 1,
+          "start_position": {
+            "page": 72,
+            "line": 4
+          },
+          "end_position": {
+            "page": 72,
+            "line": 4
+          },
+          "absolute_pos": 1761
+        },
+        {
+          "person_cat": "SCOTUS",
+          "person_key_name": "SOTOMAYOR",
+          "text": "All right. What is -­ the fact that the State is challenging Medicaid, how does it give the State standing to challenge an obligation that is not imposed on the State in any way?",
+          "word_count": 33,
+          "start_position": {
+            "page": 72,
+            "line": 5
+          },
+          "end_position": {
+            "page": 72,
+            "line": 8
+          },
+          "absolute_pos": 1762
+        },
+        {
+          "person_cat": "Party",
+          "person_key_name": "GREGORY G. KATSAS, ESQ.",
+          "text": "The -- the principal theory for State standing is that States are challenging the mandate because the mandate injures them when people are forced to enroll in Medicaid. Now, it is true they are not directly subject to the mandate, but -­",
+          "word_count": 40,
+          "start_position": {
+            "page": 72,
+            "line": 9
+          },
+          "end_position": {
+            "page": 72,
+            "line": 14
+          },
+          "absolute_pos": 1766
+        },
+        {
+          "person_cat": "SCOTUS",
+          "person_key_name": "SOTOMAYOR",
+          "text": "Yes. That's what I'm -­",
+          "word_count": 4,
+          "start_position": {
+            "page": 72,
+            "line": 15
+          },
+          "end_position": {
+            "page": 72,
+            "line": 15
+          },
+          "absolute_pos": 1772
+        },
+        {
+          "person_cat": "Party",
+          "person_key_name": "GREGORY G. KATSAS, ESQ.",
+          "text": "Okay. Let me -- let me try to -­",
+          "word_count": 7,
+          "start_position": {
+            "page": 72,
+            "line": 16
+          },
+          "end_position": {
+            "page": 72,
+            "line": 17
+          },
+          "absolute_pos": 1773
+        },
+        {
+          "person_cat": "SCOTUS",
+          "person_key_name": "SOTOMAYOR",
+          "text": "-- a little confused by.",
+          "word_count": 4,
+          "start_position": {
+            "page": 72,
+            "line": 18
+          },
+          "end_position": {
+            "page": 72,
+            "line": 18
+          },
+          "absolute_pos": 1775
+        },
+        {
+          "person_cat": "Party",
+          "person_key_name": "GREGORY G. KATSAS, ESQ.",
+          "text": "Let me try it this way -- may I finish the thought?",
+          "word_count": 11,
+          "start_position": {
+            "page": 72,
+            "line": 19
+          },
+          "end_position": {
+            "page": 72,
+            "line": 20
+          },
+          "absolute_pos": 1776
+        },
+        {
+          "person_cat": "SCOTUS",
+          "person_key_name": "ROBERTS",
+          "text": "Go ahead.",
+          "word_count": 2,
+          "start_position": {
+            "page": 72,
+            "line": 21
+          },
+          "end_position": {
+            "page": 72,
+            "line": 21
+          },
+          "absolute_pos": 1778
+        },
+        {
+          "person_cat": "Party",
+          "person_key_name": "GREGORY G. KATSAS, ESQ.",
+          "text": "In South Carolina v. Regan, the State was not subject to the tax at issue. The State was harmed because -- as the issuer of the bonds, and the bond holders were the ones subject to the tax. So the State is injured not because it is the direct object of the Federal tax, but because of its relationship to the regulated party as issuer/bond holder.",
+          "word_count": 65,
+          "start_position": {
+            "page": 72,
+            "line": 22
+          },
+          "end_position": {
+            "page": 73,
+            "line": 3
+          },
+          "absolute_pos": 1779
+        },
+        {
+          "person_cat": "SCOTUS",
+          "person_key_name": "ROBERTS",
+          "text": "Thank you, Mr. Katsas.",
+          "word_count": 4,
+          "start_position": {
+            "page": 73,
+            "line": 4
+          },
+          "end_position": {
+            "page": 73,
+            "line": 5
+          },
+          "absolute_pos": 1786
+        },
+        {
+          "person_cat": "Party",
+          "person_key_name": "GREGORY G. KATSAS, ESQ.",
+          "text": "Thank you, Mr. Chief Justice.",
+          "word_count": 5,
+          "start_position": {
+            "page": 73,
+            "line": 6
+          },
+          "end_position": {
+            "page": 73,
+            "line": 6
+          },
+          "absolute_pos": 1788
+        },
+        {
+          "person_cat": "SCOTUS",
+          "person_key_name": "ROBERTS",
+          "text": "Mr. Long, you have 5 minutes remaining.",
+          "word_count": 7,
+          "start_position": {
+            "page": 73,
+            "line": 7
+          },
+          "end_position": {
+            "page": 73,
+            "line": 8
+          },
+          "absolute_pos": 1789
+        },
+        {
+          "person_cat": "Party",
+          "person_key_name": "ROBERT A. LONG, ESQ.",
+          "text": "Everyone agrees that the section 5000A penalty shall be assessed and collected in the same manner as taxes. And the parties' principal argument why that does not make the Anti-Injunction Act applicable is that, well, that simply goes to the Secretary's activities. And I would simply ask, if -- if you look at chapters 63 and 64 of the Internal Revenue Code, which are the chapters on assessment and collection, they are not just addressed to the Secretary. There are many provisions in there that are addressed to courts and indeed talk about this interaction, the very limited situations in which courts are permitted to restrain the assessment and collection of taxes. There was a statement made that there aren't -- and many of the exceptions to the Anti-Injunction Act are in the assessment and collection provisions -- there was a statement made that none of these directly confer jurisdiction to restrain the assessment and collection of taxes. That's not true. In footnote 11 of our opening brief, we cite several. I'll simply mention section 6213 as an example. That says -- I quote: \"Notwithstanding the provisions of section 7421(a), the making of such assessment or the beginning of such proceeding or levy during the time such prohibition is in force may be enjoined by a proceeding in the proper court, including the Tax Court. The Tax Court shall have no jurisdiction to enjoin any action or proceeding or order any refund under this subsection unless a timely petition for redetermination of the deficiency has been filed, and then only in respect of the deficiency that is the subject of such petition.\"",
+          "word_count": 268,
+          "start_position": {
+            "page": 73,
+            "line": 11
+          },
+          "end_position": {
+            "page": 74,
+            "line": 18
+          },
+          "absolute_pos": 1793
+        },
+        {
+          "person_cat": "SCOTUS",
+          "person_key_name": "BREYER",
+          "text": "And all that's going to really what I think Congress's intent was meant to be in sticking the collection thing into chapter 68, and -­ and it's certainly an argument in your favor. The -- the over-arching thing in my mind is it's -- it's up to Congress, within leeway. And they did not use that word \"tax,\" and they did have a couple of exceptions. And it is true that all this language that you quote -- you know, the first two sentences and so forth, it talks about the use of tax in the IRC. It talks about the penalties and liabilities provided by this subchapter. And we look over here and it's a penalty and liability provided by a different law, which says collect it through the subchapter, and it has nothing to do with the IRC. See? So we've got it in a separate place, we can see pretty clearly what they're trying to do. They couldn't really care very much about interfering with collecting this one. That's all the statutory argument. Are you following me? You see? I'm trying to get you to focus on that kind of argument.",
+          "word_count": 190,
+          "start_position": {
+            "page": 74,
+            "line": 19
+          },
+          "end_position": {
+            "page": 75,
+            "line": 15
+          },
+          "absolute_pos": 1826
+        },
+        {
+          "person_cat": "Party",
+          "person_key_name": "ROBERT A. LONG, ESQ.",
+          "text": "I mean, I think I'm following you, but -- but the fact that it's not in the particular subchapter for assessable penalties in my view makes no difference, because they said it's still clearly -- it's assessed and collected in the same manner -­",
+          "word_count": 41,
+          "start_position": {
+            "page": 75,
+            "line": 16
+          },
+          "end_position": {
+            "page": 75,
+            "line": 20
+          },
+          "absolute_pos": 1848
+        },
+        {
+          "person_cat": "SCOTUS",
+          "person_key_name": "BREYER",
+          "text": "Yes, it is.",
+          "word_count": 3,
+          "start_position": {
+            "page": 75,
+            "line": 21
+          },
+          "end_position": {
+            "page": 75,
+            "line": 21
+          },
+          "absolute_pos": 1853
+        },
+        {
+          "person_cat": "Party",
+          "person_key_name": "ROBERT A. LONG, ESQ.",
+          "text": "-- as the penalty in that subchapter, and those penalties are collected in the same manner as taxes.",
+          "word_count": 17,
+          "start_position": {
+            "page": 75,
+            "line": 22
+          },
+          "end_position": {
+            "page": 75,
+            "line": 24
+          },
+          "absolute_pos": 1854
+        },
+        {
+          "person_cat": "SCOTUS",
+          "person_key_name": "BREYER",
+          "text": "Yes, yes.",
+          "word_count": 2,
+          "start_position": {
+            "page": 75,
+            "line": 25
+          },
+          "end_position": {
+            "page": 75,
+            "line": 25
+          },
+          "absolute_pos": 1857
+        },
+        {
+          "person_cat": "Party",
+          "person_key_name": "ROBERT A. LONG, ESQ.",
+          "text": "And so that's -- I think it's -­ it's rather detailed, but I think it's a rather clear indication that the Anti-Injunction Act applies. The -- the refund statute that does specifically refer to penalties, that has nothing to do with this argument that it's assessed and collected in the same manner as a tax. That would simply go to the point that well, you can't just call it a tax, because they've referred to it as a penalty. And finally, on jurisdiction, you know, I think the key point is we have a long line of this Court's decisions that's really been ratified by Congress, with all these exceptions in jurisdictional terms. As I read Bowles and John R. Sand & Gravel, the -- the gist of those decisions was not any special sort of rule about appeals, it's that when we have that situation, which I would submit applies as much to the collection of Federal taxes as it does to appeals from Federal district courts when we have this degree of -­ of precedent, including precedent from Congress in the form of amendments to this Anti-Injunction Act, that should be -- the presumption should be that this is jurisdictional. If there are no further questions.",
+          "word_count": 201,
+          "start_position": {
+            "page": 76,
+            "line": 1
+          },
+          "end_position": {
+            "page": 76,
+            "line": 25
+          },
+          "absolute_pos": 1858
+        },
+        {
+          "person_cat": "SCOTUS",
+          "person_key_name": "ROBERTS",
+          "text": "Mr. Long, you were invited by this Court to defend the proposition that the Anti-Injunction Act barred this litigation. You have ably carried out that responsibility, for which the Court is grateful.",
+          "word_count": 32,
+          "start_position": {
+            "page": 77,
+            "line": 1
+          },
+          "end_position": {
+            "page": 77,
+            "line": 5
+          },
+          "absolute_pos": 1883
+        },
+        {
+          "person_cat": "Party",
+          "person_key_name": "ROBERT A. LONG, ESQ.",
+          "text": "Thank you.",
+          "word_count": 2,
+          "start_position": {
+            "page": 77,
+            "line": 6
+          },
+          "end_position": {
+            "page": 77,
+            "line": 6
+          },
+          "absolute_pos": 1888
+        },
+        {
+          "person_cat": "SCOTUS",
+          "person_key_name": "ROBERTS",
+          "text": "We will continue argument in this case tomorrow.",
+          "word_count": 8,
+          "start_position": {
+            "page": 77,
+            "line": 7
+          },
+          "end_position": {
+            "page": 77,
+            "line": 8
+          },
+          "absolute_pos": 1889
+        }
+      ]
+  },
+  
+  "people": {
     "KAGAN": {
       "category": "SCOTUS",
-      "key_name": "KAGAN", "name": "KAGAN",
+      "key_name": "KAGAN",
       "party": "Justice",
       "bio": {
         "start_date": "2010-08-07",
@@ -15,7 +4421,7 @@
     },
     "SCALIA": {
       "category": "SCOTUS",
-      "key_name": "SCALIA", "name": "SCALIA",
+      "key_name": "SCALIA",
       "party": "Justice",
       "bio": {
         "start_date": "1986-09-26",
@@ -29,7 +4435,7 @@
     },
     "KENNEDY": {
       "category": "SCOTUS",
-      "key_name": "KENNEDY", "name": "KENNEDY",
+      "key_name": "KENNEDY",
       "party": "Justice",
       "bio": {
         "start_date": "1988-02-18",
@@ -43,7 +4449,7 @@
     },
     "ALITO": {
       "category": "SCOTUS",
-      "key_name": "ALITO", "name": "ALITO",
+      "key_name": "ALITO",
       "party": "Justice",
       "bio": {
         "start_date": "2006-01-31",
@@ -58,7 +4464,7 @@
     },
     "GINSBURG": {
       "category": "SCOTUS",
-      "key_name": "GINSBURG", "name": "GINSBURG",
+      "key_name": "GINSBURG",
       "party": "Justice",
       "bio": {
         "start_date": "1993-08-10",
@@ -72,7 +4478,7 @@
     },
     "BREYER": {
       "category": "SCOTUS",
-      "key_name": "BREYER", "name": "BREYER",
+      "key_name": "BREYER",
       "party": "Justice",
       "bio": {
         "start_date": "1994-08-03",
@@ -86,7 +4492,7 @@
     },
     "SOTOMAYOR": {
       "category": "SCOTUS",
-      "key_name": "SOTOMAYOR", "name": "SOTOMAYOR",
+      "key_name": "SOTOMAYOR",
       "party": "Justice",
       "bio": {
         "start_date": "2009-08-08",
@@ -100,7 +4506,7 @@
     },
     "THOMAS": {
       "category": "SCOTUS",
-      "key_name": "THOMAS", "name": "THOMAS",
+      "key_name": "THOMAS",
       "party": "Justice",
       "bio": {
         "start_date": "1991-10-23",
@@ -114,7 +4520,7 @@
     },
     "ROBERTS": {
       "category": "SCOTUS",
-      "key_name": "ROBERTS", "name": "ROBERTS",
+      "key_name": "ROBERTS",
       "party": "Justice",
       "bio": {
         "start_date": "2005-09-29",
@@ -128,7 +4534,7 @@
       }
     },
     "ROBERT A. LONG, ESQ.": {
-      "key_name": "ROBERT A. LONG, ESQ.", "name": "ROBERT A. LONG, ESQ.",
+      "key_name": "ROBERT A. LONG, ESQ.",
       "category": "Party",
       "bio": {
         "position": "Washington, D.C.; for Court-appointed amicus curiae",
@@ -141,7 +4547,7 @@
       "party": "Amicus curaie"
     },
     "DONALD B. VERRILLI, JR., ESQ.": {
-      "key_name": "DONALD B. VERRILLI, JR., ESQ.", "name": "DONALD B. VERRILLI, JR., ESQ.",
+      "key_name": "DONALD B. VERRILLI, JR., ESQ.",
       "category": "Party",
       "bio": {
         "position": "Solicitor General, Department of Justice, Washington, D.C.; on behalf of Petitioners.",
@@ -154,7 +4560,7 @@
       "party": "Petitioner"
     },
     "GREGORY G. KATSAS, ESQ.": {
-      "key_name": "GREGORY G. KATSAS, ESQ.", "name": "GREGORY G. KATSAS, ESQ.",
+      "key_name": "GREGORY G. KATSAS, ESQ.",
       "category": "Party",
       "bio": {
         "position": "Washington, D.C.; on behalf of Respondents.",
@@ -167,7 +4573,7 @@
       "party": "Respondent"
     },
     "PAUL D. CLEMENT, ESQ.": {
-      "key_name": "PAUL D. CLEMENT, ESQ.", "name": "PAUL D. CLEMENT, ESQ.",
+      "key_name": "PAUL D. CLEMENT, ESQ.",
       "category": "Party",
       "bio": {
         "position": "Washington, D.C.; on behalf of Respondents Florida, et al.",
@@ -180,7 +4586,7 @@
       "party": "Respondent"
     },
     "MICHAEL A. CARVIN, ESQ.": {
-      "key_name": "MICHAEL A. CARVIN, ESQ.", "name": "MICHAEL A. CARVIN, ESQ.",
+      "key_name": "MICHAEL A. CARVIN, ESQ.",
       "category": "Party",
       "bio": {
         "position": "Washington, D.C.; on behalf of Respondents NFIB, et al.",
@@ -192,4 +4598,5 @@
       },
       "party": "Respondent"
     }
-}}
+  }
+}
