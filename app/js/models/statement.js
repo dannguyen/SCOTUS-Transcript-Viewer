@@ -9,7 +9,8 @@ define([
 			is_focus: false
 		},
 
-	    initialize : function(){
+	    initialize : function(params){
+			this.pid = this.get('pid');
 //			_.bindAll(this);
 		}
   });

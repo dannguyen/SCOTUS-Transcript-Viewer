@@ -81,7 +81,7 @@ private
 			this.$focus_box.slideDown(100);
 		},
 		
-		_focusOff : function(){
+		_focusOff : function(){ //TK not dry
 			this.$('.apptk.show_all').slideUp(100);
 			this.collection.focusOff();
 			this.collection.each(function(_vm){_vm.trigger("show");});			

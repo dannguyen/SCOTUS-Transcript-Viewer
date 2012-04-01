@@ -19,6 +19,15 @@
 	display: none;
 }
 
+
 .statement{
 	margin-bottom: 2.0em;
+}
+
+.statement.highlight{
+	background: #dff;
+}
+
+.statement .person .name{
+	font-weight: bold;
 }

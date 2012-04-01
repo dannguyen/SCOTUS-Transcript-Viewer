@@ -1,8 +1,12 @@
 define([
-  'jquery',
-  'underscore', 
-  'backbone',
+  'order!jquery',
+  'order!underscore', 
+  'order!backbone',
+ 'order!js_other_plugins',
+  'order!js_smooth_plugin',
+	
 
+  
   'models/person',
   'models/statement',
 
@@ -14,7 +18,7 @@ define([
 //  'text!templates/stats.html'
   ], 
  //function($, _, Backbone, Todos, TodoView, statsTemplate){
-   function($, _, Backbone, 
+   function($, _, Backbone, js_other_plugins, js_smooth_plugin, 
 			PersonModel, StatementModel, FocusedCollection, PeoplePanelView, TranscriptView
  	){
 		
@@ -90,6 +94,7 @@ define([
 			// TK
 			var self = this;
 			
+			//////////////////
 			// people
 			_.each(data.people, function(_p){
 				var person = new PersonModel(_p);
@@ -98,10 +103,14 @@ define([
 			$("#init-message").html("Collections are loaded");				
 			
 			
+			//////////////
 			// statements
 			_.each(data.argument.statements, function(_s){
-				var statement = new StatementModel(_s);
-				self.statements.add(statement)
+				var p = self.people.find(function(_p){return _p.key_name === _s.person_key_name;})  // TK to be redone with diff data model
+				
+				// Caution: pid refers to person.cid; person.pid is an alias for cid
+				var statement = new StatementModel(_.extend(_s, {pid:p.pid, person_name:p.key_name}));
+				self.statements.add(statement);
 				
 			});
 			
@@ -114,7 +123,7 @@ define([
 			////////////////////////
 			// for transcript viewer mode
 			
-			this.mainview = new TranscriptView({collection: this.statements, id: "transcript"});
+			this.mainview = new TranscriptView({collection: this.statements, id: "transcript", people:this.people});
 			
 			this.mainscreen_el.append(this.mainview.render().el)
 		
@@ -129,7 +138,9 @@ define([
 		},
 		
 		_moveTranscript : function(dir, modil){
-		
+			var self = this;
+			
+			
 			if(dir == "next"){
 				console.log("_moveTranscript forward");
 			}else if(dir == "prev"){
@@ -137,11 +148,34 @@ define([
 			}else{
 				console.log("_moveTranscript to cid:  " + dir);
 			}
-			
+
 			if(!_.isUndefined(modil)){
-				console.log("  _moveTranscript filter by parent model.cid: " + modil.cid);
-				
+				console.log("  _moveTranscript filter by parent model.cid: " + modil.cid);				
 			}
+			var filter_classid = ".statement" + (!_.isUndefined(modil) ? '.' + modil.cid : '');
+
+			
+			/// TK XK
+			// tk spaghetti
+			// ## alias for $.statement_indiv_els
+
+			// find statement closest to what's in viewport
+			var t_scrolltop = $(window).scrollTop();
+			console.log("Scrolltop pos of transcript: " + t_scrolltop);
+			
+			var c_el = $("#transcript .statement").closestToTop(t_scrolltop);
+			console.log("current element is : " + c_el.attr('id'));
+			
+			console.log("looking for filter_classid: " + filter_classid );
+			var starget = c_el.nextAll(filter_classid).not('#'+c_el.attr('id')).first();
+			
+			console.log("found target: " + starget.attr('id'));	
+			console.log(starget.text());
+			
+			$.smoothScroll({
+		    	scrollTarget: starget
+		  	});
+			
 			
 		},
 		
