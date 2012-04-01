@@ -21,6 +21,11 @@
 .infobox{
 	cursor: pointer;
 }
+
+.infobox .focus{
+	display: none;
+}
+
 .infobox:hover{
 	background: #fcc;
 }
@@ -30,6 +35,7 @@
 	cursor: default;
 	font-weight: bold;
 }
+
 
 
 

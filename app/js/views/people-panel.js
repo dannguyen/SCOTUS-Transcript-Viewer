@@ -5,8 +5,7 @@ define([
   'models/person',
   'collections/focused',
    'views/person-infobox',
-  'text!templates/t-people-panel.html',
-  'text!templates/t-people-panel-focusbox.html'
+  'text!templates/t-people-panel.html'
 
 	], function($,_,Backbone,
 		PersonModel, FocusedCollection, PersonInfoboxView, 
@@ -19,7 +18,6 @@ define([
 		className : "panel",
 		tagName : "div",
 		template : _.template(templatePeoplePanel),
-		template_focus: _.template(templatePeoplePanelFocusbox),
 		
 		
 		
@@ -73,11 +71,12 @@ define([
 
 				this.$('.apptk.show_all').fadeOut(200);		
 				this.$focus_box.hide();				
+
 			}else if(this.mode == "focus"){				
 				
 				this.people_collection.filterUnfocused().each(function(_vm){ _vm.trigger("hide");});
+				
 				this._renderFocusbox( this._getFocusedPerson() );
-
 				this.$('.apptk.show_all').slideDown(100); 
 				this.$focus_box.slideDown(100);
 			}
@@ -145,6 +144,9 @@ private
 		},
 		
 		_setFocusedPerson : function(m){ 
+			//	sets reference to this.focused_model and alters focus on collection
+			//
+			
 			// pre: 		`m` contains a model in the panel collection to focus on
 			//				OR, null is passed in, which removes focus from collection
 			//				
@@ -166,9 +168,8 @@ private
 			// pre: 			m is equal to this.focusedModel
 			var self = this;
 		
-			this.$('.focusin').empty().html( 
-				self.template_focus(_.extend(m.toJSON())) 
-			);
+			
+			
 		},
 		
 		_onInfoboxClick : function(m){

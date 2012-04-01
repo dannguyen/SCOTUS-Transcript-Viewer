@@ -16,9 +16,9 @@ define([
 
 	    initialize: function() {
 			var self = this;
-	      _.bindAll(this, 'render', '_hide', '_show');
-		  this.model.on("change:is_focus", function(e, is_f){ self.$el.toggleClass("is_focus", is_f); });
-		
+	      _.bindAll(this, 'render', '_hide', '_show', '_onFocus');
+	
+		  this.model.on("change:is_focus", this._onFocus, this);
 		  this.model.on("hide", this._hide);
 		  this.model.on("show", this._show);
 		
@@ -29,6 +29,18 @@ define([
 			this.$el.html(this.template( this.model.toJSON() ));
      		return this;
 	    },
+	
+		_onFocus : function(e, is_f){
+			var self = this;
+			this.$el.toggleClass("is_focus", is_f);
+			// redundant?
+			if(is_f){
+				self.$('.focus').show(200);
+			}else{
+				self.$('.focus').hide(200);
+			}
+			
+		},
 
 		_hide: function(){
 			this.$el.hide(200);

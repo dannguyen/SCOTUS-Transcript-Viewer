@@ -3,22 +3,8 @@ define([
   'order!underscore', 
   'order!backbone',
   'order!controllers/controller'
-/*
- 'order!js_other_plugins',
-  'order!js_smooth_plugin',
-  'models/person',
-  'models/statement',
-  'collections/focused',
-  'views/people-panel',
-  'views/transcript'
-*/
 
- // 'views/todos',
-//  'text!templates/stats.html'
   ], 
- //function($, _, Backbone, Todos, TodoView, statsTemplate){
-  // function($, _, Backbone, js_other_plugins, js_smooth_plugin, 
-//			PersonModel, StatementModel, FocusedCollection, PeoplePanelView, TranscriptView
 	function($, _, Backbone, MyControllers		
  	){
 		
@@ -69,13 +55,6 @@ define([
 		/// PRIVATE THINGS THAT WILL TK
 		
 		// 
-		
-	
-		
-	
-		
-		
-		
 		
   });
   return AppView;
