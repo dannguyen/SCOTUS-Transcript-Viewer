@@ -36,10 +36,8 @@ define([
 		
 		_show: function(){
 			this.$el.show(200);
-		},
-
-
-
+		}
   });
+
   return PersonInfoboxView;
 });

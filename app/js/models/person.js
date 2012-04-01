@@ -27,7 +27,6 @@ define([
 				'statement_count' : self.statements.length,
 			});
 			
-			console.log(self.get('statement_count'))
 			
 		}
 		
