@@ -9,7 +9,7 @@ define([
 
 	], function($,_,Backbone,
 		PersonModel, FocusedCollection, PersonInfoboxView, 
-		templatePeoplePanel, templatePeoplePanelFocusbox
+		templatePeoplePanel
 	){
 
 	var PeoplePanelView = Backbone.View.extend({
@@ -42,7 +42,7 @@ define([
 			
 			var self = this;
 			this.$el.html(this.template( ));
-			this.$focus_box = this.$('.focusbox');
+			this.$focus_subpanel = this.$('.focus-subpanel');
 
 			// bind panel view events						
 			this.collection.each(function(_m){
@@ -63,22 +63,21 @@ define([
 		},
 		
 		subRender: function(){
-			// handle the re-rendering of the focus box
+			// handle the changing of panel controls
+			// each infobox handles its own .focus change upon change:is_focus
 			
 			// pre: 	model's is_focus change is handled by _focusOn
 			if(this.mode == "list"){
 				this.people_collection.each(function(_vm){_vm.trigger("show");});	
-
 				this.$('.apptk.show_all').fadeOut(200);		
-				this.$focus_box.hide();				
+				this.$focus_subpanel.hide();				
 
 			}else if(this.mode == "focus"){				
 				
 				this.people_collection.filterUnfocused().each(function(_vm){ _vm.trigger("hide");});
 				
-				this._renderFocusbox( this._getFocusedPerson() );
 				this.$('.apptk.show_all').slideDown(100); 
-				this.$focus_box.slideDown(100);
+				this.$focus_subpanel.slideDown(100);
 			}
 			
 		},
@@ -163,14 +162,6 @@ private
 		}, 
 		
 		
-		_renderFocusbox : function(m){
-			// called from: 	subRender 
-			// pre: 			m is equal to this.focusedModel
-			var self = this;
-		
-			
-			
-		},
 		
 		_onInfoboxClick : function(m){
 			this._focusOn(m);

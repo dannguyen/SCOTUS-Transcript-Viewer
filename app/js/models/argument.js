@@ -11,6 +11,7 @@ define([
 
 	    initialize : function(params){
 			// will have people_collection, statement_collection, section_collection
+			console.log("Argument initialize, name is :" + this.get("case_name"))
 		}
   });
 

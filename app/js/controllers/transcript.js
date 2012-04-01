@@ -6,15 +6,18 @@ define([
   'order!js_smooth_plugin',
   'models/person',
   'models/statement',
+  'models/argument',
+
   'collections/focused',
   'views/people-panel',
+  'views/argument-panel',
   'views/transcript'
 
  // 'views/todos',
 //  'text!templates/stats.html'
   ], 
    function($, _, Backbone, js_other_plugins, js_smooth_plugin, 
-			PersonModel, StatementModel, FocusedCollection, PeoplePanelView, TranscriptView
+			PersonModel, StatementModel, ArgumentModel, FocusedCollection, PeoplePanelView, ArgumentPanelView, TranscriptView
  	){
 		
 		// should not be a view, but TK
@@ -53,12 +56,12 @@ define([
 				// initializes collection AND views
 				var self = this;
 
-				////////////////////////
-				// for transcript viewer mode
+				this.argument = new ArgumentModel(data.argument);
+				
 			  	this.people = new FocusedCollection();
 			  	this.statements = new FocusedCollection();
 
-
+				
 				//////////////////
 				// people
 				_.each(data.people, function(_p){
@@ -106,12 +109,9 @@ define([
 					collection: this.statements, id: "transcript", people:this.people});
 				
 				this.app.renderMainscreen(this.mainscreen);
-
-
-					
 				/// append panels
-//				this.panels.case = new ArgumentPanelView({
-///					model: this.argument });
+				this.panels.case = new ArgumentPanelView({
+					model: this.argument });
 				this.panels.people = new PeoplePanelView({ collection:this.people, id : "people-panel"});
 			
 			

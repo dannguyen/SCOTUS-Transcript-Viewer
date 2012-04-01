@@ -8,7 +8,6 @@ require.config({
     backbone: 'libs/backbone/backbone',
 	js_other_plugins : 'libs/jquery/jquery-other-plugins',
 	js_smooth_plugin : 'libs/jquery/jquery-smooth-scroll'
-
   }
 
 });

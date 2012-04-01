@@ -36,10 +36,22 @@
 	font-weight: bold;
 }
 
+#mainnav{
+	background: #dff;
+	height: 60px; /* @mainnav-height*/
+	border-bottom: thin solid black;
+	padding: 10px;
+	position: fixed;
+	top: 0;
+	width: 700px;
+}
+
+#mainscreen section.content{
+	margin-top: 60px; /* @mainnav-height*/
+}
 
 
-
-.panel{
+#panels{
 	position: fixed;
 	width: 219px;
 }
@@ -51,8 +63,11 @@
 	list-style: none;
 }
 
-.panel .focusbox{
+.panel .focus-subpanel{
 	display: none;
+	padding: 10px;
+	border: thin dotted #888;
+	text-align: center;
 }
 
 
