@@ -3,7 +3,20 @@
 	cursor: pointer;
 }
 
+.apptk button{
+	margin-bottom: 5px;
+}
 
+
+.biobox .mugshot{
+	border: thin solid #888;
+	height: 120px;
+	width: 160px;
+}
+
+.focusin .lbl{
+	font-weight: bold;
+}
 
 .infobox{
 	cursor: pointer;
@@ -12,7 +25,24 @@
 	background: #fcc;
 }
 .infobox.is_focus{
-	background: #ccc;
+	background: #fff;
+	color: red;
+	cursor: default;
+	font-weight: bold;
+}
+
+
+
+.panel{
+	position: fixed;
+	width: 219px;
+}
+
+.panel ul{
+	margin-left: 0;
+}
+.panel ul li{
+	list-style: none;
 }
 
 .panel .focusbox{

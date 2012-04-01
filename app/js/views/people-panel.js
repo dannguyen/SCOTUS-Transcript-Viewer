@@ -18,7 +18,6 @@ define([
 		model_view : PersonInfoboxView,
 		className : "panel",
 		tagName : "div",
-		mode : "list",
 		template : _.template(templatePeoplePanel),
 		template_focus: _.template(templatePeoplePanelFocusbox),
 		
@@ -27,44 +26,65 @@ define([
 		events : {
 			"click .apptk.next_focused_asset" : "_on_next_focused_asset",
 			"click .apptk.prev_focused_asset" : "_on_prev_focused_asset",
-			"click .apptk.show_all" : "_on_show_all" // could be done with meta-prog, TK			
+			"click .apptk.show_all" : "_on_show_all" // could be done with meta-prog, TK,
 		},
 		
 		initialize : function(){
 			
-			_.bindAll(this, 'render', '_focusOn', '_focusOff', '_gotoAsset', '_onInfoboxClick');
+			_.bindAll(this, 'render', '_focusOn', '_focusOff', '_gotoAsset', '_onInfoboxClick', 'subRender', '_setFocusedPerson', '_getFocusedPerson');
 			
+			this.mode = "list";
+			this.focused_model = null;
+			
+			// alias
+			this.people_collection = this.collection;
 		},
 		
 		render : function(){
-
+			
 			var self = this;
 			this.$el.html(this.template( ));
-			
 			this.$focus_box = this.$('.focusbox');
-			
-			// bind panel view events
-						
+
+			// bind panel view events						
 			this.collection.each(function(_m){
-				var member_infobox_view = new self.model_view({ model:_m, id:"Infobox-" +_m.cid});				
+				var model_infobox_view = new self.model_view({ model:_m, id:"Infobox-" +_m.cid});				
 				// bind events
-				member_infobox_view.on("infobox_click", 
+				
+				model_infobox_view.on(
+					"infobox_click", 
 					function(_model){self._onInfoboxClick(_model); 
 				});
 				
-				self.$(".list").append( member_infobox_view.render().el );
+				self.$(".list").append( model_infobox_view.render().el );
 			});
+			
+			this.subRender();
 			
 			return this;
 		},
 		
-		renderFocusbox : function(){
-			var self = this;
-			if (f = this._getFocused()){
-				this.$('.focusin').empty().html( self.template_focus( f.toJSON()) );
+		subRender: function(){
+			// handle the re-rendering of the focus box
+			
+			// pre: 	model's is_focus change is handled by _focusOn
+			if(this.mode == "list"){
+				this.people_collection.each(function(_vm){_vm.trigger("show");});	
+
+				this.$('.apptk.show_all').fadeOut(200);		
+				this.$focus_box.hide();				
+			}else if(this.mode == "focus"){				
+				
+				this.people_collection.filterUnfocused().each(function(_vm){ _vm.trigger("hide");});
+				this._renderFocusbox( this._getFocusedPerson() );
+
+				this.$('.apptk.show_all').slideDown(100); 
+				this.$focus_box.slideDown(100);
 			}
 			
 		},
+		
+		
 		
 /*********
 private
@@ -73,29 +93,82 @@ private
 	
 		
 		_focusOn : function(m){
-			this.$('.apptk.show_all').slideDown(100); //TK spaghetti
-			this.collection.focusOn(m);
-			this.collection.filterUnfocused().each(function(_vm){ _vm.trigger("hide");});
+			// pre: 	m is a model passed by _onInfoboxClick, which is triggered by
+			// 			an person-infobox click event. No changes are made to the model
+			// 			by person-infobox. It is up to people-panel to change focus
 			
-			this.renderFocusbox();
-			this.$focus_box.slideDown(100);
+			// post: 	call to _setFocusedPerson sets model in collection `is_focus` to true
+			this.mode = "focus";
+			this._setFocusedPerson(m);
+			this.subRender();
 		},
 		
-		_focusOff : function(){ //TK not dry
-			this.$('.apptk.show_all').slideUp(100);
-			this.collection.focusOff();
-			this.collection.each(function(_vm){_vm.trigger("show");});			
-			this.$focus_box.slideUp(100);
+		_focusOff : function(){ 
+			this.mode = "list";
+			this._setFocusedPerson(null);
+			this.subRender();			
 		},
 		
-		_getFocused : function(){ return this.collection.getFocused(); },
+		_getFocusedPerson : function(){  
+			// superflous? TK
+			// _focusOn is the main way that this.focused_model is set externally
+			
+			// pre: 	relies on this.focused_model is set and does not touch the collection
+			// 			i.e. NOT `return this.people_collection.getFocused();` 
+			if(this.focused_model){
+				return this.focused_model;
+			}else{ return null; } // should return false?
+		},
+		
+		_getFocusedPersonStatements : function(){
+			// wrapper function for getting a person's assets
+			// may be deprecated later
+			//
+			// pre: 	this.focused_model is set
+			// post: 	returns collection of this.focused_model statements
+			var p = this._getFocusedPerson();
+			if( !_.isNull(p)){
+				// TK: person statements are models, whereas transcript uses DOM selectors
+				// to be resolved TK
+				return p.statements;
+			}else{
+				return null;
+			}
+		},
 
-		_gotoAsset : function(dir, m){
-			// pre: dir is either a direction(prev, next) or cid of an asset(a statement)
-			// post: triggers "moveTranscript" event which is read by App, which then
-			// 		applies it to the TranscriptView
+		_gotoAsset : function(dir, person){
+			// pre: 	dir is either a direction(prev, next) or cid of an asset(a statement)
+			//  		optionally: person contains a persont o filter collection by
+			// post: 	triggers "moveTranscript" event which App.transcript listens to 
 			
-			this.trigger("moveTranscript", dir, m);
+			this.trigger("moveTranscript", dir, person);
+		},
+		
+		_setFocusedPerson : function(m){ 
+			// pre: 		`m` contains a model in the panel collection to focus on
+			//				OR, null is passed in, which removes focus from collection
+			//				
+			// post: 		collection focuses or loses focus of model, dependent on `m`
+			// 				this.focused_model caches reference		 
+			if(!_.isNull(m) && m.hasOwnProperty('cid')){ // better test? TK
+				this.people_collection.setFocus( m );
+				this.focused_model = m; 
+			}else{ 		
+				this.people_collection.removeFocus();		
+				this.focused_model = null;
+			}
+			return this.focused_model;
+		}, 
+		
+		
+		_renderFocusbox : function(m){
+			// called from: 	subRender 
+			// pre: 			m is equal to this.focusedModel
+			var self = this;
+		
+			this.$('.focusin').empty().html( 
+				self.template_focus(_.extend(m.toJSON())) 
+			);
 		},
 		
 		_onInfoboxClick : function(m){
@@ -103,11 +176,11 @@ private
 		},
 		
 		_on_next_focused_asset : function(){
-			this._gotoAsset("next", this._getFocused());
+			this._gotoAsset("next", this._getFocusedPerson());
 		},
 		
 		_on_prev_focused_asset : function(){
-			this._gotoAsset("prev", this._getFocused());
+			this._gotoAsset("prev", this._getFocusedPerson());
 		},
 		_on_show_all : function(){
 			this._focusOff();

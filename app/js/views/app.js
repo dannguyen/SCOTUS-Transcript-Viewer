@@ -35,6 +35,9 @@ define([
 	    },
 
 	    initialize: function() {
+		
+		   //TKKTKTKT
+		  this.mode = "transcript"
 		  // member collections
 		  this.people = new FocusedCollection();
 		  this.statements = new FocusedCollection();
@@ -91,28 +94,43 @@ define([
 		
 		_init_collectionInitialization : function(data){
 			// initializes collection AND views
-			// TK
 			var self = this;
 			
-			//////////////////
-			// people
-			_.each(data.people, function(_p){
-				var person = new PersonModel(_p);
-				self.people.add(person);					
-			});
-			$("#init-message").html("Collections are loaded");				
+			////////////////////////
+			// for transcript viewer mode
+
+			if(this.mode=='transcript'){
+						
+				//////////////////
+				// people
+				_.each(data.people, function(_p){
+					var person = new PersonModel(_p);
+					person.statements = new FocusedCollection({model:StatementModel});
+					self.people.add(person);					
+				});
+				$("#init-message").html("Collections are loaded");				
 			
+				//////////////
+				// statements
+				
+				_.each(data.argument.statements, function(_s){
+					var p = self.people.find(function(_p){return _p.key_name === _s.person_key_name;})  // TK to be redone with diff data model
+					
+					// Caution: pid refers to person.cid; person.pid is an alias for cid
+					var statement = new StatementModel(_.extend(_s, {pid:p.pid, person_name:p.key_name}));
+					
+					self.statements.add(statement);
+					p.statements.add(statement);
+				});
+				
+				
+				//////////////////
+				// people wrap up, ugly! TK
+				this.people.each( function(_p){
+					_p.setNestedAttributes();
+				});
 			
-			//////////////
-			// statements
-			_.each(data.argument.statements, function(_s){
-				var p = self.people.find(function(_p){return _p.key_name === _s.person_key_name;})  // TK to be redone with diff data model
-				
-				// Caution: pid refers to person.cid; person.pid is an alias for cid
-				var statement = new StatementModel(_.extend(_s, {pid:p.pid, person_name:p.key_name}));
-				self.statements.add(statement);
-				
-			});
+			}
 			
 		},
 		
@@ -123,61 +141,28 @@ define([
 			////////////////////////
 			// for transcript viewer mode
 			
-			this.mainview = new TranscriptView({collection: this.statements, id: "transcript", people:this.people});
+			if(this.mode=='transcript'){
+				this.mainview = new TranscriptView({
+					collection: this.statements, id: "transcript", people:this.people});
+				
+				/// append panels
+				this.panels.people = new PeoplePanelView({
+					collection:this.people, id : "people-panel"});
 			
-			this.mainscreen_el.append(this.mainview.render().el)
-		
+				// wire panel and mainviewer			
+				this.panels.people.on("moveTranscript", self.mainview.moveTranscript, self.mainview);
 			
-			/// append panels
-			this.panels.people = new PeoplePanelView({collection:this.people, id : "people-panel"});
+			}
+			
+			//render main screen
+			this.mainscreen_el.append(this.mainview.render().el);
+					
 			// render panels
 			_.each(this.panels, function(_panel){  
 				self.panels_el.append(_panel.render().el);
-				_panel.on("moveTranscript", self._moveTranscript, self);
 			});
-		},
-		
-		_moveTranscript : function(dir, modil){
-			var self = this;
 			
-			
-			if(dir == "next"){
-				console.log("_moveTranscript forward");
-			}else if(dir == "prev"){
-				console.log("_moveTranscript backwards");
-			}else{
-				console.log("_moveTranscript to cid:  " + dir);
-			}
-
-			if(!_.isUndefined(modil)){
-				console.log("  _moveTranscript filter by parent model.cid: " + modil.cid);				
-			}
-			var filter_classid = ".statement" + (!_.isUndefined(modil) ? '.' + modil.cid : '');
-
-			
-			/// TK XK
-			// tk spaghetti
-			// ## alias for $.statement_indiv_els
-
-			// find statement closest to what's in viewport
-			var t_scrolltop = $(window).scrollTop();
-			console.log("Scrolltop pos of transcript: " + t_scrolltop);
-			
-			var c_el = $("#transcript .statement").closestToTop(t_scrolltop);
-			console.log("current element is : " + c_el.attr('id'));
-			
-			console.log("looking for filter_classid: " + filter_classid );
-			var starget = c_el.nextAll(filter_classid).not('#'+c_el.attr('id')).first();
-			
-			console.log("found target: " + starget.attr('id'));	
-			console.log(starget.text());
-			
-			$.smoothScroll({
-		    	scrollTarget: starget
-		  	});
-			
-			
-		},
+		}
 		
 		
 		

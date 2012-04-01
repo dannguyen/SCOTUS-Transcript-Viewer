@@ -52,6 +52,41 @@ define([
 			
 		},
 		
+		
+		moveTranscript : function(dir, modil){
+			var self = this, starget;
+			
+			var t_scrolltop = $(window).scrollTop();			
+			var c_el = $("#transcript .statement").closestToTop(t_scrolltop);
+			console.log("Scrolltop pos of transcript: " + t_scrolltop);
+			console.log("current element is : " + c_el.attr('id'));
+			
+			var filter_classid = ".statement" + (!_.isUndefined(modil) ? '.' + modil.cid : '');
+			
+			if(dir == "next"){
+				starget = c_el.nextAll(filter_classid).not('#'+c_el.attr('id')).first();
+				console.log("_moveTranscript forward");
+			}else if(dir == "prev"){
+				starget = c_el.prevAll(filter_classid).not('#'+c_el.attr('id')).last();
+				console.log("_moveTranscript backwards");
+			}else{
+				console.log("_moveTranscript to cid:  " + dir);
+			}
+
+			
+			console.log("looking for filter_classid: " + filter_classid );
+			
+			console.log("found target: " + starget.attr('id'));	
+			console.log(starget.text());
+			$.smoothScroll({
+		    	scrollTarget: starget,
+				speed: 200
+		  	});
+			
+			
+		},
+		
+		
 		_onPersonFocused : function(changed_person, change_bool){
 			// pre: 	a person's is_focus attribute has changed
 			// post: 	all statements with class "person.pid" have .highlight class toggled
@@ -63,8 +98,6 @@ define([
 		
 			var stmts = this.statement_indiv_els.filter("." + changed_person.pid);
 			stmts.toggleClass('highlight', change_bool);
-			
-
 		}
 		
 	});

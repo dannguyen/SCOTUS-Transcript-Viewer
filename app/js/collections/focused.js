@@ -12,7 +12,7 @@ define([
 			return this.find(function(_m){return _m.get('is_focus') === true; });
 		},
 
-	    focusOn : function(m){
+	    setFocus : function(m){
 			if( g = this.getFocused()){
 				if(g!=m){g.set({is_focus:false}); m.set({is_focus:true});}
 			}else{
@@ -28,7 +28,7 @@ define([
 			});*/
 		},
 		
-		focusOff : function(){
+		removeFocus : function(){
 			// assumes there is only one focused object
 			var g = this.getFocused();
 			if(g){g.set({is_focus:false} ); }

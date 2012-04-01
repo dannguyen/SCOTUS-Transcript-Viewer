@@ -27,8 +27,6 @@ module PScootus
       @current_docstate = DOCSTATES.first
       
       @page_filenames = PScootus::Local.get_transcript_page_filenames(@directory)
-      
-      
       puts "Transcript#Initialize  for #{@uid}, \t #{page_filenames.length} pages"
       
     end

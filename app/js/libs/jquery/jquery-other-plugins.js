@@ -6,6 +6,7 @@
 
 	$.fn.closestToTop = function(y){
 		var elOffset, top, el, yesel = this.first();
+		y += 100;
 		this.each(function(){
 			el = $(this);
 	        top = el.offset().top;
