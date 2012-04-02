@@ -46,14 +46,18 @@ define([
 		
 	    },
 	
-	
 
 	    render: function() {
      		return this;
 	    },
 
-		renderMainscreen : function(mv){
+		renderMainscreen : function(mv, callback){
 			this.mainscreen_el.append(mv.render().el);
+			
+			if(typeof callback === "function"){
+				callback.call();
+			}
+			
 			return mv;
 		},
 		

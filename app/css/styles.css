@@ -20,7 +20,7 @@
 	font-weight: bold;
 }
 
-.infobox{
+.infobox .info-label{
 	cursor: pointer;
 }
 
@@ -28,10 +28,10 @@
 	display: none;
 }
 
-.infobox:hover{
+.infobox:hover .info-label{
 	background: #fcc;
 }
-.infobox.is_focus{
+.infobox.is_focus .info-label{
 	background: #fff;
 	color: red;
 	cursor: default;
@@ -83,4 +83,19 @@
 
 .statement .person .name{
 	font-weight: bold;
+}
+
+
+
+#transcript .scrubber{
+	background: #fdd;
+	height: 30px;
+	position: relative;
+}
+
+#transcript .scrubber .progress-pin{
+	width: 2px;
+	height: 30px;
+	border: thin solid green;
+	position: absolute;
 }

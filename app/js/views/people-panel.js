@@ -67,6 +67,8 @@ define([
 			// each infobox handles its own .focus change upon change:is_focus
 			
 			// pre: 	model's is_focus change is handled by _focusOn
+			
+			// post: focused view is shown
 			if(this.mode == "list"){
 				this.people_collection.each(function(_vm){_vm.trigger("show");});	
 				this.$('.apptk.show_all').fadeOut(200);		
@@ -75,7 +77,6 @@ define([
 			}else if(this.mode == "focus"){				
 				
 				this.people_collection.filterUnfocused().each(function(_vm){ _vm.trigger("hide");});
-				
 				this.$('.apptk.show_all').slideDown(100); 
 				this.$focus_subpanel.slideDown(100);
 			}

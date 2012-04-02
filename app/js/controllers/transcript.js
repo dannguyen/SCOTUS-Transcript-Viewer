@@ -28,6 +28,12 @@ define([
 				this.panels = {};			  
 				console.log("Hello I am transcript Controller");				
 
+
+				// listen to window resize events
+				var self = this;
+				$(window).resize(function(){ self.trigger("windowResized"); })
+				$(window).scroll(function(){self.trigger("windowScrolled");});
+				
 			},
 			
 			execute : function(){
@@ -66,7 +72,7 @@ define([
 				// people
 				_.each(data.people, function(_p){
 					var person = new PersonModel(_p);
-					person.statements = new FocusedCollection({model:StatementModel});
+					person.statements = new FocusedCollection();
 					self.people.add(person);					
 				});
 
@@ -101,26 +107,35 @@ define([
 			},
 			
 			_init_viewCreation : function(data){
-				var self = this;
 
 				
 				//render main screen
-				this.mainscreen = new TranscriptView({
-					collection: this.statements, id: "transcript", people:this.people});
+				this.mainscreen = new TranscriptView({ collection: this.statements, id: "transcript", people:this.people, controller: this});
 				
-				this.app.renderMainscreen(this.mainscreen);
+				var sm = this.mainscreen;
+				this.app.renderMainscreen(this.mainscreen); 
+				
+				
+				
 				/// append panels
-				this.panels.case = new ArgumentPanelView({
-					model: this.argument });
-				this.panels.people = new PeoplePanelView({ collection:this.people, id : "people-panel"});
+				this.panels.argument = new ArgumentPanelView({ model: this.argument, controller: this });
+				this.panels.people = new PeoplePanelView({ collection:this.people, id : "people-panel", controller: this});
 			
-			
+				var self = this;
 				// render panels
 				_.each(this.panels, function(_panel){  
 					self.app.renderPanel(_panel);
 				});
-			} // end of view Creation
-
+			
+				
+				this.trigger("renderFinished");
+				
+			}, // end of view Creation
+			
+			cleanUp : function(){
+				// TK implementation
+				// remove all subviews
+			}
 
 		});
 		

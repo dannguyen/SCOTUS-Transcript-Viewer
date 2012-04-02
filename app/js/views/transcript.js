@@ -4,12 +4,14 @@ define([
   'backbone',
   'models/statement',
   'collections/focused',
+  'views/transcript-scrubber',
+
   'text!templates/t-transcript.html',
   'text!templates/t-transcript-statement.html'
 
 
 	], function($,_,Backbone,
-		StatementModel, FocusedCollection, templateTranscript, templateTranscriptStatement){
+		StatementModel, FocusedCollection, TranscriptScrubberView, templateTranscript, templateTranscriptStatement){
 
 	var TranscriptView = Backbone.View.extend({
 		template : _.template(templateTranscript),
@@ -17,22 +19,28 @@ define([
 		
 		
 		initialize : function(params){
-			_.bindAll(this, 'render', 'renderChildren', 'highlightStatements');			
+			_.bindAll(this, 'render', 'renderChildren', 'highlightStatements', 'postRendered');			
 			this.MAINNAV_HEIGHT = 90;
 			// alias
 			this.statements = this.collection;
 			// also, transcript is given reference to people collection from app
 			this.people = params.people;
+			this.controller = params.controller;
 			
 			this.people.on("change:is_focus", this._onPersonFocused, this);
+			this.controller.on("renderFinished", this.postRendered, this)
 		},
 		
 		render : function(){
 			
-			this.$el.html(this.template( ));	
+			this.$el.html(this.template( ));
+			this.$transcript_view = this.$("#statements-viewer");	
 			this.renderChildren();		
+			this.$statements = this.$(".statement");
 			
-			this.statement_indiv_els = this.$(".statement");
+			
+		
+			
 			return this;
 		},
 		
@@ -44,8 +52,20 @@ define([
 				// to decide: create many statement views? or create simple dom elements?
 				var sj = _.extend(_s.toJSON(), {pid:_s.pid, id:"stmt-"+_s.cid, cid:_s.cid});
 				var shtml = self.template_statement(sj);
-				self.$("#statements").append(shtml);
+				self.$transcript_view.append(shtml);
 			});			
+		},
+		
+		
+		postRendered : function(){
+			//pre:  this attaches the scrubber which depends on all of transcript member elements (people, statements)
+			//		being rendered onto the main view
+			
+
+			var self = this;
+			this.scrubber = new TranscriptScrubberView({collection : this.statements, transcript_height : this.$transcript_view.height(), controller : this.controller });
+			this.$(".scrubber-wrapper").append(self.scrubber.render().el);
+			return this;
 		},
 		
 		highlightStatements : function(){
@@ -57,7 +77,7 @@ define([
 			var self = this, starget;
 			
 			var t_scrolltop = $(window).scrollTop();			
-			var c_el = $("#transcript .statement").closestToTop(t_scrolltop);
+			var c_el = this.$statements.closestToTop(t_scrolltop);
 			console.log("Scrolltop pos of transcript: " + t_scrolltop);
 			console.log("current element is : " + c_el.attr('id'));
 			
@@ -95,9 +115,8 @@ define([
 			var self = this;
 		//	var stmt = this.statements.filter(function(_s){_s.pid === changed_person.cid});
 		
-			console.log("coutn statements: " + this.statement_indiv_els.length)
 		
-			var stmts = this.statement_indiv_els.filter("." + changed_person.pid);
+			var stmts = this.$statements.filter("." + changed_person.pid);
 			stmts.toggleClass('highlight', change_bool);
 		}
 		
