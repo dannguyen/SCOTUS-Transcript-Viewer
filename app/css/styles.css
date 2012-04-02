@@ -10,8 +10,10 @@
 
 .biobox .mugshot{
 	border: thin solid #888;
-	height: 120px;
-	width: 160px;
+	float: right;
+	margin: 0 0 10px 10px;
+	height: 100px;
+	width: 75px;
 }
 
 .focusin .lbl{

@@ -2,10 +2,11 @@ define([
   'order!jquery',
   'order!underscore', 
   'order!backbone',
-  'order!controllers/controller'
+  'order!controllers/controller',
+  'routers/main_router'
 
   ], 
-	function($, _, Backbone, MyControllers		
+	function($, _, Backbone, MyControllers, MainRouter		
  	){
 		
 		
@@ -29,14 +30,23 @@ define([
 	      _.bindAll(this, 'render', 'renderPanel', 'renderMainscreen' );
 		  $("#init-message").html("App is initialized");
 		
+		
 		  this.render();
 		
 		  //some kind of routing action
-		  this.mode = "Transcript"
-		  this.controller = new MyControllers[this.mode]({app:self});	
-		  this.controller.execute();
+		
+		
+		//  this.router = new MainRouter();
+	   	 // Backbone.history.start();
+	    
+	/* stub code */
+		  this.controller_name = 'transcript';
+		  this.controller = new MyControllers[this.controller_name]({app:self});	
+	  	  this.controller.execute();
 		
 	    },
+	
+	
 
 	    render: function() {
      		return this;

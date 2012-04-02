@@ -6,7 +6,7 @@ define([
    function(_, Backbone, TranscriptController){
 		
 		var MyControllers = {
-			'Transcript' : TranscriptController
+			'transcript' : TranscriptController
 		};
 		return MyControllers;
 	}

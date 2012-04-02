@@ -18,7 +18,7 @@ define([
 		
 		initialize : function(params){
 			_.bindAll(this, 'render', 'renderChildren', 'highlightStatements');			
-			
+			this.MAINNAV_HEIGHT = 90;
 			// alias
 			this.statements = this.collection;
 			// also, transcript is given reference to people collection from app
@@ -67,7 +67,7 @@ define([
 				starget = c_el.nextAll(filter_classid).not('#'+c_el.attr('id')).first();
 				console.log("_moveTranscript forward");
 			}else if(dir == "prev"){
-				starget = c_el.prevAll(filter_classid).not('#'+c_el.attr('id')).last();
+				starget = c_el.prevAll(filter_classid).not('#'+c_el.attr('id')).first();
 				console.log("_moveTranscript backwards");
 			}else{
 				console.log("_moveTranscript to cid:  " + dir);
@@ -80,7 +80,8 @@ define([
 			console.log(starget.text());
 			$.smoothScroll({
 		    	scrollTarget: starget,
-				speed: 200
+				speed: 150,
+				offset: -this.MAINNAV_HEIGHT
 		  	});
 			
 			
