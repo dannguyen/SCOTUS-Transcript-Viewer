@@ -21,7 +21,7 @@ module PScootus
     def initialize(raw_line_array, params={})
     # raw_line_array is readlines result from textfile, with line-ending chomped
     
-    # params should include :argument, :page_number
+    # params should include :page_number, :transcript
       @raw_lines = raw_line_array
       @transcript = params[:transcript]
       @page_number = params[:page_number]
@@ -82,6 +82,41 @@ module PScootus
     end
     
     
+    # docstate checks
+    
+    def is_introduction?
+      @lines[0].matches_official_tagline? &&  @content_lines[0].andand.matches_intro_line?
+    end
+    
+    def is_meta_introduction?
+      # only a few transcripts have these
+      @lines[0].matches_meta_intro_header?
+    end
+    
+    def is_toc?
+      @content_lines[0].andand.matches_toc_header?
+    end
+    
+    def is_proceedings_start?
+      @content_lines[0].andand.matches_proceedings_header?
+    end
+    
+    def is_index_page?
+      #TK to be made more specific
+      !(self.has_content?)
+    end
+    
+    
+    
+    ### page state checks
+    
+    def is_proceedings_end?
+      @conten
+    end
+
+
+    
+    
     def content_line_count
       @content_lines.length
     end
@@ -103,7 +138,7 @@ module PScootus
     # poor man's meta-validation
     VALIDATORS = {
       :has_lines => lambda{ |_p| return _p.lines.length > 0 || false},
-      :first_line_is_official_tagline => lambda{|_p| l = _p.lines.first; puts l.matches_official_tagline?;  l.matches_official_tagline? || _p.lines.first.raw_text}, 
+      :first_line_is_official_tagline => lambda{|_p| l = _p.lines.first;  l.matches_official_tagline? || _p.lines.first.raw_text}, 
       :last_line_is_blank => lambda{|_p| l = _p.lines.last; return  l.matches_empty? || l.raw_text },
       
       # for content pages

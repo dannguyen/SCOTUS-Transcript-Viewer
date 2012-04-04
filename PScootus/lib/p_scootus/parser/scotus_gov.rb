@@ -23,13 +23,13 @@ module PScootus
           # dirname is a directory corresponding to transcript pages
         
           # intialize argument
-          argument = PScootus::ScotusArgument.new(dirname)  
+          scotus_case = PScootus::ScotusCase.new(dirname)  
           
           # build argument
-          argument.build
+          scotus_case.build
           
           ## create json
-          parsefile_name = File.join( PScootus::Local::DIRS[:scotus][:parsed], argument.uid ) +'.json'
+          parsefile_name = File.join( PScootus::Local::DIRS[:scotus][:parsed], scotus_case.uid ) +'.json'
           
         
         end

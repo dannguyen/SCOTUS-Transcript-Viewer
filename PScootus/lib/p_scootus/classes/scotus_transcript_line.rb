@@ -122,15 +122,19 @@ module PScootus
   class ScotusTranscriptLine
     
     BASE_PATTERNS = {
-      :content_line_start => /^(?: \d|\d{2})(?= +)/,                  # the pattern before a numbered line
-      :strict_content_line_start => /^(?: [1-9]|[12]\d)(?= +)/,       # assumes lines are numbered from 1-25
-      :empty => /^\s*$/                                                # blank line
+      :content_line_start => /^(?: ?\d|\d{2})(?= {2,})/,                  # the pattern before a numbered line
+#      :strict_content_line_start => /^(?: [1-9]|[12]\d)(?= +)/,       # assumes lines are numbered from 1-25
+      :empty => /^\s*$/  ,                                              # blank line
+      :meta_intro_header =>/OFFICIAL TRANSCRIPT/
     }
     
     ## assumes that content_line_start has been matched and stripped
     ##  and that we're in a dialogue section
     CONTENT_STATEMENT_PATTERNS = {
-      :speaker => /^\s/      
+      :intro_line => /IN THE SUPREME COURT OF THE UNITED STATES/,
+      :toc_header => /C O N T E N T S/,
+      :proceedings_header => /P R O C E E D I N G S/,
+      :speaker => /^\s/     
     }
     
     NON_CONTENT_PATTERNS = {

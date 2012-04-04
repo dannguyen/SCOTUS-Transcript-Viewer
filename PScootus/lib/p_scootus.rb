@@ -78,6 +78,7 @@ module PScootus
 end
 
 require 'rubygems'
+require 'andand'
 require 'fileutils'
 require 'shellwords'
 require 'active_support/core_ext'
